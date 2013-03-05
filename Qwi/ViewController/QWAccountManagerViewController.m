@@ -38,13 +38,15 @@
   // iOS6でしかうごかないっぽい
   [_accountStore requestAccessToAccountsWithType:type options:nil completion:^(BOOL granted, NSError *error) {
     if (granted) {
-      _accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
+      NSArray* accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
       [indicator stopAnimating];
       QWUserManager* manager = [QWUserManager sharedManager];
-      for (ACAccount* account in _accounts) {
-        [manager createUserWithScreenName:account.username via:account];
+      for (ACAccount* account in accounts) {
+        [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
+          [_accounts addObject:user];
+          [self.tableView reloadData];
+        }];
       }
-      [self.tableView reloadData];
     }
   }];
   
@@ -76,8 +78,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   static NSString *CellIdentifier = @"AccountCell";
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-  ACAccount* account = [_accounts objectAtIndex:indexPath.row];
-  cell.textLabel.text = account.username;
+  QWUser* account = _accounts[indexPath.row];
+  cell.textLabel.text = account.name;
+  cell.detailTextLabel.text = account.screenName;
+  cell.imageView.image = account.profileImage;
   
   return cell;
 }

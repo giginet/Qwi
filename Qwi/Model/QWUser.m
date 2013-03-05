@@ -41,8 +41,11 @@
     _URL = [NSURL URLWithString:urlString];
   }
   
-  _profileImageURL = dictionary[@"profile_image_url"];
+  _profileImageURL = [NSURL URLWithString:dictionary[@"profile_image_url"]];
   _location = dictionary[@"location"];
+  
+  NSData* imageData = [NSData dataWithContentsOfURL:self.profileImageURL];
+  _profileImage = [UIImage imageWithData:imageData];
 }
 
 @end

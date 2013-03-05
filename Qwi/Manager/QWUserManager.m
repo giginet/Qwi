@@ -30,16 +30,18 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
   return self;
 }
 
-- (void)createUserWithScreenName:(NSString *)screenName via:(ACAccount *)account {
+- (void)createUserWithScreenName:(NSString *)screenName via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
   TWRequest* showRequest = [[TWRequest alloc] initWithURL:[NSURL URLWithString:(NSString*)kUserShowAPI]
                                                parameters:@{@"screen_name" : screenName}
                                             requestMethod:TWRequestMethodGET];
   [showRequest setAccount:account];
   [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
     NSString* jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", jsonString);
     QWUser* user = [[QWUser alloc] initWithJSON:jsonString];
     [_users setObject:user forKey:screenName];
+    if (onSucceed) {
+      onSucceed(user, urlResponse, error);
+    }
   }];
 }
 

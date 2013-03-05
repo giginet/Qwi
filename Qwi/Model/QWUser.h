@@ -13,6 +13,7 @@
  */
 
 @interface QWUser : NSObject {
+  UIImage* _profileImage;
 }
 
 @property(readonly) NSString* name;
