@@ -7,6 +7,7 @@
 //
 
 #import "QWAccountManagerViewController.h"
+#import "QWUserManager.h"
 
 @interface QWAccountManagerViewController ()
 
@@ -39,6 +40,10 @@
     if (granted) {
       _accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
       [indicator stopAnimating];
+      QWUserManager* manager = [QWUserManager sharedManager];
+      for (ACAccount* account in _accounts) {
+        [manager createUserWithScreenName:account.username via:account];
+      }
       [self.tableView reloadData];
     }
   }];

@@ -27,21 +27,22 @@
   NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
   NSError *error = nil;
   NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
-  self.name = [[dictionary objectForKey:@"name"] stringValue];
-  self.screenName = [[dictionary objectForKey:@"screen_name"] stringValue];
-  self.description = [[dictionary objectForKey:@"description"] stringValue];
-  self.friendsCount = [[dictionary objectForKey:@"friend_count"] integerValue];
-  self.favoritesCount = [[dictionary objectForKey:@"favorites_count"] integerValue];
-  self.statusesCount = [[dictionary objectForKey:@"statuses_count"] integerValue];
-  self.followersCount = [[dictionary objectForKey:@"followers_count"] integerValue];
-  self.listedCount = [[dictionary objectForKey:@"listed_count"] integerValue];
-  if ([dictionary objectForKey:@"url"]) {
-    NSString* urlString = [[dictionary objectForKey:@"url"] stringValue];
-    self.URL = [NSURL URLWithString:urlString];
+  
+  _name = dictionary[@"name"];
+  _screenName = dictionary[@"screen_name"];
+  _description = dictionary[@"description"];
+  _friendsCount = [dictionary[@"friend_count"] integerValue];
+  _favoritesCount = [dictionary[@"favorites_count"] integerValue];
+  _statusesCount = [dictionary[@"statuses_count"] integerValue];
+  _followersCount = [dictionary[@"followers_count"] integerValue];
+  _listedCount = [dictionary[@"listed_count"] integerValue];
+  if (dictionary[@"url"]) {
+    NSString* urlString = dictionary[@"url"];
+    _URL = [NSURL URLWithString:urlString];
   }
   
-  self.profileImageURL = [NSURL URLWithString:[[dictionary objectForKey:@"profile_image_url"] stringValue]];
-  self.location = [[dictionary objectForKey:@"location"] stringValue];
+  _profileImageURL = dictionary[@"profile_image_url"];
+  _location = dictionary[@"location"];
 }
 
 @end
