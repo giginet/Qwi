@@ -40,9 +40,6 @@
       _accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
       [indicator stopAnimating];
       [self.tableView reloadData];
-      for (ACAccount* account in _accounts) {
-        NSLog(@"%@", account.username);
-      }
     }
   }];
   
@@ -74,12 +71,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   static NSString *CellIdentifier = @"AccountCell";
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-  NSLog(@"%@", cell);
-  // Configure the cell...
   ACAccount* account = [_accounts objectAtIndex:indexPath.row];
-  NSLog(@"%@", account.username);
   cell.textLabel.text = account.username;
-  
   
   return cell;
 }
