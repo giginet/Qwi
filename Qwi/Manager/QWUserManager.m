@@ -7,12 +7,14 @@
 //
 
 #import "QWUserManager.h"
+#import "CJSONDeserializer.h"
 #import <Twitter/Twitter.h>
 #import <Social/Social.h>
 
 @implementation QWUserManager
 
 const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
+const NSString* kUserFriendsAPI = @"https://api.twitter.com/1.1/friends/ids.json";
 
 + (id)sharedManager {
   static id sharedInstance = nil;
@@ -39,11 +41,11 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
                          succeed:onSucceed];
 }
 
-- (void)createUserWithID:(unsigned long)userID via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
-  [self createUserWithParameters:@{@"user_id" : [NSNumber numberWithUnsignedLong:userID]}
+- (void)createUserWithID:(NSString*)userID via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+  [self createUserWithParameters:@{@"user_id" : userID}
                              via:account
                          succeed:onSucceed];
-
+  
 }
 
 - (void)createUserWithParameters:(NSDictionary *)parameters via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
@@ -69,6 +71,36 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
 
 - (QWUser*)userWithScreenName:(NSString *)screenName {
   return [_users objectForKey:screenName];
+}
+
+- (void)createFriendsOfUser:(QWUser *)user
+                        via:(ACAccount *)account
+                    succeed:(void (^)(NSArray *, NSHTTPURLResponse *, NSError *))onSucceed {
+  int cursor = -1;
+  SLRequest* request = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                          requestMethod:SLRequestMethodGET
+                                                    URL:[NSURL URLWithString:(NSString*)kUserFriendsAPI]
+                                             parameters:@{@"cursor" : [NSString stringWithFormat:@"%d", cursor], @"screen_name" : user.screenName, @"count" : @"10"}];
+  request.account = account;
+  [request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+    NSDictionary* response = [[CJSONDeserializer deserializer] deserialize:responseData
+                                                                     error:nil];
+    NSMutableArray* friends = [NSMutableArray array];
+    NSArray* ids = response[@"ids"];
+    for (NSNumber* userID in ids) {
+      if (userID) {
+        NSString* str = [NSString stringWithFormat:@"%ld", [userID longValue]];
+        
+        [self createUserWithID:str
+                           via:account
+                       succeed:^(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error) {
+                         [friends addObject:user];
+                         NSLog(@"%@", user.name);
+                       }];
+      }
+    }
+  }];
+  
 }
 
 

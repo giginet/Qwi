@@ -36,9 +36,11 @@
   _statusesCount = [dictionary[@"statuses_count"] integerValue];
   _followersCount = [dictionary[@"followers_count"] integerValue];
   _listedCount = [dictionary[@"listed_count"] integerValue];
-  if (dictionary[@"url"]) {
+  if (dictionary[@"url"] != [NSNull null]) {
     NSString* urlString = dictionary[@"url"];
-    _URL = [NSURL URLWithString:urlString];
+    if (urlString) {
+      _URL = [NSURL URLWithString:urlString];
+    }
   }
   
   _profileImageURL = [NSURL URLWithString:dictionary[@"profile_image_url"]];

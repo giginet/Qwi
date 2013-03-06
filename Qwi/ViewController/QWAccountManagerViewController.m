@@ -44,6 +44,7 @@
       for (ACAccount* account in accounts) {
         [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
           [_accounts addObject:user];
+          [[QWUserManager sharedManager] createFriendsOfUser:user via:account succeed:nil];
           [self.tableView reloadData];
         }];
       }

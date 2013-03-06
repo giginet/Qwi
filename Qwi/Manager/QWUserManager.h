@@ -18,12 +18,15 @@
 - (void)createUserWithScreenName:(NSString*)screenName
                              via:(ACAccount*)account
                          succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
-- (void)createUserWithID:(unsigned long)userID
+- (void)createUserWithID:(NSString*)userID
                              via:(ACAccount*)account
                          succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
 - (void)createUserWithParameters:(NSDictionary*)parameters
                      via:(ACAccount*)account
                  succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
 - (QWUser*)userWithScreenName:(NSString*)screenName;
+- (void)createFriendsOfUser:(QWUser*)user
+                        via:(ACAccount*)account
+                    succeed:(void (^)(NSArray* users, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;;
 
 @end
