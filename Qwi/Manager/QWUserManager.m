@@ -34,6 +34,19 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
 - (void)createUserWithScreenName:(NSString *)screenName
                              via:(ACAccount *)account
                          succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+  [self createUserWithParameters:@{@"screen_name" : screenName}
+                             via:account
+                         succeed:onSucceed];
+}
+
+- (void)createUserWithID:(unsigned long)userID via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+  [self createUserWithParameters:@{@"user_id" : [NSNumber numberWithUnsignedLong:userID]}
+                             via:account
+                         succeed:onSucceed];
+
+}
+
+- (void)createUserWithParameters:(NSDictionary *)parameters via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
   /*
    iOS6ではTWRequestではなく、SLRequestを利用するのが良いらしい
    5は切り捨てる方針で
@@ -42,12 +55,12 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
   SLRequest* showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                               requestMethod:SLRequestMethodGET
                                                         URL:[NSURL URLWithString:(NSString*)kUserShowAPI]
-                                                 parameters:@{@"screen_name" : screenName}];
+                                                 parameters:parameters];
   showRequest.account = account;
   [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
     NSString* jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     QWUser* user = [[QWUser alloc] initWithJSON:jsonString];
-    [_users setObject:user forKey:screenName];
+    [_users setObject:user forKey:user.screenName];
     if (onSucceed) {
       onSucceed(user, urlResponse, error);
     }

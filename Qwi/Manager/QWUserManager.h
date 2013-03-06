@@ -18,6 +18,12 @@
 - (void)createUserWithScreenName:(NSString*)screenName
                              via:(ACAccount*)account
                          succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
+- (void)createUserWithID:(unsigned long)userID
+                             via:(ACAccount*)account
+                         succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
+- (void)createUserWithParameters:(NSDictionary*)parameters
+                     via:(ACAccount*)account
+                 succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
 - (QWUser*)userWithScreenName:(NSString*)screenName;
 
 @end
