@@ -31,7 +31,7 @@
   _name = dictionary[@"name"];
   _screenName = dictionary[@"screen_name"];
   _description = dictionary[@"description"];
-  _friendsCount = [dictionary[@"friend_count"] integerValue];
+  _friendsCount = [dictionary[@"friends_count"] integerValue];
   _favoritesCount = [dictionary[@"favorites_count"] integerValue];
   _statusesCount = [dictionary[@"statuses_count"] integerValue];
   _followersCount = [dictionary[@"followers_count"] integerValue];
@@ -43,9 +43,15 @@
   
   _profileImageURL = [NSURL URLWithString:dictionary[@"profile_image_url"]];
   _location = dictionary[@"location"];
-  
-  NSData* imageData = [NSData dataWithContentsOfURL:self.profileImageURL];
-  _profileImage = [UIImage imageWithData:imageData];
+  _profileImage = nil;
+}
+
+- (UIImage*)profileImage {
+  if (!_profileImage) {
+    NSData* imageData = [NSData dataWithContentsOfURL:self.profileImageURL];
+    _profileImage = [UIImage imageWithData:imageData];
+  }
+  return _profileImage;
 }
 
 @end

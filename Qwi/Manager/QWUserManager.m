@@ -8,6 +8,7 @@
 
 #import "QWUserManager.h"
 #import <Twitter/Twitter.h>
+#import <Social/Social.h>
 
 @implementation QWUserManager
 
@@ -30,11 +31,19 @@ const NSString* kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
   return self;
 }
 
-- (void)createUserWithScreenName:(NSString *)screenName via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
-  TWRequest* showRequest = [[TWRequest alloc] initWithURL:[NSURL URLWithString:(NSString*)kUserShowAPI]
-                                               parameters:@{@"screen_name" : screenName}
-                                            requestMethod:TWRequestMethodGET];
-  [showRequest setAccount:account];
+- (void)createUserWithScreenName:(NSString *)screenName
+                             via:(ACAccount *)account
+                         succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+  /*
+   iOS6ではTWRequestではなく、SLRequestを利用するのが良いらしい
+   5は切り捨てる方針で
+   // http://stackoverflow.com/questions/13330596/twrequest-is-deprecated-in-ios-6-0-what-can-i-use-instead
+   */
+  SLRequest* showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                              requestMethod:SLRequestMethodGET
+                                                        URL:[NSURL URLWithString:(NSString*)kUserShowAPI]
+                                                 parameters:@{@"screen_name" : screenName}];
+  showRequest.account = account;
   [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
     NSString* jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     QWUser* user = [[QWUser alloc] initWithJSON:jsonString];

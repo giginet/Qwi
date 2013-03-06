@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0718916716E6390300A156BE /* QWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0718916616E6390300A156BE /* QWUserManager.m */; };
 		0718916916E639B000A156BE /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718916816E639B000A156BE /* Twitter.framework */; };
+		0718916B16E6C57400A156BE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718916A16E6C57400A156BE /* Social.framework */; };
 		07FD923116E61A7900688022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923016E61A7900688022 /* UIKit.framework */; };
 		07FD923316E61A7900688022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923216E61A7900688022 /* Foundation.framework */; };
 		07FD923516E61A7900688022 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923416E61A7900688022 /* CoreGraphics.framework */; };
@@ -31,6 +32,7 @@
 		0718916516E6390300A156BE /* QWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWUserManager.h; path = Manager/QWUserManager.h; sourceTree = "<group>"; };
 		0718916616E6390300A156BE /* QWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWUserManager.m; path = Manager/QWUserManager.m; sourceTree = "<group>"; };
 		0718916816E639B000A156BE /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		0718916A16E6C57400A156BE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		07FD922D16E61A7900688022 /* Qwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FD923016E61A7900688022 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FD923216E61A7900688022 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0718916B16E6C57400A156BE /* Social.framework in Frameworks */,
 				0718916916E639B000A156BE /* Twitter.framework in Frameworks */,
 				07FD925B16E621BC00688022 /* Accounts.framework in Frameworks */,
 				07FD923116E61A7900688022 /* UIKit.framework in Frameworks */,
@@ -86,7 +89,6 @@
 		07FD922416E61A7900688022 = {
 			isa = PBXGroup;
 			children = (
-				0718916816E639B000A156BE /* Twitter.framework */,
 				07FD923616E61A7900688022 /* Qwi */,
 				07FD922F16E61A7900688022 /* Frameworks */,
 				07FD922E16E61A7900688022 /* Products */,
@@ -105,6 +107,8 @@
 		07FD922F16E61A7900688022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0718916A16E6C57400A156BE /* Social.framework */,
+				0718916816E639B000A156BE /* Twitter.framework */,
 				07FD923016E61A7900688022 /* UIKit.framework */,
 				07FD923216E61A7900688022 /* Foundation.framework */,
 				07FD923416E61A7900688022 /* CoreGraphics.framework */,

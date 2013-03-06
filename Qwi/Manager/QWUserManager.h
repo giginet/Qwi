@@ -15,7 +15,9 @@
 }
 
 + (id)sharedManager;
-- (void)createUserWithScreenName:(NSString*)screenName via:(ACAccount*)account succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
+- (void)createUserWithScreenName:(NSString*)screenName
+                             via:(ACAccount*)account
+                         succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
 - (QWUser*)userWithScreenName:(NSString*)screenName;
 
 @end
