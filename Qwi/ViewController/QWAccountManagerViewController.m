@@ -15,8 +15,8 @@
 
 @implementation QWAccountManagerViewController
 
-- (id)initWithStyle:(UITableViewStyle)style {
-    self = [super initWithStyle:style];
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     }
     return self;
@@ -42,6 +42,7 @@
             for (ACAccount *account in accounts) {
                 [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
                     [_accounts addObject:user];
+                    NSLog(@"user %@", user.screenName);
                     [self.tableView reloadData];
                 }];
             }
@@ -53,6 +54,10 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

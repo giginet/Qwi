@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Accounts/Accounts.h>
 
-@interface QWAccountManagerViewController : UITableViewController {
+@interface QWAccountManagerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     ACAccountStore *_accountStore;
     NSMutableArray *_accounts;
 }
+
+- (IBAction)doneButtonPressed:(id)sender;
+
+@property(readonly, nonatomic) IBOutlet UITableView *tableView;
 
 @end
