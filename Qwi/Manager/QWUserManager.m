@@ -10,6 +10,8 @@
 #import <Twitter/Twitter.h>
 #import <Social/Social.h>
 
+#import "QWAccount.h"
+
 @implementation QWUserManager
 
 const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
@@ -46,10 +48,18 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     showRequest.account = account;
     [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
         NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-        QWUser *user = [[QWUser alloc] initWithJSON:jsonString];
-        [_users setObject:user forKey:screenName];
-        if (onSucceed) {
-            onSucceed(user, urlResponse, error);
+        if ([account.username isEqual:screenName]) {
+            QWAccount *user = [[QWAccount alloc] initWithJSON:jsonString];
+            [_users setObject:user forKey:screenName];
+            if (onSucceed) {
+                onSucceed(user, urlResponse, error);
+            }
+        } else {
+            QWUser *user = [[QWUser alloc] initWithJSON:jsonString];
+            [_users setObject:user forKey:screenName];
+            if (onSucceed) {
+                onSucceed(user, urlResponse, error);
+            }
         }
     }];
 }
@@ -57,6 +67,5 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
 - (QWUser *)userWithScreenName:(NSString *)screenName {
     return [_users objectForKey:screenName];
 }
-
 
 @end

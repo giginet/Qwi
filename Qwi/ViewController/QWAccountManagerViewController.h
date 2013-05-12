@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Accounts/Accounts.h>
 
 @interface QWAccountManagerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    ACAccountStore *_accountStore;
-    NSMutableArray *_accounts;
 }
 
 - (IBAction)doneButtonPressed:(id)sender;

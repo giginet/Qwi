@@ -25,6 +25,8 @@
 		07FD925916E61C9C00688022 /* QWAccountManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD925816E61C9C00688022 /* QWAccountManagerViewController.m */; };
 		07FD925B16E621BC00688022 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD925A16E621BC00688022 /* Accounts.framework */; };
 		07FD925F16E62AEF00688022 /* QWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD925E16E62AEF00688022 /* QWUser.m */; };
+		1AB896E6921AD8B3CD880F05 /* QWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89F4D44CF526A25FD68FC /* QWAccount.m */; };
+		1AB89FC4BBD4C7ABF6226159 /* QWAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB894CD30BD941324C059C3 /* QWAccountManager.m */; };
 		B89BA06450854709BA8B3266 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E824178C5428D96534543 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		07FD925A16E621BC00688022 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		07FD925D16E62AEF00688022 /* QWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWUser.h; path = Model/QWUser.h; sourceTree = "<group>"; };
 		07FD925E16E62AEF00688022 /* QWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWUser.m; path = Model/QWUser.m; sourceTree = "<group>"; };
+		1AB8944662669CFD0B858020 /* QWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWAccount.h; sourceTree = "<group>"; };
+		1AB894CD30BD941324C059C3 /* QWAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccountManager.m; sourceTree = "<group>"; };
+		1AB8989EA619A1F8175E5D91 /* QWAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWAccountManager.h; sourceTree = "<group>"; };
+		1AB89F4D44CF526A25FD68FC /* QWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccount.m; sourceTree = "<group>"; };
 		AFF396E4896D41888D75CB33 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D09E824178C5428D96534543 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +88,8 @@
 			children = (
 				0718916516E6390300A156BE /* QWUserManager.h */,
 				0718916616E6390300A156BE /* QWUserManager.m */,
+				1AB894CD30BD941324C059C3 /* QWAccountManager.m */,
+				1AB8989EA619A1F8175E5D91 /* QWAccountManager.h */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -163,6 +171,8 @@
 			children = (
 				07FD925D16E62AEF00688022 /* QWUser.h */,
 				07FD925E16E62AEF00688022 /* QWUser.m */,
+				1AB89F4D44CF526A25FD68FC /* QWAccount.m */,
+				1AB8944662669CFD0B858020 /* QWAccount.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,6 +269,8 @@
 				07FD925916E61C9C00688022 /* QWAccountManagerViewController.m in Sources */,
 				07FD925F16E62AEF00688022 /* QWUser.m in Sources */,
 				0718916716E6390300A156BE /* QWUserManager.m in Sources */,
+				1AB896E6921AD8B3CD880F05 /* QWAccount.m in Sources */,
+				1AB89FC4BBD4C7ABF6226159 /* QWAccountManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

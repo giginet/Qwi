@@ -7,7 +7,7 @@
 //
 
 #import "QWAccountManagerViewController.h"
-#import "QWUserManager.h"
+#import "QWAccountManager.h"
 
 @interface QWAccountManagerViewController ()
 
@@ -24,29 +24,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _accounts = [NSMutableArray array];
-    _accountStore = [[ACAccountStore alloc] init];
-    ACAccountType *type = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
 
     __block UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [self.view addSubview:indicator];
 
     [indicator startAnimating];
 
-    // iOS6でしかうごかないっぽい
-    [_accountStore requestAccessToAccountsWithType:type options:nil completion:^(BOOL granted, NSError *error) {
-        if (granted) {
-            NSArray *accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
-            [indicator stopAnimating];
-            QWUserManager *manager = [QWUserManager sharedManager];
-            for (ACAccount *account in accounts) {
-                [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
-                    [_accounts addObject:user];
-                    NSLog(@"user %@", user.screenName);
-                    [self.tableView reloadData];
-                }];
-            }
-        }
+    QWAccountManager *manager = [QWAccountManager sharedManager];
+    [manager loadAccounts:^(BOOL granted, NSError *error) {
+        [indicator stopAnimating];
+        [self.tableView reloadData];
     }];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -74,13 +61,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [_accounts count];
+    return [[[QWAccountManager sharedManager] accounts] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"AccountCell";
+    NSArray *accounts = [[QWAccountManager sharedManager] accounts];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    QWUser *account = _accounts[indexPath.row];
+    QWUser *account = accounts[indexPath.row];
     cell.textLabel.text = account.name;
     cell.detailTextLabel.text = account.screenName;
     cell.imageView.image = account.profileImage;

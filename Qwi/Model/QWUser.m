@@ -54,4 +54,8 @@
     return _profileImage;
 }
 
+- (BOOL)isOwnAccount {
+    return NO;
+}
+
 @end

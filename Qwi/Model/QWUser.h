@@ -16,6 +16,8 @@
     UIImage *_profileImage;
 }
 
+- (BOOL)isOwnAccount;
+
 @property(readonly) NSString *name;
 @property(readonly) NSString *screenName;
 @property(readonly) NSString *description;
