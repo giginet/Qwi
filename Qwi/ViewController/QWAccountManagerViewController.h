@@ -10,8 +10,8 @@
 #import <Accounts/Accounts.h>
 
 @interface QWAccountManagerViewController : UITableViewController {
-  ACAccountStore* _accountStore;
-  NSMutableArray* _accounts;
+    ACAccountStore *_accountStore;
+    NSMutableArray *_accounts;
 }
 
 @end
