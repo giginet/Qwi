@@ -44,7 +44,7 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -125,6 +125,10 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    int row = indexPath.row;
+    QWAccountManager *manager = [QWAccountManager sharedManager];
+    manager.currentAccount = [manager.accounts objectAtIndex:row];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)refreshButtonPressed:(id)sender {

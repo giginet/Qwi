@@ -15,7 +15,7 @@
     ACAccountStore *_accountStore;
 }
 
-@property (readonly, nonatomic) QWAccount *currentAccount;
+@property (readwrite, nonatomic) QWAccount *currentAccount;
 @property (readonly, nonatomic) NSMutableArray *accounts;
 
 + (id)sharedManager;
