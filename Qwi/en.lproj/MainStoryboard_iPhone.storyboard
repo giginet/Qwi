@@ -77,6 +77,11 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzL-BJ-Spr">
                                 <items>
                                     <navigationItem title="Title" id="aFe-1s-PUU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="B0T-tL-yA9">
+                                            <connections>
+                                                <action selector="refreshButtonPressed:" destination="qGD-zz-hV8" id="0Lp-PW-Hho"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="JTp-6k-8g7">
                                             <connections>
                                                 <action selector="doneButtonPressed:" destination="qGD-zz-hV8" id="LOb-JS-xFT"/>
@@ -114,6 +119,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QWAccountManagerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="doneButtonPressed:"/>
+                <relationship kind="action" name="refreshButtonPressed:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>

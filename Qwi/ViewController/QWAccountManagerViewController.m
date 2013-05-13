@@ -127,4 +127,9 @@
      */
 }
 
+- (IBAction)refreshButtonPressed:(id)sender {
+    [[QWAccountManager sharedManager] updateAccounts:^(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error) {
+        [self.tableView reloadData];
+    }];
+}
 @end

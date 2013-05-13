@@ -12,6 +12,7 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender;
+- (IBAction)refreshButtonPressed:(id)sender;
 
 @property(readonly, nonatomic) IBOutlet UITableView *tableView;
 

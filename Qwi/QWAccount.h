@@ -7,9 +7,12 @@
 
 
 #import <Foundation/Foundation.h>
+#import <Accounts/Accounts.h>
 #import "QWUser.h"
 
 
 @interface QWAccount : QWUser
+
+@property (readwrite, nonatomic) ACAccount *acAccount;
 
 @end

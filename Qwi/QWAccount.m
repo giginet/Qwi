@@ -10,6 +10,7 @@
 
 
 @implementation QWAccount
+@synthesize acAccount;
 
 - (id)init {
     self = [super init];

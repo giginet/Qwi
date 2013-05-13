@@ -35,11 +35,12 @@
         if (granted) {
             NSArray *accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
             QWUserManager *manager = [QWUserManager sharedManager];
-            for (ACAccount *account in accounts) {
-                QWUser *cache = [manager selectUserByName:account.username];
+            for (ACAccount *acAccount in accounts) {
+                QWUser *cache = [manager selectUserByName:acAccount.username];
                 if (cache == NULL) {
-                    [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
+                    [manager createUserWithScreenName:acAccount.username via:acAccount succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
                         QWAccount *account = (QWAccount *)user;
+                        account.acAccount = acAccount;
                         [_accounts addObject:account];
                         NSError *saveErr;
                         [manager.managedObjectContext save:&saveErr];
@@ -55,6 +56,22 @@
                         completion(granted, error);
                     }
                 }
+            }
+        }
+    }];
+}
+
+- (void)updateAccounts:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+    ACAccountType *type = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [_accountStore requestAccessToAccountsWithType:type options:nil completion:^(BOOL granted, NSError *error) {
+        if (granted) {
+            NSArray *accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
+            QWUserManager *manager = [QWUserManager sharedManager];
+            for (ACAccount *acAccount in accounts) {
+                QWUser *cache = [manager selectUserByName:acAccount.username];
+                [manager updateUserByName:cache.screenName
+                                      via:acAccount
+                                  succeed:onSucceed];
             }
         }
     }];

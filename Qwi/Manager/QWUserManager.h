@@ -21,7 +21,9 @@
 - (void)createUserWithScreenName:(NSString *)screenName
                              via:(ACAccount *)account
                          succeed:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
-- (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account;
+- (QWUser *)updateUserByName:(NSString *)screenName
+                         via:(ACAccount *)account
+                     succeed:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
 - (QWUser *)selectUserByName:(NSString *)screenName;
 - (BOOL)deleteUserByName:(NSString *)screenName;
 - (BOOL)isCachedByName:(NSString *)screenName;

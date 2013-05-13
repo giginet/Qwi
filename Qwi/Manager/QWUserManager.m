@@ -70,7 +70,7 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     }];
 }
 
-- (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account {
+- (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
     QWUser *user = [self selectUserByName:screenName];
     if (user) {
         SLRequest *showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
@@ -81,6 +81,7 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
         [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
             NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
             [self updateFromJSON:jsonString for:user];
+            onSucceed(user, urlResponse, error);
         }];
 
     }
