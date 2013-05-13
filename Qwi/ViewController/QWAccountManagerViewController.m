@@ -7,7 +7,7 @@
 //
 
 #import "QWAccountManagerViewController.h"
-#import "QWUserManager.h"
+#import "QWAccountManager.h"
 
 @interface QWAccountManagerViewController ()
 
@@ -15,75 +15,65 @@
 
 @implementation QWAccountManagerViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-  self = [super initWithStyle:style];
-  if (self) {
-  }
-  return self;
-}
-
-- (void)viewDidLoad
-{
-  [super viewDidLoad];
-  _accounts = [NSMutableArray array];
-  _accountStore = [[ACAccountStore alloc] init];
-  ACAccountType* type = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-  
-  __block UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-  [self.view addSubview:indicator];
-  
-  [indicator startAnimating];
-  
-  // iOS6でしかうごかないっぽい
-  [_accountStore requestAccessToAccountsWithType:type options:nil completion:^(BOOL granted, NSError *error) {
-    if (granted) {
-      NSArray* accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
-      [indicator stopAnimating];
-      QWUserManager* manager = [QWUserManager sharedManager];
-      for (ACAccount* account in accounts) {
-        [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
-          [_accounts addObject:user];
-          [self.tableView reloadData];
-        }];
-      }
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
     }
-  }];
-  
-  // Uncomment the following line to preserve selection between presentations.
-  // self.clearsSelectionOnViewWillAppear = NO;
-  
-  // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-  // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    __block UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [self.view addSubview:indicator];
+
+    [indicator startAnimating];
+
+    QWAccountManager *manager = [QWAccountManager sharedManager];
+    [manager loadAccounts:^(BOOL granted, NSError *error) {
+        [indicator stopAnimating];
+        [self.tableView reloadData];
+    }];
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (IBAction)doneButtonPressed:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  // Return the number of sections.
-  return 1;
+    // Return the number of sections.
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  // Return the number of rows in the section.
-  return [_accounts count];
+    // Return the number of rows in the section.
+    return [[[QWAccountManager sharedManager] accounts] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"AccountCell";
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-  QWUser* account = _accounts[indexPath.row];
-  cell.textLabel.text = account.name;
-  cell.detailTextLabel.text = account.screenName;
-  cell.imageView.image = account.profileImage;
-  
-  return cell;
+    static NSString *CellIdentifier = @"AccountCell";
+    NSArray *accounts = [[QWAccountManager sharedManager] accounts];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    QWUser *account = accounts[indexPath.row];
+    cell.textLabel.text = account.name;
+    cell.detailTextLabel.text = account.screenName;
+    cell.imageView.image = account.profileImage;
+
+    return cell;
 }
 
 /*
@@ -127,15 +117,14 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  // Navigation logic may go here. Create and push another view controller.
-  /*
-   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-   // ...
-   // Pass the selected object to the new view controller.
-   [self.navigationController pushViewController:detailViewController animated:YES];
-   */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
 @end

@@ -13,22 +13,24 @@
  */
 
 @interface QWUser : NSObject {
-  UIImage* _profileImage;
+    UIImage *_profileImage;
 }
 
-@property(readonly) NSString* name;
-@property(readonly) NSString* screenName;
-@property(readonly) NSString* description;
+- (BOOL)isOwnAccount;
+
+@property(readonly) NSString *name;
+@property(readonly) NSString *screenName;
+@property(readonly) NSString *description;
 @property(readonly) NSUInteger friendsCount;
 @property(readonly) NSUInteger favoritesCount;
 @property(readonly) NSUInteger statusesCount;
 @property(readonly) NSUInteger followersCount;
 @property(readonly) NSUInteger listedCount;
-@property(readonly) NSString* location;
-@property(readonly) NSURL* URL;
-@property(readonly) NSURL* profileImageURL;
-@property(readonly) UIImage* profileImage;
+@property(readonly) NSString *location;
+@property(readonly) NSURL *URL;
+@property(readonly) NSURL *profileImageURL;
+@property(readonly) UIImage *profileImage;
 
-- (id)initWithJSON:(NSString*)jsonString;
+- (id)initWithJSON:(NSString *)jsonString;
 
 @end

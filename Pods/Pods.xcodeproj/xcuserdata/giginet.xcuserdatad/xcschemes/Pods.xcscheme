@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD6A996B0BC74B58BD3275FB"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "07FD922C16E61A7900688022"
+               BuildableName = "Qwi.app"
+               BlueprintName = "Qwi"
+               ReferencedContainer = "container:../Qwi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,6 +41,15 @@
       allowLocationSimulation = "YES">
       <AdditionalOptions>
       </AdditionalOptions>
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "07FD922C16E61A7900688022"
+            BuildableName = "Qwi.app"
+            BlueprintName = "Qwi"
+            ReferencedContainer = "container:../Qwi.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       shouldUseLaunchSchemeArgsEnv = "YES"

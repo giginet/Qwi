@@ -11,7 +11,7 @@
 #import "QWUser.h"
 
 @interface QWUserManager : NSObject {
-  NSMutableDictionary* _users;
+    NSMutableDictionary *_users;
 }
 
 + (id)sharedManager;
