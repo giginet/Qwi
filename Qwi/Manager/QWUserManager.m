@@ -70,6 +70,32 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     }];
 }
 
+- (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account {
+    QWUser *user = [self selectUserByName:screenName];
+    if (user) {
+        SLRequest *showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                requestMethod:SLRequestMethodGET
+                                                          URL:[NSURL URLWithString:(NSString *) kUserShowAPI]
+                                                   parameters:@{@"screen_name" : screenName}];
+        showRequest.account = account;
+        [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+            NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+            [self updateFromJSON:jsonString for:user];
+        }];
+
+    }
+    return user;
+}
+
+- (BOOL)deleteUserByName:(NSString *)screenName {
+    QWUser *user = [self selectUserByName:screenName];
+    if (user) {
+        [self.managedObjectContext deleteObject:user];
+        return YES;
+    }
+    return NO;
+}
+
 - (QWUser *)selectUserByName:(NSString *)name {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
     request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
@@ -78,7 +104,7 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     if ([cache count] > 0) {
         return [cache lastObject];
     }
-    return NULL;
+    return nil;
 }
 
 - (BOOL)isCachedByName:(NSString *)name {
@@ -99,9 +125,7 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     user.statusesCount = dictionary[@"statuses_count"];
     user.followersCount = dictionary[@"followers_count"];
     user.listedCount = dictionary[@"listed_count"];
-    if (dictionary[@"url"]) {
-        user.url = dictionary[@"url"];
-    }
+    user.url = dictionary[@"url"];
 
     user.profileImageURL = dictionary[@"profile_image_url"];
     user.location = dictionary[@"location"];
