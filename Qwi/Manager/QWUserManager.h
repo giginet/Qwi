@@ -14,12 +14,16 @@
     NSMutableDictionary *_users;
 }
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 + (id)sharedManager;
 
 - (void)createUserWithScreenName:(NSString *)screenName
                              via:(ACAccount *)account
                          succeed:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
 
-- (QWUser *)userWithScreenName:(NSString *)screenName;
+- (QWUser *)updateFromJSON:(NSString *)jsonString for:(QWUser *)user;
+- (QWUser *)selectUserByName:(NSString *)name;
+- (BOOL)isCachedByName:(NSString *)name;
 
 @end

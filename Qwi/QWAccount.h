@@ -12,7 +12,4 @@
 
 @interface QWAccount : QWUser
 
-@property (readonly, nonatomic) NSMutableArray *friends;
-@property (readonly, nonatomic) NSMutableArray *favorites;
-
 @end

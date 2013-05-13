@@ -7,30 +7,44 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+@class QWTweet, QWUser;
 
 /**
  ユーザー一人一人をモデル化します
  */
 
-@interface QWUser : NSObject {
-    UIImage *_profileImage;
-}
+@interface QWUser : NSManagedObject
 
 - (BOOL)isOwnAccount;
 
-@property(readonly) NSString *name;
-@property(readonly) NSString *screenName;
-@property(readonly) NSString *description;
-@property(readonly) NSUInteger friendsCount;
-@property(readonly) NSUInteger favoritesCount;
-@property(readonly) NSUInteger statusesCount;
-@property(readonly) NSUInteger followersCount;
-@property(readonly) NSUInteger listedCount;
-@property(readonly) NSString *location;
-@property(readonly) NSURL *URL;
-@property(readonly) NSURL *profileImageURL;
-@property(readonly) UIImage *profileImage;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * screenName;
+@property (nonatomic, retain) NSString * bio;
+@property (nonatomic, retain) NSNumber * friendsCount;
+@property (nonatomic, retain) NSNumber * favoritesCount;
+@property (nonatomic, retain) NSNumber * statusesCount;
+@property (nonatomic, retain) NSNumber * followersCount;
+@property (nonatomic, retain) NSNumber * listedCount;
+@property (nonatomic, retain) NSString * location;
+@property (nonatomic, retain) NSString * url;
+@property (nonatomic, retain) NSString * profileImageURL;
+@property (nonatomic, retain) NSData * profileImage;
+@property (nonatomic, retain) NSNumber * pk;
+@property (nonatomic, retain) NSSet *friends;
+@property (nonatomic, retain) QWTweet *favorites;
+@property (nonatomic, retain) QWTweet *statuses;
 
 - (id)initWithJSON:(NSString *)jsonString;
+
+@end
+
+@interface QWUser (CoreDataGeneratedAccessors)
+
+- (void)addFriendsObject:(QWUser *)value;
+- (void)removeFriendsObject:(QWUser *)value;
+- (void)addFriends:(NSSet *)values;
+- (void)removeFriends:(NSSet *)values;
 
 @end

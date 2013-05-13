@@ -14,8 +14,6 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _friends = [NSMutableArray array];
-        _favorites = [NSMutableArray array];
     }
     return self;
 }

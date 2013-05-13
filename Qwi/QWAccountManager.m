@@ -9,7 +9,6 @@
 #import "QWAccountManager.h"
 #import "QWUserManager.h"
 
-
 @implementation QWAccountManager
 
 + (id)sharedManager {
@@ -37,11 +36,25 @@
             NSArray *accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
             QWUserManager *manager = [QWUserManager sharedManager];
             for (ACAccount *account in accounts) {
-                [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
-                    QWAccount *account = (QWAccount *)user;
-                    [_accounts addObject:account];
-                    completion(granted, error);
-                }];
+                QWUser *cache = [manager selectUserByName:account.username];
+                if (cache == NULL) {
+                    [manager createUserWithScreenName:account.username via:account succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
+                        QWAccount *account = (QWAccount *)user;
+                        [_accounts addObject:account];
+                        NSError *saveErr;
+                        [manager.managedObjectContext save:&saveErr];
+                        NSLog(@"%@", saveErr);
+                        completion(granted, error);
+                    }];
+                } else {
+                    NSLog(@"CoreData exists!");
+                    NSLog(@"cache = %@", cache.name);
+                    QWAccount *account = (QWAccount *) cache;
+                    if (![_accounts containsObject:account]) {
+                        [_accounts addObject:account];
+                        completion(granted, error);
+                    }
+                }
             }
         }
     }];

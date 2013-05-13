@@ -10,6 +10,8 @@
 #import <Twitter/Twitter.h>
 #import <Social/Social.h>
 
+#include "CJSONDeserializer.h"
+
 #import "QWAccount.h"
 
 @implementation QWUserManager
@@ -49,13 +51,17 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
         NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
         if ([account.username isEqual:screenName]) {
-            QWAccount *user = [[QWAccount alloc] initWithJSON:jsonString];
+            QWAccount *user = [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
+                                                         inManagedObjectContext:self.managedObjectContext];
+            [self updateFromJSON:jsonString for:user];
             [_users setObject:user forKey:screenName];
             if (onSucceed) {
                 onSucceed(user, urlResponse, error);
             }
         } else {
-            QWUser *user = [[QWUser alloc] initWithJSON:jsonString];
+            QWUser *user = [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
+                                                         inManagedObjectContext:self.managedObjectContext];
+            [self updateFromJSON:jsonString for:user];
             [_users setObject:user forKey:screenName];
             if (onSucceed) {
                 onSucceed(user, urlResponse, error);
@@ -64,8 +70,43 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     }];
 }
 
-- (QWUser *)userWithScreenName:(NSString *)screenName {
-    return [_users objectForKey:screenName];
+- (QWUser *)selectUserByName:(NSString *)name {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
+    request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
+
+    NSArray *cache = [self.managedObjectContext executeFetchRequest:request error:nil];
+    if ([cache count] > 0) {
+        return [cache lastObject];
+    }
+    return NULL;
+}
+
+- (BOOL)isCachedByName:(NSString *)name {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
+    return [self.managedObjectContext countForFetchRequest:request error:nil] > 0;
+}
+
+- (QWUser *)updateFromJSON:(NSString *)jsonString for:(QWUser *)user {
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error = nil;
+    NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
+
+    user.name = dictionary[@"name"];
+    user.screenName = dictionary[@"screen_name"];
+    user.bio = dictionary[@"description"];
+    user.friendsCount = dictionary[@"friends_count"];
+    user.favoritesCount = dictionary[@"favorites_count"];
+    user.statusesCount = dictionary[@"statuses_count"];
+    user.followersCount = dictionary[@"followers_count"];
+    user.listedCount = dictionary[@"listed_count"];
+    if (dictionary[@"url"]) {
+        user.url = dictionary[@"url"];
+    }
+
+    user.profileImageURL = dictionary[@"profile_image_url"];
+    user.location = dictionary[@"location"];
+    NSURL *imageURL = [[NSURL alloc] initWithString:user.profileImageURL];
+    user.profileImage = [NSData dataWithContentsOfURL:imageURL];
 }
 
 @end

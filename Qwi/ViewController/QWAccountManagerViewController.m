@@ -71,7 +71,7 @@
     QWUser *account = accounts[indexPath.row];
     cell.textLabel.text = account.name;
     cell.detailTextLabel.text = account.screenName;
-    cell.imageView.image = account.profileImage;
+    cell.imageView.image = [UIImage imageWithData:account.profileImage];
 
     return cell;
 }
