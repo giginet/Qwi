@@ -72,6 +72,7 @@
                 [manager updateUserByName:cache.screenName
                                       via:acAccount
                                   succeed:onSucceed];
+                [manager updateFriends:acAccount];
             }
         }
     }];

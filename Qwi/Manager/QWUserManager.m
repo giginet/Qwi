@@ -17,6 +17,7 @@
 @implementation QWUserManager
 
 const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
+const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json";
 
 + (id)sharedManager {
     static id sharedInstance = nil;
@@ -110,14 +111,11 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
 
 - (BOOL)isCachedByName:(NSString *)name {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
+    request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
     return [self.managedObjectContext countForFetchRequest:request error:nil] > 0;
 }
 
-- (QWUser *)updateFromJSON:(NSString *)jsonString for:(QWUser *)user {
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = nil;
-    NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
-
+- (QWUser *)updateFromDictionary:(NSDictionary *)dictionary for:(QWUser *)user {
     user.name = dictionary[@"name"];
     user.screenName = dictionary[@"screen_name"];
     user.bio = dictionary[@"description"];
@@ -126,12 +124,64 @@ const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
     user.statusesCount = dictionary[@"statuses_count"];
     user.followersCount = dictionary[@"followers_count"];
     user.listedCount = dictionary[@"listed_count"];
-    user.url = dictionary[@"url"];
-
+    if (![dictionary[@"url"] isEqual:[NSNull null]]) {
+        user.url = dictionary[@"url"];
+    }
     user.profileImageURL = dictionary[@"profile_image_url"];
     user.location = dictionary[@"location"];
-    NSURL *imageURL = [[NSURL alloc] initWithString:user.profileImageURL];
-    user.profileImage = [NSData dataWithContentsOfURL:imageURL];
+    //NSURL *imageURL = [[NSURL alloc] initWithString:user.profileImageURL];
+    //user.profileImage = [NSData dataWithContentsOfURL:imageURL];
+    return user;
+}
+
+- (QWUser *)updateFromJSON:(NSString *)jsonString for:(QWUser *)user {
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error = nil;
+    NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
+    NSLog(@"name = %@", dictionary[@"name"]);
+    return [self updateFromDictionary:dictionary for:user];
+}
+
+- (void)updateFriends:(ACAccount *)account {
+    [self updateFriends:account cursor:@"-1"];
+}
+
+- (void)updateFriends:(ACAccount *)account cursor:(NSString *)cursor {
+    NSLog(@"fetch friends of %@ cursor %@", account.username, cursor);
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"screen_name" : account.username,
+            @"skip_status" : @"true"}];
+    if (![cursor isEqual:@"-1"]) {
+        [params setObject:cursor forKey:@"cursor"];
+    }
+    SLRequest *listRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                requestMethod:SLRequestMethodGET
+                                                          URL:[NSURL URLWithString:(NSString *) kFriendListAPI]
+                                                   parameters:params];
+    listRequest.account = account;
+    [listRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+        NSError *err;
+        NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserialize:responseData error:&err];
+        if (!err) {
+            NSArray *userInfos = dictionary[@"users"];
+            for (NSDictionary *userInfo in userInfos) {
+                NSLog(@"friend = %@", userInfo[@"name"]);
+                if (![self isCachedByName:userInfo[@"screen_name"]]) {
+                    NSLog(@"save %@", userInfo[@"screen_name"]);
+                    QWAccount *user = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([QWUser class])
+                                                                inManagedObjectContext:self.managedObjectContext];
+                    [self updateFromDictionary:userInfo for:user];
+                }
+            }
+        }
+        NSString *nextCursor = dictionary[@"next_cursor_str"];
+        NSLog(@"next = %@", nextCursor);
+        if (nextCursor == nil) {
+            [self.managedObjectContext save:nil];
+        } else {
+            [self updateFriends:account cursor:nextCursor];
+        }
+    }];
 }
 
 @end
