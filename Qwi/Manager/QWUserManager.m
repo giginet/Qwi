@@ -7,6 +7,7 @@
 //
 
 #import "QWUserManager.h"
+#import "AFNetworking.h"
 #import <Twitter/Twitter.h>
 #import <Social/Social.h>
 
@@ -16,8 +17,12 @@
 
 @implementation QWUserManager
 
-const NSString *kUserShowAPI = @"http://api.twitter.com/1.1/users/show.json";
-const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json";
+const NSURL *kBaseURL = @"http://api.twitter.com/1.1/";
+const NSString *kUserShowAPI = @"users/show.json";
+const NSString *kFriendListAPI = @"friends/list.json";
+const NSString *kUserLookupAPI = @"users/lookup.json";
+const NSString *kFriendsIdsAPI = @"friends/ids.json";
+
 
 + (id)sharedManager {
     static id sharedInstance = nil;
@@ -36,6 +41,10 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
     return self;
 }
 
+- (NSURL *)buildURL:(NSString *)endPoint {
+    return [NSURL URLWithString:endPoint relativeToURL:[NSURL URLWithString:kBaseURL]];
+}
+
 - (void)createUserWithScreenName:(NSString *)screenName
                              via:(ACAccount *)account
                          succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
@@ -46,7 +55,7 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
      */
     SLRequest *showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                 requestMethod:SLRequestMethodGET
-                                                          URL:[NSURL URLWithString:(NSString *) kUserShowAPI]
+                                                          URL:[self buildURL:kUserShowAPI]
                                                    parameters:@{@"screen_name" : screenName}];
     showRequest.account = account;
     [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
@@ -76,7 +85,7 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
     if (user) {
         SLRequest *showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                 requestMethod:SLRequestMethodGET
-                                                          URL:[NSURL URLWithString:(NSString *) kUserShowAPI]
+                                                          URL:[self buildURL:kFriendListAPI]
                                                    parameters:@{@"screen_name" : screenName}];
         showRequest.account = account;
         [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
@@ -118,7 +127,9 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
 - (QWUser *)updateFromDictionary:(NSDictionary *)dictionary for:(QWUser *)user {
     user.name = dictionary[@"name"];
     user.screenName = dictionary[@"screen_name"];
-    user.bio = dictionary[@"description"];
+    if (![dictionary[@"description"] isEqual:[NSNull null]]) {
+        user.bio = dictionary[@"description"];
+    }
     user.friendsCount = dictionary[@"friends_count"];
     user.favoritesCount = dictionary[@"favorites_count"];
     user.statusesCount = dictionary[@"statuses_count"];
@@ -128,7 +139,9 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
         user.url = dictionary[@"url"];
     }
     user.profileImageURL = dictionary[@"profile_image_url"];
-    user.location = dictionary[@"location"];
+    if (![dictionary[@"location"] isEqual:[NSNull null]]) {
+        user.location = dictionary[@"location"];
+    }
     //NSURL *imageURL = [[NSURL alloc] initWithString:user.profileImageURL];
     //user.profileImage = [NSData dataWithContentsOfURL:imageURL];
     return user;
@@ -143,19 +156,16 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
 }
 
 - (void)updateFriends:(ACAccount *)account {
-    [self updateFriends:account cursor:@"-1"];
+    [self updateFriends:account count:1000];
 }
 
-- (void)updateFriends:(ACAccount *)account cursor:(NSString *)cursor {
-    NSLog(@"fetch friends of %@ cursor %@", account.username, cursor);
+- (void)updateFriends:(ACAccount *)account count:(int)count {
+    NSLog(@"fetch friends of %@ limit %d", account.username, count);
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"screen_name" : account.username,
-            @"skip_status" : @"true"}];
-    if (![cursor isEqual:@"-1"]) {
-        [params setObject:cursor forKey:@"cursor"];
-    }
+            @"count" : [NSString stringWithFormat:@"%d", count]}];
     SLRequest *listRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                 requestMethod:SLRequestMethodGET
-                                                          URL:[NSURL URLWithString:(NSString *) kFriendListAPI]
+                                                          URL:[self buildURL:kFriendsIdsAPI]
                                                    parameters:params];
     listRequest.account = account;
     [listRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
@@ -163,25 +173,49 @@ const NSString *kFriendListAPI = @"https://api.twitter.com/1.1/friends/list.json
         NSError *err;
         NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserialize:responseData error:&err];
         if (!err) {
-            NSArray *userInfos = dictionary[@"users"];
-            for (NSDictionary *userInfo in userInfos) {
-                NSLog(@"friend = %@", userInfo[@"name"]);
-                if (![self isCachedByName:userInfo[@"screen_name"]]) {
-                    NSLog(@"save %@", userInfo[@"screen_name"]);
-                    QWAccount *user = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([QWUser class])
-                                                                inManagedObjectContext:self.managedObjectContext];
-                    [self updateFromDictionary:userInfo for:user];
-                }
+            NSArray *ids = dictionary[@"ids"];
+            int count = [ids count];
+            NSLog(@"count = %d", count);
+            const int kIDLimit = 100;
+            for (int i = 0; i < count; i += kIDLimit) {
+                [self updateFriendsWithIDs:account
+                                       ids:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))]];
             }
-        }
-        NSString *nextCursor = dictionary[@"next_cursor_str"];
-        NSLog(@"next = %@", nextCursor);
-        if (nextCursor == nil) {
             [self.managedObjectContext save:nil];
-        } else {
-            [self updateFriends:account cursor:nextCursor];
         }
     }];
+}
+
+- (void)updateFriendsWithIDs:(ACAccount *)account ids:(NSArray *)ids {
+    NSString *users = [ids componentsJoinedByString:@","];
+    NSDictionary *params = @{@"user_id" : users};
+    SLRequest *lookupRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                   requestMethod:SLRequestMethodGET
+                                                             URL:[self buildURL:kUserLookupAPI]
+                                                      parameters:params];
+    lookupRequest.account = account;
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[lookupRequest preparedURLRequest]
+                                                                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                                                                                            for (NSDictionary *userInfo in JSON) {
+                                                                                                NSString *screenName = userInfo[@"screen_name"];
+                                                                                                if ([self isCachedByName:screenName]) {
+                                                                                                    // 保存済みの時
+                                                                                                    QWUser *user = [self selectUserByName:screenName];
+                                                                                                    [self updateFromDictionary:userInfo for:user];
+                                                                                                    NSLog(@"update %@", screenName);
+                                                                                                } else {
+                                                                                                    // 保存されていなかったとき。新規生成してあげるよ！
+                                                                                                    QWUser *user = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([QWUser class])
+                                                                                                                                                 inManagedObjectContext:self.managedObjectContext];
+                                                                                                    [self updateFromDictionary:userInfo for:user];
+                                                                                                    NSLog(@"create %@", screenName);
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+
+                                                                                        }];
+    [[NSOperationQueue new] addOperation:operation];
 }
 
 @end

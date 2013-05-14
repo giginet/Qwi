@@ -40,7 +40,6 @@
                 if (cache == NULL) {
                     [manager createUserWithScreenName:acAccount.username via:acAccount succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
                         QWAccount *account = (QWAccount *)user;
-                        account.acAccount = acAccount;
                         [_accounts addObject:account];
                         NSError *saveErr;
                         [manager.managedObjectContext save:&saveErr];

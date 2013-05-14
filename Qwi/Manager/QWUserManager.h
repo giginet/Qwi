@@ -28,6 +28,7 @@
 - (BOOL)deleteUserByName:(NSString *)screenName;
 - (BOOL)isCachedByName:(NSString *)screenName;
 - (void)updateFriends:(ACAccount *)account;
-- (void)updateFriends:(ACAccount *)account cursor:(NSString *)cursor;
+- (void)updateFriends:(ACAccount *)account count:(int)count;
+- (void)updateFriendsWithIDs:(ACAccount *)account ids:(NSArray *)ids;
 
 @end
