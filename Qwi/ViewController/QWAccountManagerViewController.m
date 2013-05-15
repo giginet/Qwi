@@ -44,7 +44,7 @@
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,10 +68,11 @@
     static NSString *CellIdentifier = @"AccountCell";
     NSArray *accounts = [[QWAccountManager sharedManager] accounts];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    QWUser *account = accounts[indexPath.row];
-    cell.textLabel.text = account.name;
-    cell.detailTextLabel.text = account.screenName;
-    cell.imageView.image = account.profileImage;
+    QWAccount *account = accounts[indexPath.row];
+    QWUser *user = account.user;
+    cell.textLabel.text = user.name;
+    cell.detailTextLabel.text = user.screenName;
+    cell.imageView.image = [UIImage imageWithData:user.profileImage];
 
     return cell;
 }
@@ -125,6 +126,15 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    int row = indexPath.row;
+    QWAccountManager *manager = [QWAccountManager sharedManager];
+    manager.currentAccount = [manager.accounts objectAtIndex:row];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)refreshButtonPressed:(id)sender {
+    [[QWAccountManager sharedManager] updateAccounts:^(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error) {
+        [self.tableView reloadData];
+    }];
+}
 @end

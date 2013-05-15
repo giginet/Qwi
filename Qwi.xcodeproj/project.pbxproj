@@ -29,7 +29,11 @@
 		07FD925B16E621BC00688022 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD925A16E621BC00688022 /* Accounts.framework */; };
 		07FD925F16E62AEF00688022 /* QWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD925E16E62AEF00688022 /* QWUser.m */; };
 		1AB892553DE7D9FC79D72E98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB89219F9A6A0B4BF0190AA /* CoreData.framework */; };
+		1AB894F265DDBC22A15AE27E /* QWQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */; };
+		1AB8950D45AC2FAE1526F658 /* QWQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8980E1C4D6AF592181046 /* QWQuizViewController.m */; };
 		1AB896E6921AD8B3CD880F05 /* QWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89F4D44CF526A25FD68FC /* QWAccount.m */; };
+		1AB89AB98E14686736D4EA6F /* QWWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89437B3C38EAB63349858 /* QWWelcomeViewController.m */; };
+		1AB89F8BF916401900129CD1 /* QWGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89D366F00FBA75CD537F1 /* QWGame.m */; };
 		1AB89FC4BBD4C7ABF6226159 /* QWAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB894CD30BD941324C059C3 /* QWAccountManager.m */; };
 		B89BA06450854709BA8B3266 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E824178C5428D96534543 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -67,9 +71,17 @@
 		07FD925D16E62AEF00688022 /* QWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWUser.h; path = Model/QWUser.h; sourceTree = "<group>"; };
 		07FD925E16E62AEF00688022 /* QWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWUser.m; path = Model/QWUser.m; sourceTree = "<group>"; };
 		1AB89219F9A6A0B4BF0190AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1AB89437B3C38EAB63349858 /* QWWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWWelcomeViewController.m; sourceTree = "<group>"; };
 		1AB8944662669CFD0B858020 /* QWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWAccount.h; sourceTree = "<group>"; };
+		1AB89482938E312F148E14FF /* QWWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWWelcomeViewController.h; sourceTree = "<group>"; };
 		1AB894CD30BD941324C059C3 /* QWAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccountManager.m; sourceTree = "<group>"; };
+		1AB8969D36328995632BEE9F /* QWGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWGame.h; sourceTree = "<group>"; };
+		1AB8980E1C4D6AF592181046 /* QWQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWQuizViewController.m; sourceTree = "<group>"; };
+		1AB898456C0672A5BB0B63AD /* QWQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWQuizViewController.h; sourceTree = "<group>"; };
 		1AB8989EA619A1F8175E5D91 /* QWAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWAccountManager.h; sourceTree = "<group>"; };
+		1AB898EDC73CDD5D581E40AE /* QWQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWQuiz.h; sourceTree = "<group>"; };
+		1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWQuiz.m; sourceTree = "<group>"; };
+		1AB89D366F00FBA75CD537F1 /* QWGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWGame.m; sourceTree = "<group>"; };
 		1AB89F4D44CF526A25FD68FC /* QWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccount.m; sourceTree = "<group>"; };
 		AFF396E4896D41888D75CB33 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D09E824178C5428D96534543 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +187,10 @@
 			children = (
 				07FD925716E61C9C00688022 /* QWAccountManagerViewController.h */,
 				07FD925816E61C9C00688022 /* QWAccountManagerViewController.m */,
+				1AB898456C0672A5BB0B63AD /* QWQuizViewController.h */,
+				1AB8980E1C4D6AF592181046 /* QWQuizViewController.m */,
+				1AB89482938E312F148E14FF /* QWWelcomeViewController.h */,
+				1AB89437B3C38EAB63349858 /* QWWelcomeViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -190,6 +206,10 @@
 				0718916D16E6CF3200A156BE /* QWAccount.m */,
 				1AB8944662669CFD0B858020 /* QWAccount.h */,
 				1AB89F4D44CF526A25FD68FC /* QWAccount.m */,
+				1AB89D366F00FBA75CD537F1 /* QWGame.m */,
+				1AB8969D36328995632BEE9F /* QWGame.h */,
+				1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */,
+				1AB898EDC73CDD5D581E40AE /* QWQuiz.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -291,6 +311,10 @@
 				1AB89FC4BBD4C7ABF6226159 /* QWAccountManager.m in Sources */,
 				073D3A0A173F9EDC0051DAFB /* Qwi.xcdatamodeld in Sources */,
 				073D3A0D173FA56D0051DAFB /* QWTweet.m in Sources */,
+				1AB89F8BF916401900129CD1 /* QWGame.m in Sources */,
+				1AB894F265DDBC22A15AE27E /* QWQuiz.m in Sources */,
+				1AB8950D45AC2FAE1526F658 /* QWQuizViewController.m in Sources */,
+				1AB89AB98E14686736D4EA6F /* QWWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

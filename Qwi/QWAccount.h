@@ -7,12 +7,15 @@
 
 
 #import <Foundation/Foundation.h>
+#import <Accounts/Accounts.h>
 #import "QWUser.h"
 
 
-@interface QWAccount : QWUser
+@interface QWAccount : NSObject
 
-@property (readonly, nonatomic) NSMutableArray *friends;
-@property (readonly, nonatomic) NSMutableArray *favorites;
+@property (readwrite, nonatomic) QWUser *user;
+@property (readwrite, nonatomic) ACAccount *acAccount;
+
+- (id)initWithUser:(QWUser *)user account:(ACAccount *)account;
 
 @end

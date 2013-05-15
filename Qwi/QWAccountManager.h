@@ -15,10 +15,11 @@
     ACAccountStore *_accountStore;
 }
 
-@property (readonly, nonatomic) QWAccount *currentAccount;
+@property (readwrite, nonatomic) QWAccount *currentAccount;
 @property (readonly, nonatomic) NSMutableArray *accounts;
 
 + (id)sharedManager;
 - (void)loadAccounts:(ACAccountStoreRequestAccessCompletionHandler)completion;
+- (void)updateAccounts:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
 
 @end

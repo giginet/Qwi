@@ -10,18 +10,23 @@
 
 
 @implementation QWAccount
+@synthesize acAccount;
 
-- (id)init {
+- (id)initWithUser:(QWUser *)user account:(ACAccount *)account {
     self = [super init];
     if (self) {
-        _friends = [NSMutableArray array];
-        _favorites = [NSMutableArray array];
+        self.user = user;
+        self.acAccount = account;
     }
     return self;
 }
 
-- (BOOL)isOwnAccount {
-    return YES;
+- (BOOL)isEqual:(id)object {
+    if ([object isKindOfClass:[QWAccount class]]) {
+        QWAccount *other = (QWAccount *)object;
+        return [other.acAccount.username isEqualToString:self.acAccount.username];
+    }
+    return NO;
 }
 
 @end

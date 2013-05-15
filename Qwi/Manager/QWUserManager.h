@@ -14,16 +14,22 @@
     NSMutableDictionary *_users;
 }
 
+@property (readwrite, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readwrite, nonatomic) NSOperationQueue *queue;
+
 + (id)sharedManager;
-- (void)createUserWithScreenName:(NSString*)screenName
-                             via:(ACAccount*)account
-                         succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
-- (void)createUserWithID:(unsigned long)userID
-                             via:(ACAccount*)account
-                         succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
-- (void)createUserWithParameters:(NSDictionary*)parameters
-                     via:(ACAccount*)account
-                 succeed:(void (^)(QWUser* user, NSHTTPURLResponse* urlResponse, NSError* error))onSucceed;
-- (QWUser*)userWithScreenName:(NSString*)screenName;
+
+- (void)createUserWithScreenName:(NSString *)screenName
+                             via:(ACAccount *)account
+                         succeed:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
+- (QWUser *)updateUserByName:(NSString *)screenName
+                         via:(ACAccount *)account
+                     succeed:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
+- (QWUser *)selectUserByName:(NSString *)screenName;
+- (BOOL)deleteUserByName:(NSString *)screenName;
+- (BOOL)isCachedByName:(NSString *)screenName;
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account;
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account count:(int)count;
+- (void)updateFriendsWithIDs:(NSArray *)ids via:(ACAccount *)account;
 
 @end
