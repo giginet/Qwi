@@ -17,7 +17,8 @@
 
 @implementation QWUserManager
 
-const NSURL *kBaseURL = @"http://api.twitter.com/1.1/";
+const int kIDLimit = 100;
+const NSString *kBaseURL = @"http://api.twitter.com/1.1/";
 const NSString *kUserShowAPI = @"users/show.json";
 const NSString *kFriendListAPI = @"friends/list.json";
 const NSString *kUserLookupAPI = @"users/lookup.json";
@@ -155,13 +156,13 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     return [self updateFromDictionary:dictionary for:user];
 }
 
-- (void)updateFriends:(ACAccount *)account {
-    [self updateFriends:account count:1000];
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account {
+    [self updateFriends:screenName via:account count:1000];
 }
 
-- (void)updateFriends:(ACAccount *)account count:(int)count {
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account count:(int)count {
     NSLog(@"fetch friends of %@ limit %d", account.username, count);
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"screen_name" : account.username,
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"screen_name" : screenName,
             @"count" : [NSString stringWithFormat:@"%d", count]}];
     SLRequest *listRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
                                                 requestMethod:SLRequestMethodGET
@@ -172,10 +173,8 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                 NSArray *ids = JSON[@"ids"];
                 int count = [ids count];
-                const int kIDLimit = 100;
                 for (int i = 0; i < count; i += kIDLimit) {
-                    [self updateFriendsWithIDs:account
-                                           ids:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))]];
+                    [self updateFriendsWithIDs:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))] via:account];
                 }
                 [self.managedObjectContext save:nil];            }
             failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
@@ -184,7 +183,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     [self.queue addOperation:operation];
 }
 
-- (void)updateFriendsWithIDs:(ACAccount *)account ids:(NSArray *)ids {
+- (void)updateFriendsWithIDs:(NSArray *)ids via:(ACAccount *)account {
     NSString *users = [ids componentsJoinedByString:@","];
     NSDictionary *params = @{@"user_id" : users};
     SLRequest *lookupRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter

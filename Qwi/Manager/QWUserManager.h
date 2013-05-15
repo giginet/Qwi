@@ -28,8 +28,8 @@
 - (QWUser *)selectUserByName:(NSString *)screenName;
 - (BOOL)deleteUserByName:(NSString *)screenName;
 - (BOOL)isCachedByName:(NSString *)screenName;
-- (void)updateFriends:(ACAccount *)account;
-- (void)updateFriends:(ACAccount *)account count:(int)count;
-- (void)updateFriendsWithIDs:(ACAccount *)account ids:(NSArray *)ids;
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account;
+- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account count:(int)count;
+- (void)updateFriendsWithIDs:(NSArray *)ids via:(ACAccount *)account;
 
 @end

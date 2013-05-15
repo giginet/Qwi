@@ -43,18 +43,20 @@
                         [_accounts addObject:account];
                         NSError *saveErr;
                         [manager.managedObjectContext save:&saveErr];
-                        completion(granted, error);
+                        if (manager.queue.operationCount == 0) {
+                            completion(granted, error);
+                        }
                     }];
                 } else {
-                    NSLog(@"CoreData exists!");
-                    NSLog(@"cache = %@", cache.name);
                     QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
                     if (![_accounts containsObject:account]) {
                         [_accounts addObject:account];
                     }
                 }
             }
-            completion(granted, error);
+            if (manager.queue.operationCount == 0) {
+                completion(granted, error);
+            }
         }
     }];
 }
@@ -70,7 +72,7 @@
                 [manager updateUserByName:cache.screenName
                                       via:acAccount
                                   succeed:onSucceed];
-                [manager updateFriends:acAccount];
+                [manager updateFriends:cache.screenName via:acAccount];
             }
         }
     }];
