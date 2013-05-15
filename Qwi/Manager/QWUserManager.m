@@ -23,7 +23,6 @@ const NSString *kFriendListAPI = @"friends/list.json";
 const NSString *kUserLookupAPI = @"users/lookup.json";
 const NSString *kFriendsIdsAPI = @"friends/ids.json";
 
-
 + (id)sharedManager {
     static id sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -37,6 +36,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     self = [super init];
     if (self) {
         _users = [NSMutableDictionary dictionary];
+        _queue = [NSOperationQueue new];
     }
     return self;
 }
@@ -55,24 +55,29 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                    parameters:@{@"screen_name" : screenName}];
     showRequest.account = account;
 
-    [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-        NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-        if ([account.username isEqual:screenName]) {
-            QWUser *user = [self insertNewUser];
-            [self updateFromJSON:jsonString for:user];
-            [_users setObject:user forKey:screenName];
-            if (onSucceed) {
-                onSucceed(user, urlResponse, error);
-            }
-        } else {
-            QWUser *user = [self insertNewUser];
-            [self updateFromJSON:jsonString for:user];
-            [_users setObject:user forKey:screenName];
-            if (onSucceed) {
-                onSucceed(user, urlResponse, error);
-            }
-        }
-    }];
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[showRequest preparedURLRequest]
+            success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                if ([account.username isEqual:screenName]) {
+                    QWUser *user = [self insertNewUser];
+                    [self updateFromDictionary:JSON for:user];
+                    [_users setObject:user forKey:screenName];
+                    if (onSucceed) {
+                        onSucceed(user, request, nil);
+                    }
+                } else {
+                    QWUser *user = [self insertNewUser];
+                    [self updateFromDictionary:JSON for:user];
+                    [_users setObject:user forKey:screenName];
+                    if (onSucceed) {
+                        // ToDo エラーは後で！
+                        onSucceed(user, request, [NSError errorWithDomain:@"" code:@"" userInfo:nil]);
+                    }
+                }
+
+            } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+
+            }];
+    [self.queue addOperation:operation];
 }
 
 - (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
@@ -163,22 +168,20 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                           URL:[self buildURL:kFriendsIdsAPI]
                                                    parameters:params];
     listRequest.account = account;
-    [listRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-        NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-        NSError *err;
-        NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserialize:responseData error:&err];
-        if (!err) {
-            NSArray *ids = dictionary[@"ids"];
-            int count = [ids count];
-            NSLog(@"count = %d", count);
-            const int kIDLimit = 100;
-            for (int i = 0; i < count; i += kIDLimit) {
-                [self updateFriendsWithIDs:account
-                                       ids:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))]];
-            }
-            [self.managedObjectContext save:nil];
-        }
-    }];
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[listRequest preparedURLRequest]
+            success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                NSArray *ids = JSON[@"ids"];
+                int count = [ids count];
+                const int kIDLimit = 100;
+                for (int i = 0; i < count; i += kIDLimit) {
+                    [self updateFriendsWithIDs:account
+                                           ids:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))]];
+                }
+                [self.managedObjectContext save:nil];            }
+            failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+
+            }];
+    [self.queue addOperation:operation];
 }
 
 - (void)updateFriendsWithIDs:(ACAccount *)account ids:(NSArray *)ids {
@@ -190,26 +193,25 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                       parameters:params];
     lookupRequest.account = account;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[lookupRequest preparedURLRequest]
-                                                                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                                            for (NSDictionary *userInfo in JSON) {
-                                                                                                NSString *screenName = userInfo[@"screen_name"];
-                                                                                                if ([self isCachedByName:screenName]) {
-                                                                                                    // 保存済みの時
-                                                                                                    QWUser *user = [self selectUserByName:screenName];
-                                                                                                    [self updateFromDictionary:userInfo for:user];
-                                                                                                    NSLog(@"update %@", screenName);
-                                                                                                } else {
-                                                                                                    // 保存されていなかったとき。新規生成してあげるよ！
-                                                                                                    QWUser *user = [self insertNewUser];
-                                                                                                    [self updateFromDictionary:userInfo for:user];
-                                                                                                    NSLog(@"create %@", screenName);
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-
-                                                                                        }];
-    [[NSOperationQueue new] addOperation:operation];
+            success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                for (NSDictionary *userInfo in JSON) {
+                    NSString *screenName = userInfo[@"screen_name"];
+                    if ([self isCachedByName:screenName]) {
+                        // 保存済みの時
+                        QWUser *user = [self selectUserByName:screenName];
+                        [self updateFromDictionary:userInfo for:user];
+                        NSLog(@"update %@", screenName);
+                    } else {
+                        // 保存されていなかったとき。新規生成してあげるよ！
+                        QWUser *user = [self insertNewUser];
+                        [self updateFromDictionary:userInfo for:user];
+                        NSLog(@"create %@", screenName);
+                    }
+                }
+            }
+            failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+                // ToDo 上手くいかなかったとき。スルー
+            }];
 }
 
 #pragma mark private
@@ -219,6 +221,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 }
 
 - (QWUser *)insertNewUser {
+    // NSStringFromClassだと死ぬことがある
     return [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
                                          inManagedObjectContext:self.managedObjectContext];
 }

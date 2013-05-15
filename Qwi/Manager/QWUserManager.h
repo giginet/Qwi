@@ -14,7 +14,8 @@
     NSMutableDictionary *_users;
 }
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readwrite, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readwrite, nonatomic) NSOperationQueue *queue;
 
 + (id)sharedManager;
 

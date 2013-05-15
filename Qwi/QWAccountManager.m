@@ -51,10 +51,10 @@
                     QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
                     if (![_accounts containsObject:account]) {
                         [_accounts addObject:account];
-                        completion(granted, error);
                     }
                 }
             }
+            completion(granted, error);
         }
     }];
 }
