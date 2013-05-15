@@ -41,10 +41,6 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     return self;
 }
 
-- (NSURL *)buildURL:(NSString *)endPoint {
-    return [NSURL URLWithString:endPoint relativeToURL:[NSURL URLWithString:kBaseURL]];
-}
-
 - (void)createUserWithScreenName:(NSString *)screenName
                              via:(ACAccount *)account
                          succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
@@ -58,19 +54,18 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                           URL:[self buildURL:kUserShowAPI]
                                                    parameters:@{@"screen_name" : screenName}];
     showRequest.account = account;
+
     [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
         NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
         if ([account.username isEqual:screenName]) {
-            QWAccount *user = [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
-                                                         inManagedObjectContext:self.managedObjectContext];
+            QWUser *user = [self insertNewUser];
             [self updateFromJSON:jsonString for:user];
             [_users setObject:user forKey:screenName];
             if (onSucceed) {
                 onSucceed(user, urlResponse, error);
             }
         } else {
-            QWUser *user = [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
-                                                         inManagedObjectContext:self.managedObjectContext];
+            QWUser *user = [self insertNewUser];
             [self updateFromJSON:jsonString for:user];
             [_users setObject:user forKey:screenName];
             if (onSucceed) {
@@ -205,8 +200,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                                                                     NSLog(@"update %@", screenName);
                                                                                                 } else {
                                                                                                     // 保存されていなかったとき。新規生成してあげるよ！
-                                                                                                    QWUser *user = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([QWUser class])
-                                                                                                                                                 inManagedObjectContext:self.managedObjectContext];
+                                                                                                    QWUser *user = [self insertNewUser];
                                                                                                     [self updateFromDictionary:userInfo for:user];
                                                                                                     NSLog(@"create %@", screenName);
                                                                                                 }
@@ -216,6 +210,17 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 
                                                                                         }];
     [[NSOperationQueue new] addOperation:operation];
+}
+
+#pragma mark private
+
+- (NSURL *)buildURL:(NSString *)endPoint {
+    return [NSURL URLWithString:endPoint relativeToURL:[NSURL URLWithString:kBaseURL]];
+}
+
+- (QWUser *)insertNewUser {
+    return [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
+                                         inManagedObjectContext:self.managedObjectContext];
 }
 
 @end

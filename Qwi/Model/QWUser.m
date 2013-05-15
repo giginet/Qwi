@@ -43,10 +43,6 @@
     return self.profileImage;
 }
 
-- (BOOL)isOwnAccount {
-    return NO;
-}
-
 - (BOOL)isEqual:(id)object {
     if ([object isKindOfClass:[self class]]) {
         QWUser *user = (QWUser *)object;

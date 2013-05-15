@@ -39,17 +39,16 @@
                 QWUser *cache = [manager selectUserByName:acAccount.username];
                 if (cache == NULL) {
                     [manager createUserWithScreenName:acAccount.username via:acAccount succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
-                        QWAccount *account = (QWAccount *)user;
+                        QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
                         [_accounts addObject:account];
                         NSError *saveErr;
                         [manager.managedObjectContext save:&saveErr];
-                        NSLog(@"%@", saveErr);
                         completion(granted, error);
                     }];
                 } else {
                     NSLog(@"CoreData exists!");
                     NSLog(@"cache = %@", cache.name);
-                    QWAccount *account = (QWAccount *) cache;
+                    QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
                     if (![_accounts containsObject:account]) {
                         [_accounts addObject:account];
                         completion(granted, error);
