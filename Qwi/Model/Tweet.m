@@ -1,14 +1,14 @@
-#import "QWTweet.h"
+#import "Tweet.h"
 
 
-@interface QWTweet ()
+@interface Tweet ()
 
 // Private interface goes here.
 
 @end
 
 
-@implementation QWTweet
+@implementation Tweet
 
 // Custom logic goes here.
 

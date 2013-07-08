@@ -12,7 +12,10 @@
 		0718916B16E6C57400A156BE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0718916A16E6C57400A156BE /* Social.framework */; };
 		0718916E16E6CF3200A156BE /* QWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0718916D16E6CF3200A156BE /* QWAccount.m */; };
 		073D3A0A173F9EDC0051DAFB /* Qwi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 073D3A08173F9EDB0051DAFB /* Qwi.xcdatamodeld */; };
-		073D3A0D173FA56D0051DAFB /* QWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 073D3A0C173FA56D0051DAFB /* QWTweet.m */; };
+		07F4F8F1178AEC740075EE62 /* _QWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F4F8EA178AEC740075EE62 /* _QWTweet.m */; };
+		07F4F8F2178AEC740075EE62 /* _QWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F4F8EC178AEC740075EE62 /* _QWUser.m */; };
+		07F4F8F3178AEC740075EE62 /* QWTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F4F8EE178AEC740075EE62 /* QWTweet.m */; };
+		07F4F8F4178AEC740075EE62 /* QWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F4F8F0178AEC740075EE62 /* QWUser.m */; };
 		07FD923116E61A7900688022 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923016E61A7900688022 /* UIKit.framework */; };
 		07FD923316E61A7900688022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923216E61A7900688022 /* Foundation.framework */; };
 		07FD923516E61A7900688022 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD923416E61A7900688022 /* CoreGraphics.framework */; };
@@ -27,11 +30,9 @@
 		07FD925016E61A7A00688022 /* QWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD924F16E61A7A00688022 /* QWViewController.m */; };
 		07FD925916E61C9C00688022 /* QWAccountManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD925816E61C9C00688022 /* QWAccountManagerViewController.m */; };
 		07FD925B16E621BC00688022 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD925A16E621BC00688022 /* Accounts.framework */; };
-		07FD925F16E62AEF00688022 /* QWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD925E16E62AEF00688022 /* QWUser.m */; };
 		1AB892553DE7D9FC79D72E98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB89219F9A6A0B4BF0190AA /* CoreData.framework */; };
 		1AB894F265DDBC22A15AE27E /* QWQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */; };
 		1AB8950D45AC2FAE1526F658 /* QWQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8980E1C4D6AF592181046 /* QWQuizViewController.m */; };
-		1AB896E6921AD8B3CD880F05 /* QWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89F4D44CF526A25FD68FC /* QWAccount.m */; };
 		1AB89AB98E14686736D4EA6F /* QWWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89437B3C38EAB63349858 /* QWWelcomeViewController.m */; };
 		1AB89DD072BBADE8548A7027 /* QWSelectQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB895920F70C0DAEBEE8759 /* QWSelectQuiz.m */; };
 		1AB89F8BF916401900129CD1 /* QWGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89D366F00FBA75CD537F1 /* QWGame.m */; };
@@ -47,8 +48,14 @@
 		0718916C16E6CF3200A156BE /* QWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWAccount.h; path = Model/QWAccount.h; sourceTree = "<group>"; };
 		0718916D16E6CF3200A156BE /* QWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWAccount.m; path = Model/QWAccount.m; sourceTree = "<group>"; };
 		073D3A09173F9EDC0051DAFB /* Qwi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qwi.xcdatamodel; sourceTree = "<group>"; };
-		073D3A0B173FA56D0051DAFB /* QWTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWTweet.h; path = Model/QWTweet.h; sourceTree = "<group>"; };
-		073D3A0C173FA56D0051DAFB /* QWTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWTweet.m; path = Model/QWTweet.m; sourceTree = "<group>"; };
+		07F4F8E9178AEC730075EE62 /* _QWTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _QWTweet.h; path = Model/_QWTweet.h; sourceTree = "<group>"; };
+		07F4F8EA178AEC740075EE62 /* _QWTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _QWTweet.m; path = Model/_QWTweet.m; sourceTree = "<group>"; };
+		07F4F8EB178AEC740075EE62 /* _QWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _QWUser.h; path = Model/_QWUser.h; sourceTree = "<group>"; };
+		07F4F8EC178AEC740075EE62 /* _QWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _QWUser.m; path = Model/_QWUser.m; sourceTree = "<group>"; };
+		07F4F8ED178AEC740075EE62 /* QWTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWTweet.h; path = Model/QWTweet.h; sourceTree = "<group>"; };
+		07F4F8EE178AEC740075EE62 /* QWTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWTweet.m; path = Model/QWTweet.m; sourceTree = "<group>"; };
+		07F4F8EF178AEC740075EE62 /* QWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWUser.h; path = Model/QWUser.h; sourceTree = "<group>"; };
+		07F4F8F0178AEC740075EE62 /* QWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWUser.m; path = Model/QWUser.m; sourceTree = "<group>"; };
 		07FD922D16E61A7900688022 /* Qwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FD923016E61A7900688022 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07FD923216E61A7900688022 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,11 +76,8 @@
 		07FD925716E61C9C00688022 /* QWAccountManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWAccountManagerViewController.h; path = ViewController/QWAccountManagerViewController.h; sourceTree = "<group>"; };
 		07FD925816E61C9C00688022 /* QWAccountManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWAccountManagerViewController.m; path = ViewController/QWAccountManagerViewController.m; sourceTree = "<group>"; };
 		07FD925A16E621BC00688022 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		07FD925D16E62AEF00688022 /* QWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWUser.h; path = Model/QWUser.h; sourceTree = "<group>"; };
-		07FD925E16E62AEF00688022 /* QWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWUser.m; path = Model/QWUser.m; sourceTree = "<group>"; };
 		1AB89219F9A6A0B4BF0190AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1AB89437B3C38EAB63349858 /* QWWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWWelcomeViewController.m; sourceTree = "<group>"; };
-		1AB8944662669CFD0B858020 /* QWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWAccount.h; sourceTree = "<group>"; };
 		1AB89482938E312F148E14FF /* QWWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWWelcomeViewController.h; sourceTree = "<group>"; };
 		1AB894CD30BD941324C059C3 /* QWAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccountManager.m; sourceTree = "<group>"; };
 		1AB894F9053BF80BF7646920 /* QWSelectQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWSelectQuiz.h; sourceTree = "<group>"; };
@@ -85,7 +89,6 @@
 		1AB898EDC73CDD5D581E40AE /* QWQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWQuiz.h; sourceTree = "<group>"; };
 		1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWQuiz.m; sourceTree = "<group>"; };
 		1AB89D366F00FBA75CD537F1 /* QWGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWGame.m; sourceTree = "<group>"; };
-		1AB89F4D44CF526A25FD68FC /* QWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWAccount.m; sourceTree = "<group>"; };
 		AFF396E4896D41888D75CB33 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D09E824178C5428D96534543 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,20 +204,22 @@
 		07FD925C16E62AC600688022 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				073D3A0B173FA56D0051DAFB /* QWTweet.h */,
-				073D3A0C173FA56D0051DAFB /* QWTweet.m */,
-				07FD925D16E62AEF00688022 /* QWUser.h */,
-				07FD925E16E62AEF00688022 /* QWUser.m */,
 				0718916C16E6CF3200A156BE /* QWAccount.h */,
 				0718916D16E6CF3200A156BE /* QWAccount.m */,
-				1AB8944662669CFD0B858020 /* QWAccount.h */,
-				1AB89F4D44CF526A25FD68FC /* QWAccount.m */,
 				1AB89D366F00FBA75CD537F1 /* QWGame.m */,
 				1AB8969D36328995632BEE9F /* QWGame.h */,
 				1AB89953A8DD337E3ACCBB88 /* QWQuiz.m */,
 				1AB898EDC73CDD5D581E40AE /* QWQuiz.h */,
 				1AB895920F70C0DAEBEE8759 /* QWSelectQuiz.m */,
 				1AB894F9053BF80BF7646920 /* QWSelectQuiz.h */,
+				07F4F8E9178AEC730075EE62 /* _QWTweet.h */,
+				07F4F8EA178AEC740075EE62 /* _QWTweet.m */,
+				07F4F8EB178AEC740075EE62 /* _QWUser.h */,
+				07F4F8EC178AEC740075EE62 /* _QWUser.m */,
+				07F4F8ED178AEC740075EE62 /* QWTweet.h */,
+				07F4F8EE178AEC740075EE62 /* QWTweet.m */,
+				07F4F8EF178AEC740075EE62 /* QWUser.h */,
+				07F4F8F0178AEC740075EE62 /* QWUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,18 +314,19 @@
 				07FD924116E61A7900688022 /* QWAppDelegate.m in Sources */,
 				07FD925016E61A7A00688022 /* QWViewController.m in Sources */,
 				07FD925916E61C9C00688022 /* QWAccountManagerViewController.m in Sources */,
-				07FD925F16E62AEF00688022 /* QWUser.m in Sources */,
 				0718916716E6390300A156BE /* QWUserManager.m in Sources */,
 				0718916E16E6CF3200A156BE /* QWAccount.m in Sources */,
-				1AB896E6921AD8B3CD880F05 /* QWAccount.m in Sources */,
 				1AB89FC4BBD4C7ABF6226159 /* QWAccountManager.m in Sources */,
 				073D3A0A173F9EDC0051DAFB /* Qwi.xcdatamodeld in Sources */,
-				073D3A0D173FA56D0051DAFB /* QWTweet.m in Sources */,
 				1AB89F8BF916401900129CD1 /* QWGame.m in Sources */,
 				1AB894F265DDBC22A15AE27E /* QWQuiz.m in Sources */,
 				1AB8950D45AC2FAE1526F658 /* QWQuizViewController.m in Sources */,
 				1AB89AB98E14686736D4EA6F /* QWWelcomeViewController.m in Sources */,
 				1AB89DD072BBADE8548A7027 /* QWSelectQuiz.m in Sources */,
+				07F4F8F1178AEC740075EE62 /* _QWTweet.m in Sources */,
+				07F4F8F2178AEC740075EE62 /* _QWUser.m in Sources */,
+				07F4F8F3178AEC740075EE62 /* QWTweet.m in Sources */,
+				07F4F8F4178AEC740075EE62 /* QWUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +427,7 @@
 				INFOPLIST_FILE = "Qwi/Qwi-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,6 +441,7 @@
 				INFOPLIST_FILE = "Qwi/Qwi-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -14,6 +14,11 @@
 #include "CJSONDeserializer.h"
 
 #import "QWAccount.h"
+#import "NSManagedObject+MagicalRecord.h"
+#import "MagicalRecordShorthand.h"
+#import "NSManagedObject+MagicalAggregation.h"
+
+#define MR_SHORTHAND
 
 @implementation QWUserManager
 
@@ -102,17 +107,17 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 - (BOOL)deleteUserByName:(NSString *)screenName {
     QWUser *user = [self selectUserByName:screenName];
     if (user) {
-        [self.managedObjectContext deleteObject:user];
+        [user MR_deleteEntity];
         return YES;
     }
     return NO;
 }
 
 - (QWUser *)selectUserByName:(NSString *)name {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"User"];
     request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
 
-    NSArray *cache = [self.managedObjectContext executeFetchRequest:request error:nil];
+    NSArray *cache = [QWUser MR_executeFetchRequest:request];
     if ([cache count] > 0) {
         return [cache lastObject];
     }
@@ -120,9 +125,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 }
 
 - (BOOL)isCachedByName:(NSString *)name {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([QWUser class])];
-    request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
-    return [self.managedObjectContext countForFetchRequest:request error:nil] > 0;
+    return [QWUser MR_countOfEntitiesWithPredicate:[NSPredicate predicateWithFormat:@"screenName = %@", name]];
 }
 
 - (QWUser *)updateFromDictionary:(NSDictionary *)dictionary for:(QWUser *)user {
@@ -176,7 +179,8 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                 for (int i = 0; i < count; i += kIDLimit) {
                     [self updateFriendsWithIDs:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))] via:account];
                 }
-                [self.managedObjectContext save:nil];            }
+                //[self.managedObjectContext save:nil];
+            }
             failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 
             }];
@@ -220,9 +224,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 }
 
 - (QWUser *)insertNewUser {
-    // NSStringFromClassだと死ぬことがある
-    return [NSEntityDescription insertNewObjectForEntityForName:@"QWUser"
-                                         inManagedObjectContext:self.managedObjectContext];
+    return [QWUser MR_createEntity];
 }
 
 @end

@@ -8,6 +8,11 @@
 
 #import "QWAccountManager.h"
 #import "QWUserManager.h"
+#import "MagicalRecord+Setup.h"
+#import "MagicalRecordShorthand.h"
+#import "NSManagedObjectContext+MagicalRecord.h"
+
+#define MR_SHORTHAND
 
 @implementation QWAccountManager
 
@@ -23,6 +28,7 @@
 - (id)init {
     self = [super init];
     if (self) {
+        [MagicalRecord setupCoreDataStackWithStoreNamed:@"Qwi.sqlite"];
         _accounts = [NSMutableArray array];
         _accountStore = [ACAccountStore new];
     }
@@ -42,7 +48,8 @@
                         QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
                         [_accounts addObject:account];
                         NSError *saveErr;
-                        [manager.managedObjectContext save:&saveErr];
+                        NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+                        [context save:&saveErr];
                         if (manager.queue.operationCount == 0) {
                             completion(granted, error);
                         }

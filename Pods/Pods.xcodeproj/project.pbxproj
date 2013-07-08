@@ -1,3151 +1,664 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>000CC046C45649EAAF9895CE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D15D1BC17D36415E84B280E9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>00317EBD9EF14516A8C01C05</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>014EEAC4257D4B92AF17F5E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSAttributeDescription+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>014F39177CF9444394B0BB43</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1531F964B568430BBE01D4D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>01E0213BA31A4F7895629A29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CJSONSerializedData.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CJSONSerializedData.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>028EF826283E4290BB50F843</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6EAC5CFE85C4EB1855BDB9F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>0492C7BA25E0412499480DCC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF549A98E7164222A2604B35</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>074D0C5E71604989B9909879</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalObserving.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>079A313520B0439C8EAD4931</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5C33C93BB96D434AB2916410</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>0B250B4BF9AB4A4C810859B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>142674F07DE74D6B905C746C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>0BE360E444DA403797B87D4C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFHTTPClient.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPClient.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0C94C2E89CE8406287A1D6F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+Options.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>0D5F951D601C495EA387F126</key>
-		<dict>
-			<key>fileRef</key>
-			<string>67E5463E3AFC4F9C9EEDBB9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>0EC3B24AB82B40268601B620</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49B0BD45E54B4909A24D8C8D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>10C41C69F0FF459A8604FD4F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2575B04FB1A94CCA83C57D03</string>
-				<string>3B6C9ECEFD394281899A43BC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>115A364B7B654DEC9311C820</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A25EEB9FB1CC454195B5CCA1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>11836351F0064C908D5A5AF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1186D17E09BD4301A8101B99</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CJSONDeserializer.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONDeserializer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>12D8EC3FA50E488BA3FA3C1C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CJSONDeserializer.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONDeserializer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>136EB5EAEC3345B5B5261F3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FB9C3EE3C1540CE9A6B685F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>142674F07DE74D6B905C746C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSObject+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>146B54B24D804931B60D8299</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFPropertyListRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1491CBB6A92244C6B0AB9B7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C75A4554128246698B58323B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>1531F964B568430BBE01D4D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalFinders.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1573709AA6B446F19253A768</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B8FBFAB0BB3D42FD8CD969F4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>15E1B71583DC4BCC8FD03471</key>
-		<dict>
-			<key>fileRef</key>
-			<string>59189EC1F099467FAF0BB8BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>1600343C2DFB4420975FAB9B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>1664AEA95A0D4E3DA69231EB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DDA92A2B9D5A4AD7B032FAEA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>1D6B079B6EB24B50A70EB7D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CFilteringJSONSerializer.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CFilteringJSONSerializer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1DE6F6943FAA45E285D0F454</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFEDAB7ED173467EA2F1D270</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>1EC34AB953454D2681BF351E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E59EBCFA2D934E30BDFA29A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>1FF1D24085294EEA8117BBAF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5B1A31F225AC404B83098515</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>20BCC9F9112C4114BB80585B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSObject+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>211C7A69C2D248C499D917BD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>746365FC287E42CCB91AD024</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>220ACCBBB47B4DB090228A4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalRequests.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>22283F92FEA346B694A64BA1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CDataScanner.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/CDataScanner.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>24FDE82CC3B140B7A46B1005</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3D8E0DD5A82F4232AE7CFD7A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2575B04FB1A94CCA83C57D03</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>25E22257C080428C8491CF09</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFURLConnectionOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>266ED0B0299E4BB4A54C0824</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F820CB917EA24AD6816D6DD3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>28B85D46E26E4228A99CC087</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFImageRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFImageRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>295C9B2843464EE9A4812CCF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B14E1A368E34B278EF63177</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2A7F7B9667DA4A249EAD5248</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CJSONSerialization.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CJSONSerialization.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2B251217543041A2812B7293</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFA6FE372F314BA0A4AABFBD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2DB171401D0940CCB6F21C5D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C80B7E32155F46D894CE8758</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_HEADERS_SEARCH_PATHS</key>
-				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
-				<key>PODS_ROOT</key>
-				<string>${SRCROOT}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2E6B8ED0E67541B094FEE0AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FA3BA8574D5646E2A6DD596D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>2EAC98A26DB24D268F942720</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D6B079B6EB24B50A70EB7D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>2F21C1830AB14B22B072DDB9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DAE4D912B9234D75BF4E14E4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>2FB9C3EE3C1540CE9A6B685F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CDataScanner_Extensions.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Extensions/CDataScanner_Extensions.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>30CACF67BFC442ABBCFB85E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>11836351F0064C908D5A5AF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>3249E2A9849A4BA399F77EB8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSString+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>348129FBFA0B455389F5A6F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>59DCF95032DE4B8F968B2975</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>348D94EA20634B98B9A76319</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+Actions.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3692F236D6804AD9991BB1FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99EA602B89F1450C89E15708</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>3B14E1A368E34B278EF63177</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+Setup.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3B6C9ECEFD394281899A43BC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3BB301D8D5604F1B880D0B73</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2DB171401D0940CCB6F21C5D</string>
-				<string>6CF063C7C33F47259FCDBA40</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3BE62DF709DC4636994E2A8C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+ErrorHandling.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>3D8E0DD5A82F4232AE7CFD7A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>41520F28CC06439293B66AFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D31839FD953F4C6BAF177870</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>41AEEF67A82247CA81BEBEDB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSPersistentStore+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>434E137EA9A84ABFADD7A298</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFURLConnectionOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFURLConnectionOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>446A3BB38DE84EA3A5AC8979</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8CDCB7BFA14348D4968E6AD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>472EC4877CFF47A5986BCAB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>48595D2143FD487BAC97A2BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8CF3819C8C8F4D358639E679</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>4890D86BAEAF499BB99FE1CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA49115335A3492283F207C4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>49B09E607DB942F08A8BE123</key>
-		<dict>
-			<key>fileRef</key>
-			<string>644B41F546DA49FDAE423DD9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>49B0BD45E54B4909A24D8C8D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalRequests.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4B61C9DCCCFC49A98DD4FD1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BA11F45CB7E1430A9B383267</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>4B9C19E1B77A4F2BA7804503</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4BDF2EA46BF4432E874BF041</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObjectModel+MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4C63FD5AEFD04C2EA18F005B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B2EB8190747941CBAAD4F4C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>4D26839572CB4F82A056BD0E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>014EEAC4257D4B92AF17F5E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>51884D21A8984EE493C96CF0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7DD0F19233524E6590B27E96</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52DBB4E7B9CF4279835FEAFA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C612B2EAF2A047F786004C18</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>52FAB6D705B14B5BBF992E5B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C94C2E89CE8406287A1D6F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>53C8D5305DCD4A49B55555E2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AABAA7AF1015466CAEDB2C5A</string>
-				<string>7ABEFE9747D742359CD85CE1</string>
-				<string>E52C8563CAC5451680C7310D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>57BA42244C1B4EF4BF571FA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFImageRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFImageRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>59189EC1F099467FAF0BB8BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>593A65F85B474EE79DBB4BBC</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0450</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>10C41C69F0FF459A8604FD4F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>760DFFCE48E841669060E240</string>
-			<key>productRefGroup</key>
-			<string>C9024815CC564A0E9FCE2843</string>
-			<key>projectReferences</key>
-			<array/>
-			<key>targets</key>
-			<array>
-				<string>BB7878F2902C4AC8B61D5D9A</string>
-			</array>
-		</dict>
-		<key>59DCF95032DE4B8F968B2975</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+Options.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5B15F337A24E464FAAF96ACB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4B61C9DCCCFC49A98DD4FD1C</string>
-				<string>41520F28CC06439293B66AFA</string>
-				<string>FAB8B4BBA8304A32AC65C9A1</string>
-				<string>D880E591D3814744A21EA07C</string>
-				<string>73EB2622D2B940D0857D7FBE</string>
-				<string>C83A035F46C24B6C98199EFD</string>
-				<string>DDEDB53A50BC4A1EBF5EC1D8</string>
-				<string>BB3211066C1842338720D197</string>
-				<string>1EC34AB953454D2681BF351E</string>
-				<string>079A313520B0439C8EAD4931</string>
-				<string>211C7A69C2D248C499D917BD</string>
-				<string>4D26839572CB4F82A056BD0E</string>
-				<string>446A3BB38DE84EA3A5AC8979</string>
-				<string>52DBB4E7B9CF4279835FEAFA</string>
-				<string>0B250B4BF9AB4A4C810859B3</string>
-				<string>791FB53F273043A4800813C9</string>
-				<string>84E7ED735A5C4481917022CC</string>
-				<string>028EF826283E4290BB50F843</string>
-				<string>15E1B71583DC4BCC8FD03471</string>
-				<string>CF8AFB045CC54219A258FB23</string>
-				<string>30CACF67BFC442ABBCFB85E7</string>
-				<string>BD6929226E8644CD9DCAA9B3</string>
-				<string>75493FF0BA60444AB1E191FC</string>
-				<string>768BEACADEDB4AE2AF093985</string>
-				<string>B3316DF74F8948859FB1949A</string>
-				<string>FD1FD0B75E2A4C279D436F44</string>
-				<string>1573709AA6B446F19253A768</string>
-				<string>8824A104CFB941EBA5CC5C0A</string>
-				<string>0D5F951D601C495EA387F126</string>
-				<string>4C63FD5AEFD04C2EA18F005B</string>
-				<string>0492C7BA25E0412499480DCC</string>
-				<string>A24D282B5AE646DCB9E4DEBA</string>
-				<string>348129FBFA0B455389F5A6F9</string>
-				<string>000CC046C45649EAAF9895CE</string>
-				<string>6389132CB29C40A38C0A2D81</string>
-				<string>2E6B8ED0E67541B094FEE0AC</string>
-				<string>92EC0D78218644039177E312</string>
-				<string>8B29724AA9B34A3EACBD70CD</string>
-				<string>BE066EDBCBF345A398341F10</string>
-				<string>2EAC98A26DB24D268F942720</string>
-				<string>7D26F2ACDE41479F9E4AD63D</string>
-				<string>BCDFA6A7B1ED418B9AAC070F</string>
-				<string>1664AEA95A0D4E3DA69231EB</string>
-				<string>FBB617DB17964051981B6A0F</string>
-				<string>694DCF81C7EE400E9D3E9327</string>
-				<string>1491CBB6A92244C6B0AB9B7B</string>
-				<string>B3D6F2AE00B24D1FB8DD4A3D</string>
-				<string>3692F236D6804AD9991BB1FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5B1A31F225AC404B83098515</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSEntityDescription+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5C33C93BB96D434AB2916410</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIImageView+AFNetworking.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5FF0A3D1D08C432180FFF9E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>57BA42244C1B4EF4BF571FA9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5FF6A2C91CD84ECCAA9F6C65</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalFinders.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>629D89C7D9944E4DA0D2663A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>00317EBD9EF14516A8C01C05</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>6389132CB29C40A38C0A2D81</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A524FC2548BA48569F2E0921</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>6440ED25755B4838BCE1C0CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2A7F7B9667DA4A249EAD5248</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>644B41F546DA49FDAE423DD9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFHTTPRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>67E5463E3AFC4F9C9EEDBB9C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSPersistentStoreCoordinator+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>694DCF81C7EE400E9D3E9327</key>
-		<dict>
-			<key>fileRef</key>
-			<string>12D8EC3FA50E488BA3FA3C1C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>6A2717428D724A17AE733550</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFPropertyListRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFPropertyListRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>6CF063C7C33F47259FCDBA40</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C80B7E32155F46D894CE8758</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_HEADERS_SEARCH_PATHS</key>
-				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
-				<key>PODS_ROOT</key>
-				<string>${SRCROOT}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6F16A932F23241C491691D9C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-dummy.m</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>72AC60A0D7954F6EBD0E2AC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSNumber+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>73EB2622D2B940D0857D7FBE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9016365471294C8380D380F5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>74376BB30C9B4B3C9C9FE58E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-prefix.pch</string>
-			<key>path</key>
-			<string>Pods-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>746365FC287E42CCB91AD024</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalImportFunctions.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7548D49A7F1C499EBBDA929F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>20BCC9F9112C4114BB80585B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>75493FF0BA60444AB1E191FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>89C212BD1F6E45BBBACC731D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>759B20C288A3433AA73FAAA0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFJSONRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>75A1C23E2FB04C1089198CD8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D8D420CEA64146BCB31B3430</string>
-				<string>49B09E607DB942F08A8BE123</string>
-				<string>5FF0A3D1D08C432180FFF9E7</string>
-				<string>CAA8F13E86FD4FCCBE7F5B4B</string>
-				<string>BE23715AC9A34413B13A9A51</string>
-				<string>AB8262F9201C4346BE80754A</string>
-				<string>B4D0D778B4E648C094F2CBED</string>
-				<string>B372B1103F734F6E875991C3</string>
-				<string>DF53B88C859F40C6B6770329</string>
-				<string>BBD3276A53024C09BD2A17CC</string>
-				<string>78F12D370B7C49D28F729BDC</string>
-				<string>1FF1D24085294EEA8117BBAF</string>
-				<string>B91669F3F4F84E4F8C18D94B</string>
-				<string>7548D49A7F1C499EBBDA929F</string>
-				<string>2B251217543041A2812B7293</string>
-				<string>8F9F9320BB8A450F8136FB35</string>
-				<string>D5538591BC984F03A17885D3</string>
-				<string>24FDE82CC3B140B7A46B1005</string>
-				<string>014F39177CF9444394B0BB43</string>
-				<string>DA5DE99090FF4BAEB2DAE7DD</string>
-				<string>0EC3B24AB82B40268601B620</string>
-				<string>EF5A15710D5D4CB5A146D645</string>
-				<string>8F7D93617C9A482999F11638</string>
-				<string>1DE6F6943FAA45E285D0F454</string>
-				<string>CB5522C92CBE4F6784CB30D1</string>
-				<string>D85482AAD3004839A3706709</string>
-				<string>E5B84E72C4CC4B1C91C9395B</string>
-				<string>94691AB6622E467A93869B27</string>
-				<string>ED670256B1774C93BA62F3D3</string>
-				<string>EE80D3074634428DA89C8451</string>
-				<string>4890D86BAEAF499BB99FE1CC</string>
-				<string>52FAB6D705B14B5BBF992E5B</string>
-				<string>295C9B2843464EE9A4812CCF</string>
-				<string>9AC8115448CD44A183924196</string>
-				<string>629D89C7D9944E4DA0D2663A</string>
-				<string>B1049C8E3FCC435DA0673967</string>
-				<string>48595D2143FD487BAC97A2BC</string>
-				<string>6440ED25755B4838BCE1C0CC</string>
-				<string>266ED0B0299E4BB4A54C0824</string>
-				<string>136EB5EAEC3345B5B5261F3F</string>
-				<string>7DFFA676F4A04C899282F7E3</string>
-				<string>AB6E2493D81A4BA1AF6432E9</string>
-				<string>84C404BE44C34936AD11F744</string>
-				<string>115A364B7B654DEC9311C820</string>
-				<string>F01D00CC719F456792F8009D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>760DFFCE48E841669060E240</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA7CB23F2EB04A0FAEDD93C5</string>
-				<string>53C8D5305DCD4A49B55555E2</string>
-				<string>C9024815CC564A0E9FCE2843</string>
-				<string>51884D21A8984EE493C96CF0</string>
-				<string>ED1E3F8B45E8403D89C5E116</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>768BEACADEDB4AE2AF093985</key>
-		<dict>
-			<key>fileRef</key>
-			<string>472EC4877CFF47A5986BCAB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>78F12D370B7C49D28F729BDC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81301FF758324285876E233F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>791FB53F273043A4800813C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A125BBCB98AC40BF8EE3A1E3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>793CCF4796754C65AD267FBC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MobileCoreServices.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>7ABEFE9747D742359CD85CE1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>746365FC287E42CCB91AD024</string>
-				<string>904AA0F4E4AF4FF7B63DD15C</string>
-				<string>014EEAC4257D4B92AF17F5E6</string>
-				<string>81301FF758324285876E233F</string>
-				<string>8CDCB7BFA14348D4968E6AD6</string>
-				<string>5B1A31F225AC404B83098515</string>
-				<string>C612B2EAF2A047F786004C18</string>
-				<string>72AC60A0D7954F6EBD0E2AC9</string>
-				<string>142674F07DE74D6B905C746C</string>
-				<string>20BCC9F9112C4114BB80585B</string>
-				<string>A125BBCB98AC40BF8EE3A1E3</string>
-				<string>AFA6FE372F314BA0A4AABFBD</string>
-				<string>A46237EBD1AA4030857DC5F2</string>
-				<string>3249E2A9849A4BA399F77EB8</string>
-				<string>B6EAC5CFE85C4EB1855BDB9F</string>
-				<string>A2B3362089594C39B2099E68</string>
-				<string>59189EC1F099467FAF0BB8BA</string>
-				<string>3D8E0DD5A82F4232AE7CFD7A</string>
-				<string>5FF6A2C91CD84ECCAA9F6C65</string>
-				<string>1531F964B568430BBE01D4D8</string>
-				<string>11836351F0064C908D5A5AF5</string>
-				<string>CDE063D90F024C39BB067F4C</string>
-				<string>220ACCBBB47B4DB090228A4D</string>
-				<string>49B0BD45E54B4909A24D8C8D</string>
-				<string>89C212BD1F6E45BBBACC731D</string>
-				<string>074D0C5E71604989B9909879</string>
-				<string>472EC4877CFF47A5986BCAB9</string>
-				<string>F09846FDBBBA4E329A058C33</string>
-				<string>AFAE6206F4A54C31B7C14AB9</string>
-				<string>AFEDAB7ED173467EA2F1D270</string>
-				<string>BD765FF3A514492689DDD4A8</string>
-				<string>BD25E17ADFC94101894939D9</string>
-				<string>B8FBFAB0BB3D42FD8CD969F4</string>
-				<string>4BDF2EA46BF4432E874BF041</string>
-				<string>41AEEF67A82247CA81BEBEDB</string>
-				<string>E03375F4506A4FDFBE27F01B</string>
-				<string>67E5463E3AFC4F9C9EEDBB9C</string>
-				<string>C8382B947E134207BAAAE207</string>
-				<string>B2EB8190747941CBAAD4F4C2</string>
-				<string>348D94EA20634B98B9A76319</string>
-				<string>AF549A98E7164222A2604B35</string>
-				<string>3BE62DF709DC4636994E2A8C</string>
-				<string>C24299FD0251423AAB220DC9</string>
-				<string>AA49115335A3492283F207C4</string>
-				<string>59DCF95032DE4B8F968B2975</string>
-				<string>0C94C2E89CE8406287A1D6F6</string>
-				<string>D15D1BC17D36415E84B280E9</string>
-				<string>3B14E1A368E34B278EF63177</string>
-				<string>A524FC2548BA48569F2E0921</string>
-				<string>A97C58CA482C4DA8A4915C49</string>
-				<string>FA3BA8574D5646E2A6DD596D</string>
-				<string>00317EBD9EF14516A8C01C05</string>
-				<string>8B79C4AD16E8407CA9F462FA</string>
-				<string>A9B04C55FD264A699784C7B5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>MagicalRecord</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D26F2ACDE41479F9E4AD63D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D6BE84490EA847EE93FDE746</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>7DB41A44C0704714BABEE3DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-environment.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7DD0F19233524E6590B27E96</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C80B7E32155F46D894CE8758</string>
-				<string>7DB41A44C0704714BABEE3DC</string>
-				<string>74376BB30C9B4B3C9C9FE58E</string>
-				<string>EB7CAC7A81144BEFA6EBD401</string>
-				<string>4B9C19E1B77A4F2BA7804503</string>
-				<string>DC2A3FBECD534B06A155FF81</string>
-				<string>6F16A932F23241C491691D9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DFFA676F4A04C899282F7E3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E70958DCA36240B1AFE549E2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>81301FF758324285876E233F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSAttributeDescription+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>81B8E102371742F3917578F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CJSONSerializer.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONSerializer.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>84C404BE44C34936AD11F744</key>
-		<dict>
-			<key>fileRef</key>
-			<string>91754A1E03A9422583B86570</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>84E7ED735A5C4481917022CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A46237EBD1AA4030857DC5F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>8824A104CFB941EBA5CC5C0A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41AEEF67A82247CA81BEBEDB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>89C212BD1F6E45BBBACC731D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalObserving.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8B29724AA9B34A3EACBD70CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9B04C55FD264A699784C7B5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>8B79C4AD16E8407CA9F462FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecordShorthand.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecordShorthand.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8CA853E3151D4128ADD47F7C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>8CDCB7BFA14348D4968E6AD6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSEntityDescription+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8CF3819C8C8F4D358639E679</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CFilteringJSONSerializer.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CFilteringJSONSerializer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>8F7D93617C9A482999F11638</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F09846FDBBBA4E329A058C33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>8F9F9320BB8A450F8136FB35</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3249E2A9849A4BA399F77EB8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>9016365471294C8380D380F5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFNetworkActivityIndicatorManager.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>904AA0F4E4AF4FF7B63DD15C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalImportFunctions.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>91754A1E03A9422583B86570</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CJSONScanner.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONScanner.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9263C03D9C684129B851BAF5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>92EC0D78218644039177E312</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8B79C4AD16E8407CA9F462FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>94691AB6622E467A93869B27</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C8382B947E134207BAAAE207</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>94EC807C7BD04E438D3DA541</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>997B7B1CCA07432A8064C7EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFNetworkActivityIndicatorManager.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>99EA602B89F1450C89E15708</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSONRepresentation.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/JSONRepresentation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9AC8115448CD44A183924196</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A97C58CA482C4DA8A4915C49</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>A125BBCB98AC40BF8EE3A1E3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSRelationshipDescription+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A1C9CB87E7504FE3BD1480C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>A24D282B5AE646DCB9E4DEBA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C24299FD0251423AAB220DC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>A25EEB9FB1CC454195B5CCA1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CJSONSerializer.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONSerializer.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A298CF3597144DBEB821245A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImageView+AFNetworking.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/UIImageView+AFNetworking.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A2B3362089594C39B2099E68</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalAggregation.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A46237EBD1AA4030857DC5F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSString+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A524FC2548BA48569F2E0921</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+ShorthandSupport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandSupport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A97C58CA482C4DA8A4915C49</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+ShorthandSupport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandSupport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>A9B04C55FD264A699784C7B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CoreData+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/CoreData+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AA49115335A3492283F207C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MagicalRecord+iCloud.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AABAA7AF1015466CAEDB2C5A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA11F45CB7E1430A9B383267</string>
-				<string>0BE360E444DA403797B87D4C</string>
-				<string>D31839FD953F4C6BAF177870</string>
-				<string>644B41F546DA49FDAE423DD9</string>
-				<string>28B85D46E26E4228A99CC087</string>
-				<string>57BA42244C1B4EF4BF571FA9</string>
-				<string>759B20C288A3433AA73FAAA0</string>
-				<string>FC1C883EF1CF42C3A468301E</string>
-				<string>9016365471294C8380D380F5</string>
-				<string>997B7B1CCA07432A8064C7EB</string>
-				<string>B47ABDEED9224F4AABA9E74B</string>
-				<string>146B54B24D804931B60D8299</string>
-				<string>6A2717428D724A17AE733550</string>
-				<string>434E137EA9A84ABFADD7A298</string>
-				<string>25E22257C080428C8491CF09</string>
-				<string>E59EBCFA2D934E30BDFA29A9</string>
-				<string>C171945FAA2E4997A572732F</string>
-				<string>5C33C93BB96D434AB2916410</string>
-				<string>A298CF3597144DBEB821245A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AFNetworking</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB6E2493D81A4BA1AF6432E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1186D17E09BD4301A8101B99</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AB8262F9201C4346BE80754A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A2717428D724A17AE733550</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AF549A98E7164222A2604B35</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+ErrorHandling.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AFA6FE372F314BA0A4AABFBD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSRelationshipDescription+MagicalDataImport.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AFAE6206F4A54C31B7C14AB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalSaves.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>AFEDAB7ED173467EA2F1D270</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalSaves.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B1049C8E3FCC435DA0673967</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22283F92FEA346B694A64BA1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B2EB8190747941CBAAD4F4C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+Actions.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B3316DF74F8948859FB1949A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFAE6206F4A54C31B7C14AB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>B372B1103F734F6E875991C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C171945FAA2E4997A572732F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B3BE0E9B41E446E99CEE3746</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSDictionary_JSONExtensions.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B3D6F2AE00B24D1FB8DD4A3D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>81B8E102371742F3917578F4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>B47ABDEED9224F4AABA9E74B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFNetworking.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFNetworking.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B4D0D778B4E648C094F2CBED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25E22257C080428C8491CF09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B6EAC5CFE85C4EB1855BDB9F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalAggregation.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B8FBFAB0BB3D42FD8CD969F4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObjectModel+MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B91669F3F4F84E4F8C18D94B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>72AC60A0D7954F6EBD0E2AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BA11F45CB7E1430A9B383267</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFHTTPClient.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPClient.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BA63B5D4B6A74FEDA76EA19D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CDataScanner.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/CDataScanner.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BB3211066C1842338720D197</key>
-		<dict>
-			<key>fileRef</key>
-			<string>434E137EA9A84ABFADD7A298</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>BB7878F2902C4AC8B61D5D9A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3BB301D8D5604F1B880D0B73</string>
-			<key>buildPhases</key>
-			<array>
-				<string>75A1C23E2FB04C1089198CD8</string>
-				<string>2F21C1830AB14B22B072DDB9</string>
-				<string>5B15F337A24E464FAAF96ACB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>9263C03D9C684129B851BAF5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>BBD3276A53024C09BD2A17CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>904AA0F4E4AF4FF7B63DD15C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BCDFA6A7B1ED418B9AAC070F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>01E0213BA31A4F7895629A29</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>BD25E17ADFC94101894939D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalThreading.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BD6929226E8644CD9DCAA9B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>220ACCBBB47B4DB090228A4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>BD765FF3A514492689DDD4A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalThreading.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BE066EDBCBF345A398341F10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BA63B5D4B6A74FEDA76EA19D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>BE23715AC9A34413B13A9A51</key>
-		<dict>
-			<key>fileRef</key>
-			<string>997B7B1CCA07432A8064C7EB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C171945FAA2E4997A572732F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFXMLRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C24299FD0251423AAB220DC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+iCloud.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C612B2EAF2A047F786004C18</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>NSNumber+MagicalDataImport.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C75A4554128246698B58323B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CJSONScanner.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/JSON/CJSONScanner.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C80B7E32155F46D894CE8758</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C8382B947E134207BAAAE207</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSPersistentStoreCoordinator+MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>C83A035F46C24B6C98199EFD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B47ABDEED9224F4AABA9E74B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>C9024815CC564A0E9FCE2843</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9263C03D9C684129B851BAF5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAA8F13E86FD4FCCBE7F5B4B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FC1C883EF1CF42C3A468301E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CB5522C92CBE4F6784CB30D1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BD25E17ADFC94101894939D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CDE063D90F024C39BB067F4C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObject+MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>CF8AFB045CC54219A258FB23</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FF6A2C91CD84ECCAA9F6C65</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>D15D1BC17D36415E84B280E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord+Setup.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D31839FD953F4C6BAF177870</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFHTTPRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFHTTPRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D5538591BC984F03A17885D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A2B3362089594C39B2099E68</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D6BE84490EA847EE93FDE746</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CJSONSerialization.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CJSONSerialization.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>D85482AAD3004839A3706709</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4BDF2EA46BF4432E874BF041</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D880E591D3814744A21EA07C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>759B20C288A3433AA73FAAA0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>D8D420CEA64146BCB31B3430</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BE360E444DA403797B87D4C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DA5DE99090FF4BAEB2DAE7DD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDE063D90F024C39BB067F4C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DAE4D912B9234D75BF4E14E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>94EC807C7BD04E438D3DA541</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>DC2A3FBECD534B06A155FF81</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>DDA92A2B9D5A4AD7B032FAEA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CDataScanner_Extensions.h</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Extensions/CDataScanner_Extensions.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>DDEDB53A50BC4A1EBF5EC1D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>146B54B24D804931B60D8299</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>DF53B88C859F40C6B6770329</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A298CF3597144DBEB821245A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>E03375F4506A4FDFBE27F01B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSPersistentStore+MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E52C8563CAC5451680C7310D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA63B5D4B6A74FEDA76EA19D</string>
-				<string>22283F92FEA346B694A64BA1</string>
-				<string>1D6B079B6EB24B50A70EB7D8</string>
-				<string>8CF3819C8C8F4D358639E679</string>
-				<string>D6BE84490EA847EE93FDE746</string>
-				<string>2A7F7B9667DA4A249EAD5248</string>
-				<string>01E0213BA31A4F7895629A29</string>
-				<string>F820CB917EA24AD6816D6DD3</string>
-				<string>DDA92A2B9D5A4AD7B032FAEA</string>
-				<string>2FB9C3EE3C1540CE9A6B685F</string>
-				<string>B3BE0E9B41E446E99CEE3746</string>
-				<string>E70958DCA36240B1AFE549E2</string>
-				<string>12D8EC3FA50E488BA3FA3C1C</string>
-				<string>1186D17E09BD4301A8101B99</string>
-				<string>C75A4554128246698B58323B</string>
-				<string>91754A1E03A9422583B86570</string>
-				<string>81B8E102371742F3917578F4</string>
-				<string>A25EEB9FB1CC454195B5CCA1</string>
-				<string>99EA602B89F1450C89E15708</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TouchJSON</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E59EBCFA2D934E30BDFA29A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AFXMLRequestOperation.h</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFXMLRequestOperation.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>E5B84E72C4CC4B1C91C9395B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E03375F4506A4FDFBE27F01B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>E70958DCA36240B1AFE549E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSDictionary_JSONExtensions.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EB7CAC7A81144BEFA6EBD401</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-resources.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>ED1E3F8B45E8403D89C5E116</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>ED670256B1774C93BA62F3D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>348D94EA20634B98B9A76319</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EE80D3074634428DA89C8451</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3BE62DF709DC4636994E2A8C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EF5A15710D5D4CB5A146D645</key>
-		<dict>
-			<key>fileRef</key>
-			<string>074D0C5E71604989B9909879</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>F01D00CC719F456792F8009D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6F16A932F23241C491691D9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>F09846FDBBBA4E329A058C33</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>NSManagedObjectContext+MagicalRecord.m</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F820CB917EA24AD6816D6DD3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CJSONSerializedData.m</string>
-			<key>path</key>
-			<string>TouchJSON/Source/Experimental/CJSONSerializedData.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FA3BA8574D5646E2A6DD596D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MagicalRecord.h</string>
-			<key>path</key>
-			<string>MagicalRecord/MagicalRecord/Core/MagicalRecord.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FA7CB23F2EB04A0FAEDD93C5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8CA853E3151D4128ADD47F7C</string>
-				<string>94EC807C7BD04E438D3DA541</string>
-				<string>793CCF4796754C65AD267FBC</string>
-				<string>1600343C2DFB4420975FAB9B</string>
-				<string>A1C9CB87E7504FE3BD1480C5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAB8B4BBA8304A32AC65C9A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>28B85D46E26E4228A99CC087</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>FBB617DB17964051981B6A0F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B3BE0E9B41E446E99CEE3746</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>FC1C883EF1CF42C3A468301E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AFJSONRequestOperation.m</string>
-			<key>path</key>
-			<string>AFNetworking/AFNetworking/AFJSONRequestOperation.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FD1FD0B75E2A4C279D436F44</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BD765FF3A514492689DDD4A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>593A65F85B474EE79DBB4BBC</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0196B174E5744FCA945BF03E /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEB5A997A6E4D30A43B11AC /* NSManagedObjectModel+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		02A28A4D7FC84065BC23A248 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B697D0C5DA4445BB706942 /* NSManagedObjectContext+MagicalSaves.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		052B2908665F474E9F889713 /* MagicalRecord+ShorthandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ED66C1A03454A2090F218D4 /* MagicalRecord+ShorthandSupport.h */; settings = {}; };
+		0C7C32F0CA1E481F84F2132D /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7A9BDAF22544DB9147F1BC /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0DBB1DD86FDE4281B9A7CCDB /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2E8E6B0724614BF6AC834 /* MagicalRecord+ShorthandSupport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0E387432A3C44A3AA946D622 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FEE678CF104C719C4E36C8 /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0F6EEB283962448CB50C4C7A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D93027A1374CA18261190D /* AFURLConnectionOperation.h */; settings = {}; };
+		16EFEA28BCA546A6A80976A7 /* CJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = A04CA2A0182C4970BB3AED76 /* CJSONSerialization.h */; settings = {}; };
+		1D7143AEED7642D7862A1F44 /* CDataScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE747C62EE5D47638C1C1394 /* CDataScanner_Extensions.h */; settings = {}; };
+		20834E5932A9473A8A00250F /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 11AD9710373E4C279478A135 /* AFPropertyListRequestOperation.h */; settings = {}; };
+		23A6CC2C18AC4A6DA0D1797E /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = F06BF728C85D411A97EE865E /* NSEntityDescription+MagicalDataImport.h */; settings = {}; };
+		268B8ADCD9AA4F8C95E2E786 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 96426DA430D94068870194F2 /* MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		2A0C0D1E0817470894D9218C /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D03E047BAC474497029979 /* NSManagedObjectContext+MagicalThreading.h */; settings = {}; };
+		2BF33C1BC6FF4754AE6EB732 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 69290CDC440D4856ACA73C20 /* MagicalRecord+iCloud.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		2FD5BE9B864B4653BAC4360D /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D048920583A41759CA3B387 /* NSRelationshipDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		30294CEEC05D4AE098606062 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD6BE056A14A7A8D5B5407 /* MagicalRecord+Setup.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		309C89E10A62441E9E8A9968 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 0473DB1FD03A485AA117485E /* NSManagedObject+MagicalDataImport.h */; settings = {}; };
+		3337B47E844A4DFB94D06414 /* CJSONDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DF118CC3D947A192D3833B /* CJSONDeserializer.h */; settings = {}; };
+		3396E47A91664FA4952F897B /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = 664816DDFEFD4442AC6165B5 /* NSManagedObject+MagicalFinders.h */; settings = {}; };
+		362AD840E58B459F87398C44 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A2815B9B434F08B45817B6 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		36DAE8A1D2394E3CBF7188D2 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAD5A79D75E4FD28A2CFD32 /* NSString+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3C12B34E7FF446BAB565210A /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 088FE46E98CC48049BD09CCE /* NSObject+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3C3611471C8441619BF1B62B /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0160C53B4F4B5382B93165 /* MagicalRecord+Options.h */; settings = {}; };
+		3DB36A15CE88495D9ACB44FA /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 822F514EC1054426A0207C15 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3F52C4C607494483A2277354 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A350108D33A4DAF991A736A /* MagicalRecord+ErrorHandling.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		418D22A59CE543F89B63D91C /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8B85789605430E8394424F /* CDataScanner.h */; settings = {}; };
+		44AEAED89A5D448C8796F10A /* NSDictionary_JSONExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E35DBC5B134E447BA57A9C12 /* NSDictionary_JSONExtensions.h */; settings = {}; };
+		53D9CC851757405BA718CAF4 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = E20D322ED87F4F7CB01EA9D4 /* NSNumber+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		58B44D996C0C4529A4AEA8EB /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034DC501DFE4ACCA17D65C1 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		58BBBA5A1F554564A3293B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E28E583ECD43E38C55145D /* Foundation.framework */; settings = {}; };
+		59A7EFA695FD44E790CCC655 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 45086B91C65F4CBABC70D64C /* MagicalRecord+ErrorHandling.h */; settings = {}; };
+		5D1782FBA5854B4D845688A2 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6E77421675445E87B33546 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5DD5724B44254299AE875FFD /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 47AED02B27724CA2BC04D403 /* AFImageRequestOperation.h */; settings = {}; };
+		62AC892E1BFC4258BEC5B212 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6ED2F5F741DE9DA67F37 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		641EBD477522441698D3A750 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2090BBE2247F3BF0B2647 /* NSManagedObject+MagicalAggregation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		65D3D0914B704BB8B7921537 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2774C81E2947E683221037 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6AEBDA68AB954F15AAFAAFC6 /* CoreData+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = BD756EC23F2D453FA695A8C8 /* CoreData+MagicalRecord.h */; settings = {}; };
+		6BE22109B0A949C6B9909CC7 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E895D6EF66D43BDB7A5E217 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {}; };
+		6D17A4522D0E4CEC81A45D51 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 83255222FB064352BBF731D3 /* AFHTTPClient.h */; settings = {}; };
+		6DF0C5EF5A7248BA878A4EB5 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1425EA362234E6F85907C39 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6F237D9A1E854C2389CFFAD6 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = BA692A47BA65403EA2F17FF6 /* NSManagedObject+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6FA7E971058743788579F2CF /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76F9A01134429AAF4208A6 /* NSManagedObjectContext+MagicalObserving.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6FCC03357B3B442F93932683 /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F6631E651543B7BA3D2D14 /* MagicalRecord.h */; settings = {}; };
+		78A98FFFB1EE409EA64D3C2E /* CJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4C598EB23A40F3925764AE /* CJSONScanner.h */; settings = {}; };
+		7DFE920D307548B2AC995B17 /* JSONRepresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A269787277844C893069E17 /* JSONRepresentation.h */; settings = {}; };
+		81286B93D0804F6EB141E7E1 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CD9B9C034445308262E910 /* NSManagedObject+MagicalRequests.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		82653551EC4F4DBAB88481C2 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 455813F4FC43498CB8A6091F /* NSPersistentStore+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		835C57C235404D3B9742C426 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DDF5797F564D75A5CC2DE6 /* AFNetworkActivityIndicatorManager.h */; settings = {}; };
+		88971986835D4330B7B5E955 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD22EAB61D24EA8AD307F51 /* NSManagedObjectModel+MagicalRecord.h */; settings = {}; };
+		8E0290A29DEC4A31AD8EC83C /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E79FC6CA54A3A82576998 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8E0C270F859845E4ACFA9D89 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C3546E084A524C2E9DD4404F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		91149DA5F83E45988D141CEF /* MagicalRecordShorthand.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5F5E0ACD5147CE9BCD9941 /* MagicalRecordShorthand.h */; settings = {}; };
+		928677462EAF4B33B4CDE553 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1263290F944B3EABD82355 /* AFJSONRequestOperation.h */; settings = {}; };
+		95E0B819D6B049018CF39562 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7433A2EE80124E848F92E892 /* NSManagedObject+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9A32A1F621B64A0AAE6BB759 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B73C8611997640078098F858 /* NSManagedObjectContext+MagicalRecord.h */; settings = {}; };
+		9B61F0404F3C4BEF95394A7A /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A8908B63043F6A7AA5757 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A2C9F75075724F7EA6E07C0D /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A5CF7561C4432FAD7C7ECE /* MagicalRecord+Actions.h */; settings = {}; };
+		A545494BA1444919A77BB513 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AEEB537944FF795351E24 /* NSEntityDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A697D961D84D449BBCC88FC3 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ED4A333B5D41F0B29C6AB4 /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {}; };
+		A6A0B975E4284BB5A5600828 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F0B308826D482889CC0750 /* NSAttributeDescription+MagicalDataImport.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A999F9371362402FB2EAFEEC /* CJSONSerializedData.h in Headers */ = {isa = PBXBuildFile; fileRef = 740900E00CA54079A2953B13 /* CJSONSerializedData.h */; settings = {}; };
+		AF646DD7BA5645DD84909E56 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = ED84B3247A8341A4ACBACD7C /* MagicalRecord+iCloud.h */; settings = {}; };
+		AF96F450E8C444D2BBC2DFFE /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 40B494E64D124A2EA4A2DC2C /* NSObject+MagicalDataImport.h */; settings = {}; };
+		B3C70CF002984E51AE5D4B8A /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9068D7A80FD948DCA03960DA /* NSManagedObject+MagicalAggregation.h */; settings = {}; };
+		B51A6748CE2B4A61B075A601 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FEF5DA911646DDB12F41D8 /* NSManagedObjectContext+MagicalObserving.h */; settings = {}; };
+		B702874DA12540258E084DEA /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB96FEC50CE448EB17E8E7B /* NSManagedObject+MagicalRequests.h */; settings = {}; };
+		B880D61263EA45D092461C35 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C04D1D4565DF4545AD884C73 /* NSManagedObjectContext+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BA26DC98FAD84E5EA667F9C3 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DF496B06B7F141D0999FF3AE /* AFXMLRequestOperation.h */; settings = {}; };
+		BB28EC5986104F3E8CF62FF7 /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = EB458AFF08D942CB8E43FB67 /* CJSONSerializer.h */; settings = {}; };
+		BE6CFFB52E78429EA40C6CBC /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A68240FF7B794ECC8A68F42A /* MagicalRecord+Options.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C3CC3C29728E4DFEB051D139 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CDCD6C03E4005AC0A6E7E /* Pods-dummy.m */; settings = {}; };
+		C482B7FBD72E4445837DB99F /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B58AEFFA87AE4775B92CC370 /* CJSONSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C5B6FB0E3F3143BB9A670C85 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E6F3D00D9846788819D3FF /* AFHTTPRequestOperation.h */; settings = {}; };
+		C6E4D00D7D794519B93ED9E6 /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89AFD5528BE14672A4F9CF0F /* MagicalImportFunctions.h */; settings = {}; };
+		C89575E76EDD471CBA660D3D /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = A618A8F8252F48C79A8ACF52 /* NSManagedObjectContext+MagicalThreading.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C971488D3A2040DB9B73E222 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A1BF7095164C54A7E53607 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CB61D424713A4FCBABEFB837 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE43E5E406F4B06886AAA20 /* NSPersistentStore+MagicalRecord.h */; settings = {}; };
+		D3978625348745E493494D8F /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E91F8889A2645BCBCE00F70 /* MagicalRecord+Setup.h */; settings = {}; };
+		D8067388153345A29FFF176C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEFF7D162194833ADBD0AFC /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D9C61FA788D64A8392FA9AEF /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD95573DAB94C55A96867EF /* UIImageView+AFNetworking.h */; settings = {}; };
+		DB593DE933B34F54839FB4FB /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A23D96D750274162A11E4707 /* NSString+MagicalDataImport.h */; settings = {}; };
+		DD620CD6FB6D46978E962218 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C70CBE7A824C4837A466BC63 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		E344564CBFE24E4A9D3C4C7B /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 609054065FD94F92AADA5A3C /* NSNumber+MagicalDataImport.h */; settings = {}; };
+		E3C53ED2357541AABFE3A23A /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 68ED4FDCD08B43CBA558217E /* NSAttributeDescription+MagicalDataImport.h */; settings = {}; };
+		E3F90E9A98EE41AAB787611A /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2577D490F64C1997A1D7DE /* NSPersistentStoreCoordinator+MagicalRecord.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		ECAAD35870854AF193ACE4E6 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8059C46935498AB1D64E8E /* NSManagedObject+MagicalFinders.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F310C7D4F74E4DFFAF3C5C67 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = 2318F7223DB94BE2915BF5AF /* NSManagedObjectContext+MagicalSaves.h */; settings = {}; };
+		F3954F02557F46B6A9FBF9EF /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F931395D8DC0445BB868766F /* MagicalImportFunctions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F3D122CBC4F04C4BB6BA50ED /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 26DC1D8F08B642009D2A3B5F /* NSManagedObject+MagicalRecord.h */; settings = {}; };
+		F89950544B374EFBB1621330 /* CFilteringJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F1966274367425787C6DFEA /* CFilteringJSONSerializer.h */; settings = {}; };
+		F8A869DEFEFB423EBD72608D /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8B8EE19C8403EBD4EEBEA /* CJSONSerializedData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F957BDEB75B24A0F90A46E74 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C54F5CBD494029A344DF66 /* MagicalRecord+Actions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FADB2372061A4EF4A31C967C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4EA4F42A0745DF99BF30EC /* AFNetworking.h */; settings = {}; };
+		FEF8046513B84341B922B1B3 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A2648AC67D45B7A89CF3FD /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0473DB1FD03A485AA117485E /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		05A2648AC67D45B7A89CF3FD /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = TouchJSON/Source/Extensions/CDataScanner_Extensions.m; sourceTree = SOURCE_ROOT; };
+		05ED4A333B5D41F0B29C6AB4 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+		088FE46E98CC48049BD09CCE /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		09C64B471B5848339BA5159D /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.markdown"; path = "Pods-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		0EC6B2EFD8BE4620A9ACA3E4 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-resources.sh"; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		11A8B8EE19C8403EBD4EEBEA /* CJSONSerializedData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializedData.m; path = TouchJSON/Source/Experimental/CJSONSerializedData.m; sourceTree = SOURCE_ROOT; };
+		11AD9710373E4C279478A135 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		17C93F3BE8F34E90B539E8E1 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-environment.h"; path = "Pods-environment.h"; sourceTree = SOURCE_ROOT; };
+		18D93027A1374CA18261190D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		1A350108D33A4DAF991A736A /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = SOURCE_ROOT; };
+		1A5A8908B63043F6A7AA5757 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.m; sourceTree = SOURCE_ROOT; };
+		1B4C598EB23A40F3925764AE /* CJSONScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = TouchJSON/Source/JSON/CJSONScanner.h; sourceTree = SOURCE_ROOT; };
+		1DC367D37BE0497A9B87E5D9 /* CoreData.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		209176AE7923429EAE82FCDC /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2318F7223DB94BE2915BF5AF /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = SOURCE_ROOT; };
+		26DC1D8F08B642009D2A3B5F /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+		28A2815B9B434F08B45817B6 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		2E8B85789605430E8394424F /* CDataScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = TouchJSON/Source/CDataScanner.h; sourceTree = SOURCE_ROOT; };
+		2E91F8889A2645BCBCE00F70 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = SOURCE_ROOT; };
+		37CD9B9C034445308262E910 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = SOURCE_ROOT; };
+		3A5F5E0ACD5147CE9BCD9941 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordShorthand.h; path = MagicalRecord/MagicalRecord/Core/MagicalRecordShorthand.h; sourceTree = SOURCE_ROOT; };
+		3D40FAFB2DD2456F8AF14300 /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		40B494E64D124A2EA4A2DC2C /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		41F6631E651543B7BA3D2D14 /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord/Core/MagicalRecord.h; sourceTree = SOURCE_ROOT; };
+		42DD6BE056A14A7A8D5B5407 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = SOURCE_ROOT; };
+		45086B91C65F4CBABC70D64C /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = SOURCE_ROOT; };
+		455813F4FC43498CB8A6091F /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = SOURCE_ROOT; };
+		45C54F5CBD494029A344DF66 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = SOURCE_ROOT; };
+		47AED02B27724CA2BC04D403 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		4B1263290F944B3EABD82355 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		4DD95573DAB94C55A96867EF /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
+		4F4EA4F42A0745DF99BF30EC /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		5034DC501DFE4ACCA17D65C1 /* CJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJSONSerializer.m; path = TouchJSON/Source/JSON/CJSONSerializer.m; sourceTree = SOURCE_ROOT; };
+		52C2090BBE2247F3BF0B2647 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = SOURCE_ROOT; };
+		52D03E047BAC474497029979 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = SOURCE_ROOT; };
+		5D048920583A41759CA3B387 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		5FF2E8E6B0724614BF6AC834 /* MagicalRecord+ShorthandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandSupport.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandSupport.m"; sourceTree = SOURCE_ROOT; };
+		609054065FD94F92AADA5A3C /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		6544706D41DF4DE78B999A54 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-prefix.pch"; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		664816DDFEFD4442AC6165B5 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = SOURCE_ROOT; };
+		68ED4FDCD08B43CBA558217E /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		69290CDC440D4856ACA73C20 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = SOURCE_ROOT; };
+		6ED66C1A03454A2090F218D4 /* MagicalRecord+ShorthandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandSupport.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandSupport.h"; sourceTree = SOURCE_ROOT; };
+		6F1966274367425787C6DFEA /* CFilteringJSONSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CFilteringJSONSerializer.h; path = TouchJSON/Source/Experimental/CFilteringJSONSerializer.h; sourceTree = SOURCE_ROOT; };
+		6FEB5A997A6E4D30A43B11AC /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = SOURCE_ROOT; };
+		71DDF5797F564D75A5CC2DE6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
+		740900E00CA54079A2953B13 /* CJSONSerializedData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJSONSerializedData.h; path = TouchJSON/Source/Experimental/CJSONSerializedData.h; sourceTree = SOURCE_ROOT; };
+		7433A2EE80124E848F92E892 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = SOURCE_ROOT; };
+		7A269787277844C893069E17 /* JSONRepresentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONRepresentation.h; path = TouchJSON/Source/JSON/JSONRepresentation.h; sourceTree = SOURCE_ROOT; };
+		7E895D6EF66D43BDB7A5E217 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		822F514EC1054426A0207C15 /* CDataScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = TouchJSON/Source/CDataScanner.m; sourceTree = SOURCE_ROOT; };
+		83255222FB064352BBF731D3 /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		89AFD5528BE14672A4F9CF0F /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = SOURCE_ROOT; };
+		89F0B308826D482889CC0750 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		8A4CDCD6C03E4005AC0A6E7E /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-dummy.m"; path = "Pods-dummy.m"; sourceTree = SOURCE_ROOT; };
+		9068D7A80FD948DCA03960DA /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = SOURCE_ROOT; };
+		95A5CF7561C4432FAD7C7ECE /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = SOURCE_ROOT; };
+		96426DA430D94068870194F2 /* MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecord.m; path = MagicalRecord/MagicalRecord/Core/MagicalRecord.m; sourceTree = SOURCE_ROOT; };
+		9B2774C81E2947E683221037 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
+		9C4AEEB537944FF795351E24 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		9FAD5A79D75E4FD28A2CFD32 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		A04CA2A0182C4970BB3AED76 /* CJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJSONSerialization.h; path = TouchJSON/Source/Experimental/CJSONSerialization.h; sourceTree = SOURCE_ROOT; };
+		A1425EA362234E6F85907C39 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		A23D96D750274162A11E4707 /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		A2B697D0C5DA4445BB706942 /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = SOURCE_ROOT; };
+		A4E28E583ECD43E38C55145D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A618A8F8252F48C79A8ACF52 /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = SOURCE_ROOT; };
+		A68240FF7B794ECC8A68F42A /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = SOURCE_ROOT; };
+		ABCE45586C1F42C2A82472B2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B58AEFFA87AE4775B92CC370 /* CJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJSONSerialization.m; path = TouchJSON/Source/Experimental/CJSONSerialization.m; sourceTree = SOURCE_ROOT; };
+		B6A19DA697D248A7B127DC9D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73C8611997640078098F858 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+		B7FEE678CF104C719C4E36C8 /* CFilteringJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CFilteringJSONSerializer.m; path = TouchJSON/Source/Experimental/CFilteringJSONSerializer.m; sourceTree = SOURCE_ROOT; };
+		BA692A47BA65403EA2F17FF6 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		BA7A9BDAF22544DB9147F1BC /* CJSONScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = TouchJSON/Source/JSON/CJSONScanner.m; sourceTree = SOURCE_ROOT; };
+		BBEFF7D162194833ADBD0AFC /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		BD2577D490F64C1997A1D7DE /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = SOURCE_ROOT; };
+		BD756EC23F2D453FA695A8C8 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CoreData+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/CoreData+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+		C04D1D4565DF4545AD884C73 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = SOURCE_ROOT; };
+		C3546E084A524C2E9DD4404F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		C70CBE7A824C4837A466BC63 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		C9DF118CC3D947A192D3833B /* CJSONDeserializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = TouchJSON/Source/JSON/CJSONDeserializer.h; sourceTree = SOURCE_ROOT; };
+		CE747C62EE5D47638C1C1394 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = TouchJSON/Source/Extensions/CDataScanner_Extensions.h; sourceTree = SOURCE_ROOT; };
+		CFB96FEC50CE448EB17E8E7B /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = SOURCE_ROOT; };
+		D0AEEF9DB3BC4A9E81C6C817 /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DA0160C53B4F4B5382B93165 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = SOURCE_ROOT; };
+		DD2E79FC6CA54A3A82576998 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
+		DF496B06B7F141D0999FF3AE /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		E20D322ED87F4F7CB01EA9D4 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = SOURCE_ROOT; };
+		E2E6F3D00D9846788819D3FF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		E35DBC5B134E447BA57A9C12 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = TouchJSON/Source/Extensions/NSDictionary_JSONExtensions.h; sourceTree = SOURCE_ROOT; };
+		E3A1BF7095164C54A7E53607 /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		E5AB6ED2F5F741DE9DA67F37 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		EB458AFF08D942CB8E43FB67 /* CJSONSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = TouchJSON/Source/JSON/CJSONSerializer.h; sourceTree = SOURCE_ROOT; };
+		ED6E77421675445E87B33546 /* CJSONDeserializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = TouchJSON/Source/JSON/CJSONDeserializer.m; sourceTree = SOURCE_ROOT; };
+		ED84B3247A8341A4ACBACD7C /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = SOURCE_ROOT; };
+		F06BF728C85D411A97EE865E /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = SOURCE_ROOT; };
+		F463EAE104BF417993A046FB /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; name = "Pods-acknowledgements.plist"; path = "Pods-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		F5FEF5DA911646DDB12F41D8 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = SOURCE_ROOT; };
+		F931395D8DC0445BB868766F /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = SOURCE_ROOT; };
+		F964A412A0EC4C6DBEDFD6F3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		FBE43E5E406F4B06886AAA20 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+		FD76F9A01134429AAF4208A6 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = SOURCE_ROOT; };
+		FE8059C46935498AB1D64E8E /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = SOURCE_ROOT; };
+		FFD22EAB61D24EA8AD307F51 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCB9EC89165D48289733DA20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BBBA5A1F554564A3293B58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		441F5AC7CFDE4DC3B5DB56DC /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				89AFD5528BE14672A4F9CF0F /* MagicalImportFunctions.h */,
+				F931395D8DC0445BB868766F /* MagicalImportFunctions.m */,
+				68ED4FDCD08B43CBA558217E /* NSAttributeDescription+MagicalDataImport.h */,
+				89F0B308826D482889CC0750 /* NSAttributeDescription+MagicalDataImport.m */,
+				F06BF728C85D411A97EE865E /* NSEntityDescription+MagicalDataImport.h */,
+				9C4AEEB537944FF795351E24 /* NSEntityDescription+MagicalDataImport.m */,
+				609054065FD94F92AADA5A3C /* NSNumber+MagicalDataImport.h */,
+				E20D322ED87F4F7CB01EA9D4 /* NSNumber+MagicalDataImport.m */,
+				40B494E64D124A2EA4A2DC2C /* NSObject+MagicalDataImport.h */,
+				088FE46E98CC48049BD09CCE /* NSObject+MagicalDataImport.m */,
+				7E895D6EF66D43BDB7A5E217 /* NSRelationshipDescription+MagicalDataImport.h */,
+				5D048920583A41759CA3B387 /* NSRelationshipDescription+MagicalDataImport.m */,
+				A23D96D750274162A11E4707 /* NSString+MagicalDataImport.h */,
+				9FAD5A79D75E4FD28A2CFD32 /* NSString+MagicalDataImport.m */,
+				9068D7A80FD948DCA03960DA /* NSManagedObject+MagicalAggregation.h */,
+				52C2090BBE2247F3BF0B2647 /* NSManagedObject+MagicalAggregation.m */,
+				0473DB1FD03A485AA117485E /* NSManagedObject+MagicalDataImport.h */,
+				BA692A47BA65403EA2F17FF6 /* NSManagedObject+MagicalDataImport.m */,
+				664816DDFEFD4442AC6165B5 /* NSManagedObject+MagicalFinders.h */,
+				FE8059C46935498AB1D64E8E /* NSManagedObject+MagicalFinders.m */,
+				26DC1D8F08B642009D2A3B5F /* NSManagedObject+MagicalRecord.h */,
+				7433A2EE80124E848F92E892 /* NSManagedObject+MagicalRecord.m */,
+				CFB96FEC50CE448EB17E8E7B /* NSManagedObject+MagicalRequests.h */,
+				37CD9B9C034445308262E910 /* NSManagedObject+MagicalRequests.m */,
+				F5FEF5DA911646DDB12F41D8 /* NSManagedObjectContext+MagicalObserving.h */,
+				FD76F9A01134429AAF4208A6 /* NSManagedObjectContext+MagicalObserving.m */,
+				B73C8611997640078098F858 /* NSManagedObjectContext+MagicalRecord.h */,
+				C04D1D4565DF4545AD884C73 /* NSManagedObjectContext+MagicalRecord.m */,
+				2318F7223DB94BE2915BF5AF /* NSManagedObjectContext+MagicalSaves.h */,
+				A2B697D0C5DA4445BB706942 /* NSManagedObjectContext+MagicalSaves.m */,
+				52D03E047BAC474497029979 /* NSManagedObjectContext+MagicalThreading.h */,
+				A618A8F8252F48C79A8ACF52 /* NSManagedObjectContext+MagicalThreading.m */,
+				FFD22EAB61D24EA8AD307F51 /* NSManagedObjectModel+MagicalRecord.h */,
+				6FEB5A997A6E4D30A43B11AC /* NSManagedObjectModel+MagicalRecord.m */,
+				FBE43E5E406F4B06886AAA20 /* NSPersistentStore+MagicalRecord.h */,
+				455813F4FC43498CB8A6091F /* NSPersistentStore+MagicalRecord.m */,
+				05ED4A333B5D41F0B29C6AB4 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				BD2577D490F64C1997A1D7DE /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+				95A5CF7561C4432FAD7C7ECE /* MagicalRecord+Actions.h */,
+				45C54F5CBD494029A344DF66 /* MagicalRecord+Actions.m */,
+				45086B91C65F4CBABC70D64C /* MagicalRecord+ErrorHandling.h */,
+				1A350108D33A4DAF991A736A /* MagicalRecord+ErrorHandling.m */,
+				ED84B3247A8341A4ACBACD7C /* MagicalRecord+iCloud.h */,
+				69290CDC440D4856ACA73C20 /* MagicalRecord+iCloud.m */,
+				DA0160C53B4F4B5382B93165 /* MagicalRecord+Options.h */,
+				A68240FF7B794ECC8A68F42A /* MagicalRecord+Options.m */,
+				2E91F8889A2645BCBCE00F70 /* MagicalRecord+Setup.h */,
+				42DD6BE056A14A7A8D5B5407 /* MagicalRecord+Setup.m */,
+				6ED66C1A03454A2090F218D4 /* MagicalRecord+ShorthandSupport.h */,
+				5FF2E8E6B0724614BF6AC834 /* MagicalRecord+ShorthandSupport.m */,
+				41F6631E651543B7BA3D2D14 /* MagicalRecord.h */,
+				96426DA430D94068870194F2 /* MagicalRecord.m */,
+				3A5F5E0ACD5147CE9BCD9941 /* MagicalRecordShorthand.h */,
+				BD756EC23F2D453FA695A8C8 /* CoreData+MagicalRecord.h */,
+			);
+			name = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		57D13E650D2F44B088FD3940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DC367D37BE0497A9B87E5D9 /* CoreData.framework */,
+				A4E28E583ECD43E38C55145D /* Foundation.framework */,
+				F964A412A0EC4C6DBEDFD6F3 /* MobileCoreServices.framework */,
+				D0AEEF9DB3BC4A9E81C6C817 /* Security.framework */,
+				3D40FAFB2DD2456F8AF14300 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E947A8EA213448C88321BC0 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				2E8B85789605430E8394424F /* CDataScanner.h */,
+				822F514EC1054426A0207C15 /* CDataScanner.m */,
+				6F1966274367425787C6DFEA /* CFilteringJSONSerializer.h */,
+				B7FEE678CF104C719C4E36C8 /* CFilteringJSONSerializer.m */,
+				A04CA2A0182C4970BB3AED76 /* CJSONSerialization.h */,
+				B58AEFFA87AE4775B92CC370 /* CJSONSerialization.m */,
+				740900E00CA54079A2953B13 /* CJSONSerializedData.h */,
+				11A8B8EE19C8403EBD4EEBEA /* CJSONSerializedData.m */,
+				CE747C62EE5D47638C1C1394 /* CDataScanner_Extensions.h */,
+				05A2648AC67D45B7A89CF3FD /* CDataScanner_Extensions.m */,
+				E35DBC5B134E447BA57A9C12 /* NSDictionary_JSONExtensions.h */,
+				1A5A8908B63043F6A7AA5757 /* NSDictionary_JSONExtensions.m */,
+				C9DF118CC3D947A192D3833B /* CJSONDeserializer.h */,
+				ED6E77421675445E87B33546 /* CJSONDeserializer.m */,
+				1B4C598EB23A40F3925764AE /* CJSONScanner.h */,
+				BA7A9BDAF22544DB9147F1BC /* CJSONScanner.m */,
+				EB458AFF08D942CB8E43FB67 /* CJSONSerializer.h */,
+				5034DC501DFE4ACCA17D65C1 /* CJSONSerializer.m */,
+				7A269787277844C893069E17 /* JSONRepresentation.h */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+		939137826DE342CBB7FC5927 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDED5328E42145098370E1F0 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B99E53D83F34F64B0488ACD = {
+			isa = PBXGroup;
+			children = (
+				57D13E650D2F44B088FD3940 /* Frameworks */,
+				BD52D0A8A13A4AF79A9E0E48 /* Pods */,
+				F02273FBE557415C97FE974A /* Products */,
+				939137826DE342CBB7FC5927 /* Targets Support Files */,
+				209176AE7923429EAE82FCDC /* Podfile */,
+			);
+			sourceTree = "<group>";
+		};
+		BD52D0A8A13A4AF79A9E0E48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6B4BEC7E55345CABA34D583 /* AFNetworking */,
+				441F5AC7CFDE4DC3B5DB56DC /* MagicalRecord */,
+				6E947A8EA213448C88321BC0 /* TouchJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6B4BEC7E55345CABA34D583 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				83255222FB064352BBF731D3 /* AFHTTPClient.h */,
+				E3A1BF7095164C54A7E53607 /* AFHTTPClient.m */,
+				E2E6F3D00D9846788819D3FF /* AFHTTPRequestOperation.h */,
+				C3546E084A524C2E9DD4404F /* AFHTTPRequestOperation.m */,
+				47AED02B27724CA2BC04D403 /* AFImageRequestOperation.h */,
+				E5AB6ED2F5F741DE9DA67F37 /* AFImageRequestOperation.m */,
+				4B1263290F944B3EABD82355 /* AFJSONRequestOperation.h */,
+				C70CBE7A824C4837A466BC63 /* AFJSONRequestOperation.m */,
+				71DDF5797F564D75A5CC2DE6 /* AFNetworkActivityIndicatorManager.h */,
+				9B2774C81E2947E683221037 /* AFNetworkActivityIndicatorManager.m */,
+				4F4EA4F42A0745DF99BF30EC /* AFNetworking.h */,
+				11AD9710373E4C279478A135 /* AFPropertyListRequestOperation.h */,
+				28A2815B9B434F08B45817B6 /* AFPropertyListRequestOperation.m */,
+				18D93027A1374CA18261190D /* AFURLConnectionOperation.h */,
+				BBEFF7D162194833ADBD0AFC /* AFURLConnectionOperation.m */,
+				DF496B06B7F141D0999FF3AE /* AFXMLRequestOperation.h */,
+				A1425EA362234E6F85907C39 /* AFXMLRequestOperation.m */,
+				4DD95573DAB94C55A96867EF /* UIImageView+AFNetworking.h */,
+				DD2E79FC6CA54A3A82576998 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		EDED5328E42145098370E1F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABCE45586C1F42C2A82472B2 /* Pods.xcconfig */,
+				17C93F3BE8F34E90B539E8E1 /* Pods-environment.h */,
+				6544706D41DF4DE78B999A54 /* Pods-prefix.pch */,
+				0EC6B2EFD8BE4620A9ACA3E4 /* Pods-resources.sh */,
+				F463EAE104BF417993A046FB /* Pods-acknowledgements.plist */,
+				09C64B471B5848339BA5159D /* Pods-acknowledgements.markdown */,
+				8A4CDCD6C03E4005AC0A6E7E /* Pods-dummy.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F02273FBE557415C97FE974A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6A19DA697D248A7B127DC9D /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		86CC5BFF74C54CA8AC1717A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D17A4522D0E4CEC81A45D51 /* AFHTTPClient.h in Headers */,
+				C5B6FB0E3F3143BB9A670C85 /* AFHTTPRequestOperation.h in Headers */,
+				5DD5724B44254299AE875FFD /* AFImageRequestOperation.h in Headers */,
+				928677462EAF4B33B4CDE553 /* AFJSONRequestOperation.h in Headers */,
+				835C57C235404D3B9742C426 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				FADB2372061A4EF4A31C967C /* AFNetworking.h in Headers */,
+				20834E5932A9473A8A00250F /* AFPropertyListRequestOperation.h in Headers */,
+				0F6EEB283962448CB50C4C7A /* AFURLConnectionOperation.h in Headers */,
+				BA26DC98FAD84E5EA667F9C3 /* AFXMLRequestOperation.h in Headers */,
+				D9C61FA788D64A8392FA9AEF /* UIImageView+AFNetworking.h in Headers */,
+				C6E4D00D7D794519B93ED9E6 /* MagicalImportFunctions.h in Headers */,
+				E3C53ED2357541AABFE3A23A /* NSAttributeDescription+MagicalDataImport.h in Headers */,
+				23A6CC2C18AC4A6DA0D1797E /* NSEntityDescription+MagicalDataImport.h in Headers */,
+				E344564CBFE24E4A9D3C4C7B /* NSNumber+MagicalDataImport.h in Headers */,
+				AF96F450E8C444D2BBC2DFFE /* NSObject+MagicalDataImport.h in Headers */,
+				6BE22109B0A949C6B9909CC7 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
+				DB593DE933B34F54839FB4FB /* NSString+MagicalDataImport.h in Headers */,
+				B3C70CF002984E51AE5D4B8A /* NSManagedObject+MagicalAggregation.h in Headers */,
+				309C89E10A62441E9E8A9968 /* NSManagedObject+MagicalDataImport.h in Headers */,
+				3396E47A91664FA4952F897B /* NSManagedObject+MagicalFinders.h in Headers */,
+				F3D122CBC4F04C4BB6BA50ED /* NSManagedObject+MagicalRecord.h in Headers */,
+				B702874DA12540258E084DEA /* NSManagedObject+MagicalRequests.h in Headers */,
+				B51A6748CE2B4A61B075A601 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
+				9A32A1F621B64A0AAE6BB759 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
+				F310C7D4F74E4DFFAF3C5C67 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
+				2A0C0D1E0817470894D9218C /* NSManagedObjectContext+MagicalThreading.h in Headers */,
+				88971986835D4330B7B5E955 /* NSManagedObjectModel+MagicalRecord.h in Headers */,
+				CB61D424713A4FCBABEFB837 /* NSPersistentStore+MagicalRecord.h in Headers */,
+				A697D961D84D449BBCC88FC3 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
+				A2C9F75075724F7EA6E07C0D /* MagicalRecord+Actions.h in Headers */,
+				59A7EFA695FD44E790CCC655 /* MagicalRecord+ErrorHandling.h in Headers */,
+				AF646DD7BA5645DD84909E56 /* MagicalRecord+iCloud.h in Headers */,
+				3C3611471C8441619BF1B62B /* MagicalRecord+Options.h in Headers */,
+				D3978625348745E493494D8F /* MagicalRecord+Setup.h in Headers */,
+				052B2908665F474E9F889713 /* MagicalRecord+ShorthandSupport.h in Headers */,
+				6FCC03357B3B442F93932683 /* MagicalRecord.h in Headers */,
+				91149DA5F83E45988D141CEF /* MagicalRecordShorthand.h in Headers */,
+				6AEBDA68AB954F15AAFAAFC6 /* CoreData+MagicalRecord.h in Headers */,
+				418D22A59CE543F89B63D91C /* CDataScanner.h in Headers */,
+				F89950544B374EFBB1621330 /* CFilteringJSONSerializer.h in Headers */,
+				16EFEA28BCA546A6A80976A7 /* CJSONSerialization.h in Headers */,
+				A999F9371362402FB2EAFEEC /* CJSONSerializedData.h in Headers */,
+				1D7143AEED7642D7862A1F44 /* CDataScanner_Extensions.h in Headers */,
+				44AEAED89A5D448C8796F10A /* NSDictionary_JSONExtensions.h in Headers */,
+				3337B47E844A4DFB94D06414 /* CJSONDeserializer.h in Headers */,
+				78A98FFFB1EE409EA64D3C2E /* CJSONScanner.h in Headers */,
+				BB28EC5986104F3E8CF62FF7 /* CJSONSerializer.h in Headers */,
+				7DFE920D307548B2AC995B17 /* JSONRepresentation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CCF07EDB0AEC41D499C7E987 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA13FCDE3F249418AA156B6 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				EC688B9D4FF14394B28A879B /* Sources */,
+				FCB9EC89165D48289733DA20 /* Frameworks */,
+				86CC5BFF74C54CA8AC1717A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = B6A19DA697D248A7B127DC9D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25BE02AD7D634743BFBCC11C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = C2F725EB8DDA44F483272F04 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9B99E53D83F34F64B0488ACD;
+			productRefGroup = F02273FBE557415C97FE974A /* Products */;
+			projectReferences = (
+			);
+			targets = (
+				CCF07EDB0AEC41D499C7E987 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC688B9D4FF14394B28A879B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C971488D3A2040DB9B73E222 /* AFHTTPClient.m in Sources */,
+				8E0C270F859845E4ACFA9D89 /* AFHTTPRequestOperation.m in Sources */,
+				62AC892E1BFC4258BEC5B212 /* AFImageRequestOperation.m in Sources */,
+				DD620CD6FB6D46978E962218 /* AFJSONRequestOperation.m in Sources */,
+				65D3D0914B704BB8B7921537 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				362AD840E58B459F87398C44 /* AFPropertyListRequestOperation.m in Sources */,
+				D8067388153345A29FFF176C /* AFURLConnectionOperation.m in Sources */,
+				6DF0C5EF5A7248BA878A4EB5 /* AFXMLRequestOperation.m in Sources */,
+				8E0290A29DEC4A31AD8EC83C /* UIImageView+AFNetworking.m in Sources */,
+				F3954F02557F46B6A9FBF9EF /* MagicalImportFunctions.m in Sources */,
+				A6A0B975E4284BB5A5600828 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				A545494BA1444919A77BB513 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				53D9CC851757405BA718CAF4 /* NSNumber+MagicalDataImport.m in Sources */,
+				3C12B34E7FF446BAB565210A /* NSObject+MagicalDataImport.m in Sources */,
+				2FD5BE9B864B4653BAC4360D /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				36DAE8A1D2394E3CBF7188D2 /* NSString+MagicalDataImport.m in Sources */,
+				641EBD477522441698D3A750 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				6F237D9A1E854C2389CFFAD6 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				ECAAD35870854AF193ACE4E6 /* NSManagedObject+MagicalFinders.m in Sources */,
+				95E0B819D6B049018CF39562 /* NSManagedObject+MagicalRecord.m in Sources */,
+				81286B93D0804F6EB141E7E1 /* NSManagedObject+MagicalRequests.m in Sources */,
+				6FA7E971058743788579F2CF /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				B880D61263EA45D092461C35 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				02A28A4D7FC84065BC23A248 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				C89575E76EDD471CBA660D3D /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				0196B174E5744FCA945BF03E /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				82653551EC4F4DBAB88481C2 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				E3F90E9A98EE41AAB787611A /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				F957BDEB75B24A0F90A46E74 /* MagicalRecord+Actions.m in Sources */,
+				3F52C4C607494483A2277354 /* MagicalRecord+ErrorHandling.m in Sources */,
+				2BF33C1BC6FF4754AE6EB732 /* MagicalRecord+iCloud.m in Sources */,
+				BE6CFFB52E78429EA40C6CBC /* MagicalRecord+Options.m in Sources */,
+				30294CEEC05D4AE098606062 /* MagicalRecord+Setup.m in Sources */,
+				0DBB1DD86FDE4281B9A7CCDB /* MagicalRecord+ShorthandSupport.m in Sources */,
+				268B8ADCD9AA4F8C95E2E786 /* MagicalRecord.m in Sources */,
+				3DB36A15CE88495D9ACB44FA /* CDataScanner.m in Sources */,
+				0E387432A3C44A3AA946D622 /* CFilteringJSONSerializer.m in Sources */,
+				C482B7FBD72E4445837DB99F /* CJSONSerialization.m in Sources */,
+				F8A869DEFEFB423EBD72608D /* CJSONSerializedData.m in Sources */,
+				FEF8046513B84341B922B1B3 /* CDataScanner_Extensions.m in Sources */,
+				9B61F0404F3C4BEF95394A7A /* NSDictionary_JSONExtensions.m in Sources */,
+				5D1782FBA5854B4D845688A2 /* CJSONDeserializer.m in Sources */,
+				0C7C32F0CA1E481F84F2132D /* CJSONScanner.m in Sources */,
+				58B44D996C0C4529A4AEA8EB /* CJSONSerializer.m in Sources */,
+				C3CC3C29728E4DFEB051D139 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59C1764ABE8D4731BE313139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABCE45586C1F42C2A82472B2 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7A0533A6976740AB9043CEC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		9501C6B4FA2B41589BC15ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		E9897DE07D7A4C3A867ED1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABCE45586C1F42C2A82472B2 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2F725EB8DDA44F483272F04 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9501C6B4FA2B41589BC15ED2 /* Release */,
+				7A0533A6976740AB9043CEC0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA13FCDE3F249418AA156B6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9897DE07D7A4C3A867ED1D3 /* Release */,
+				59C1764ABE8D4731BE313139 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25BE02AD7D634743BFBCC11C /* Project object */;
+}
