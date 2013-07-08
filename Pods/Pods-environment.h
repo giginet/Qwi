@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking 2
 #define COCOAPODS_VERSION_PATCH_AFNetworking 1
 
+// MagicalRecord
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord 1
+#define COCOAPODS_VERSION_PATCH_MagicalRecord 0
+
 // TouchJSON
 #define COCOAPODS_POD_AVAILABLE_TouchJSON
 #define COCOAPODS_VERSION_MAJOR_TouchJSON 1
