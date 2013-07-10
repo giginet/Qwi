@@ -60,7 +60,6 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                           URL:[self buildURL:kUserShowAPI]
                                                    parameters:@{@"screen_name" : screenName}];
     showRequest.account = account;
-
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[showRequest preparedURLRequest]
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                 if ([account.username isEqual:screenName]) {

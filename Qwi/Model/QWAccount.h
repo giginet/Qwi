@@ -9,9 +9,12 @@
 #import "QWUser.h"
 #import <Accounts/Accounts.h>
 
-@interface QWAccount : QWUser {
+@interface QWAccount : NSObject {
 }
 
-@property(readwrite) ACAccount* account;
+@property (readwrite) ACAccount* account;
+@property (readwrite) QWUser *user;
+
+- (id)initWithUser:(QWUser *)user account:(ACAccount *)account;
 
 @end

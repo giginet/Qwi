@@ -45,7 +45,7 @@
                 QWUser *cache = [manager selectUserByName:acAccount.username];
                 if (cache == NULL) {
                     [manager createUserWithScreenName:acAccount.username via:acAccount succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
-                        QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
+                        QWAccount *account = [[QWAccount alloc] initWithUser:user account:acAccount];
                         [_accounts addObject:account];
                         NSError *saveErr;
                         NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];

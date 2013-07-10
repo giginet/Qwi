@@ -10,4 +10,13 @@
 
 @implementation QWAccount
 
+- (id)initWithUser:(QWUser *)user account:(ACAccount *)account {
+    self = [super init];
+    if (self) {
+        self.user = user;
+        self.account = account;
+    }
+    return self;
+}
+
 @end
