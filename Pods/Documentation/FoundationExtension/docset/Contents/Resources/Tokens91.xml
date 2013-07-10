@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIApplication+Private.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(Private)</TokenIdentifier>
+			<Abstract type="html">@brief Safe private methods of [UIApplication][0]
+[0]: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>
+			
+			<NodeRef refid="91"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Private)/statusBarFrameForOrientation:</TokenIdentifier>
+			<Abstract type="html">@brief statusbar size calculated for given orientation.</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			
+			<Declaration>- (CGRect)statusBarFrameForOrientation:(UIInterfaceOrientation)orientation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>orientation</Name>
+					<Abstract type="html">The orientation to calculate status bar frame.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/statusBarFrameForOrientation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -2,8 +2,8 @@ ALWAYS_SEARCH_USER_PATHS = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/TestFlightSDK"
-OTHER_LDFLAGS = -ObjC -lTestFlight -lz -framework CoreData -framework Foundation -framework MobileCoreServices -framework Security -framework SystemConfiguration -framework UIKit
-PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/MagicalRecord" "${PODS_ROOT}/BuildHeaders/TestFlightSDK" "${PODS_ROOT}/BuildHeaders/TouchJSON"
+OTHER_LDFLAGS = -ObjC -lTestFlight -lz -framework CoreData -framework Foundation -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/FoundationExtension" "${PODS_ROOT}/BuildHeaders/FoundationExtension/UIKitExtension" "${PODS_ROOT}/BuildHeaders/KLSwitch" "${PODS_ROOT}/BuildHeaders/MagicalRecord" "${PODS_ROOT}/BuildHeaders/TestFlightSDK" "${PODS_ROOT}/BuildHeaders/TouchJSON" "${PODS_ROOT}/BuildHeaders/UI7Kit" "${PODS_ROOT}/BuildHeaders/UI7Kit/UI7Kit" "${PODS_ROOT}/BuildHeaders/cdebug"
 PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
-PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/TestFlightSDK" "${PODS_ROOT}/Headers/TouchJSON"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/FoundationExtension" "${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension" "${PODS_ROOT}/Headers/KLSwitch" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/TestFlightSDK" "${PODS_ROOT}/Headers/TouchJSON" "${PODS_ROOT}/Headers/UI7Kit" "${PODS_ROOT}/Headers/UI7Kit/UI7Kit" "${PODS_ROOT}/Headers/cdebug"
 PODS_ROOT = ${SRCROOT}/Pods

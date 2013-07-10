@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIAPreparedCellTableView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAPreparedCellTableView</TokenIdentifier>
+			<Abstract type="html">@brief A table view using rrepared cells instead of data source.
+@details Cells are prepared cells for self-implemented data source protocol.
+Cells can be grouped by section or not.
+It is decided by hasUniqueSection.
+The table view does not reuse any cells by reuse identifier.</Abstract>
+			<DeclaredIn>UIAPreparedCellTableView.h</DeclaredIn>
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPreparedCellTableView/setHasUniqueSection:</TokenIdentifier>
+			<Abstract type="html">@brief The flag tells cells are sectioned or not.
+@details YES if Cells are not sectioned; otherwise NO;</Abstract>
+			<DeclaredIn>UIAPreparedCellTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=hasUniqueSection) BOOL hasUniqueSection</Declaration>
+			
+			
+			<Anchor>//api/name/hasUniqueSection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPreparedCellTableView/hasUniqueSection</TokenIdentifier>
+			<Abstract type="html">@brief The flag tells cells are sectioned or not.
+@details YES if Cells are not sectioned; otherwise NO;</Abstract>
+			<DeclaredIn>UIAPreparedCellTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=hasUniqueSection) BOOL hasUniqueSection</Declaration>
+			
+			
+			<Anchor>//api/name/hasUniqueSection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPreparedCellTableView/setCells:</TokenIdentifier>
+			<Abstract type="html">@brief The array of cells or array of arrays of cells to be used.
+@details Array of cells if hasUniqueSection is YES; otherwise Array of arrays of cells.</Abstract>
+			<DeclaredIn>UIAPreparedCellTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *cells</Declaration>
+			
+			
+			<Anchor>//api/name/cells</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPreparedCellTableView/cells</TokenIdentifier>
+			<Abstract type="html">@brief The array of cells or array of arrays of cells to be used.
+@details Array of cells if hasUniqueSection is YES; otherwise Array of arrays of cells.</Abstract>
+			<DeclaredIn>UIAPreparedCellTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *cells</Declaration>
+			
+			
+			<Anchor>//api/name/cells</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -7,6 +7,8 @@
 //
 
 #import "QWAccountManagerViewController.h"
+
+#import "UI7Kit.h"
 #import "QWAccountManager.h"
 #import "QWUserManager.h"
 
@@ -25,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UI7ViewController patchIfNeeded];
+    [UI7TableView patchIfNeeded];
+    [UI7NavigationBar patchIfNeeded];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

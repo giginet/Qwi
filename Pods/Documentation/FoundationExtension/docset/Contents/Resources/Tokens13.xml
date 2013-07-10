@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAOrderedDictionary.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAOrderedDictionary</TokenIdentifier>
+			<Abstract type="html">@brief Immutable ordered dictionary.</Abstract>
+			<DeclaredIn>NSAOrderedDictionary.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOrderedDictionary/keyAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (id)keyAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/keyAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOrderedDictionary/objectAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectAtIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/objectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOrderedDictionary/indexOfKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)indexOfKey:(id)key</Declaration>
+			
+			
+			<Anchor>//api/name/indexOfKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOrderedDictionary/reversedKeyEnumerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOrderedDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (NSEnumerator *)reversedKeyEnumerator</Declaration>
+			
+			
+			<Anchor>//api/name/reversedKeyEnumerator</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

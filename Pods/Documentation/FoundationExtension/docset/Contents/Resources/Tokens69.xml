@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+ObjCRuntimeClass.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+			<Abstract type="html">@brief Class extensions.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/name</TokenIdentifier>
+			<Abstract type="html">@brief Returns name of class.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/className</TokenIdentifier>
+			<Abstract type="html">@brief Returns name of class.
+@deprecated Renamed to name</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)className</Declaration>
+			
+			
+			<Anchor>//api/name/className</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodValueForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (Method)methodValueForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodValueForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSAMethod *)methodForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/classMethodValueForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (Method)classMethodValueForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/classMethodValueForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/classMethodForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (NSAMethod *)classMethodForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/classMethodForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/methodImplementationForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns IMP from given method</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (IMP)methodImplementationForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodImplementationForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addMethodForSelector:fromMethod:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new method to a class with a given name and template method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addMethodForSelector:(SEL)selector fromMethod:(NSAMethod *)method</Declaration>
+			
+			
+			<Anchor>//api/name/addMethodForSelector:fromMethod:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntimeClass)/addMethodForSelector:implementation:types:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new method to a class with a given name and implementation.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addMethodForSelector:(SEL)selector implementation:(IMP)implementation types:(NSString *)implementationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/addMethodForSelector:implementation:types:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

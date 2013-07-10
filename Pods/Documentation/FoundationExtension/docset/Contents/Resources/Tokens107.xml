@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIWebView+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIWebView(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief UIWebView extension</Abstract>
+			<DeclaredIn>UIWebView.h</DeclaredIn>
+			
+			<NodeRef refid="107"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(Shortcuts)/loadRequestForURL:</TokenIdentifier>
+			<Abstract type="html">@brief Creates URLRequest from given URL and call loadRequest:</Abstract>
+			<DeclaredIn>UIWebView.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRequestForURL:(NSURL *)URL</Declaration>
+			
+			
+			<Anchor>//api/name/loadRequestForURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIWebView(Shortcuts)/loadRequestForFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIWebView.h</DeclaredIn>			
+			
+			<Declaration>- (void)loadRequestForFilePath:(NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/loadRequestForFilePath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

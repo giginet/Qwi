@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7TextField.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7TextField</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7TextField.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

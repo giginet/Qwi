@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSATuple.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSATuple</TokenIdentifier>
+			<Abstract type="html">@brief Manages ordered collections of 2 objects.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATuple/setFirst:</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSATuple/first</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATuple/setSecond:</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSATuple/second</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSATuple/tuple</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an empty tuple.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)tuple</Declaration>
+			
+			<ReturnValue><Abstract type="html">An empty tuple.</Abstract></ReturnValue>
+			<Anchor>//api/name/tuple</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATuple/initWithFirst:second:</TokenIdentifier>
+			<Abstract type="html">@brief Initilize a tuple containing first as first object and second as second object.
+@param first
+Value for first
+@param second
+Value for second</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFirst:(id)first second:(id)second</Declaration>
+			
+			<ReturnValue><Abstract type="html">A tuple with first and second value.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFirst:second:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSATuple/tupleWithFirst:second:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns a tuple containing first as first object and second as second object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSATuple/initWithFirst:second:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)tupleWithFirst:(id)first second:(id)second</Declaration>
+			
+			
+			<Anchor>//api/name/tupleWithFirst:second:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

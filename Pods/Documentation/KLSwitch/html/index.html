@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>KLSwitch 1.5 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">KLSwitch 1.5 </a></h1>
+				<a id="developerHome" href="index.html">Kieran Lafferty</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">KLSwitch 1.5 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">KLSwitch 1.5 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1><a href="Classes/KLSwitch.html">KLSwitch</a></h1>
+
+<p>An iOS 7 UISwitch clone that works on iOS 5+</p>
+
+<p><a href="https://www.cocoacontrols.com/controls/klswitch">https://www.cocoacontrols.com/controls/klswitch</a></p>
+
+<p><img src="[https://raw.github.com/KieranLafferty/KLSwitch/master/Screenshot.png](https://raw.github.com/KieranLafferty/KLSwitch/master/Screenshot.png)" width="50%"/></p>
+
+<p>Requires ARC</p>
+
+<!-- MacBuildServer Install Button -->
+
+
+<div class="macbuildserver-block">
+    <a class="macbuildserver-button" href="[http://macbuildserver.com/project/github/build/?xcode](http://macbuildserver.com/project/github/build/?xcode)_project=KLSwitchDemo.xcodeproj&amp;target=KLSwitchDemo&amp;repo_url=https%3A%2F%2Fgithub.com%2FKieranLafferty%2F[KLSwitch](Classes/KLSwitch.html).git&amp;build_conf=Release" target="_blank"><img src="[http://com.macbuildserver.github.s3-website-us-east-1.amazonaws.com/button](http://com.macbuildserver.github.s3-website-us-east-1.amazonaws.com/button)_up.png"/></a><br/><sup><a href="[http://macbuildserver.com/github/opensource/](http://macbuildserver.com/github/opensource/)" target="_blank">by MacBuildServer</a></sup>
+</div>
+
+
+<!-- MacBuildServer Install Button -->
+
+
+<h2>Goal</h2>
+
+<ol>
+<li>Create the iOS 7 UISwitch to be compatible with iOS 5+</li>
+<li>Create a drop in replacement for UISwitch</li>
+</ol>
+
+
+<h2>Installation</h2>
+
+<pre><code>1. Drag the KLSwitch.xcodeproj to your existing project
+2. Under Build Phases on your project's Xcode Project file add 'KLSwitch(KLSwitch)' to your Target Dependancies
+3. Under Build on your Xcode Project file add 'libKLSwitch' &amp; QuartzCore.framework under Link Binary With Libraries
+4. Include #import &lt;KLSwitch/KLSwitch.h&gt; in any file you wish to use
+</code></pre>
+
+<p>Via CocoaPods
+Add the following line to your podfile</p>
+
+<pre><code>pod 'KLSwitch'
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Interface is exactly the same as for the regular UISwitch you know and love (<a href="http://developer.apple.com/library/ios/">http://developer.apple.com/library/ios/</a>#documentation/uikit/reference/UISwitch_Class/Reference/Reference.html)</p>
+
+<p>Added an event handler block to recieve state changes when the switch is toggled on/off which can be set as follows:</p>
+
+<pre><code>mySwitch.didChangeHandler = ^(BOOL isOn) {
+    //Do something useful with it here
+}
+</code></pre>
+
+<p>Or it can be set using the custom initializer</p>
+
+<pre><code>- (id)initWithFrame:(CGRect)frame
+   didChangeHandler:(changeHandler) didChangeHandler;
+</code></pre>
+
+<p>See Demo project for sample usage using Interface Builder</p>
+
+<h2>Config</h2>
+
+<p>The visual appearance can be tweaked by changing the constants in <code>KLNoteViewController.m</code>:</p>
+
+<pre><code>//Appearance Defaults - Colors
+//Track Colors
+#define kDefaultTrackOnColor     [UIColor colorWithRed:83/255.0 green: 214/255.0 blue: 105/255.0 alpha: 1]
+#define kDefaultTrackOffColor    [UIColor colorWithWhite: 0.9 alpha:1.0]
+#define kDefaultTrackContrastColor [UIColor whiteColor]
+
+//Thumb Colors
+#define kDefaultThumbTintColor [UIColor whiteColor]
+#define kDefaultThumbBorderColor [UIColor colorWithWhite: 0.9 alpha:1.0]
+
+//Appearance - Layout
+
+//Size of knob with respect to the control - Must be a multiple of 2
+#define kKnobOffset 2.0
+#define kKnobTrackingGrowthRatio 1.2                //Amount to grow the thumb on press down
+
+#define kDefaultPanActivationThreshold 0.7                    //Number between 0.0 - 1.0 describing how far user must drag before initiating the switch
+
+//Appearance - Animations
+#define kDefaultAnimationScaleLength 0.10           //Length of time for the thumb to grow on press down
+#define kDefaultAnimationSlideLength 0.25           //Length of time to slide the thumb from left/right to right/left
+
+#define kSwitchTrackContrastViewShrinkFactor 0.00   
+</code></pre>
+
+<h2>Contact</h2>
+
+<ul>
+<li><a href="[https://twitter.com/kieran_lafferty">@kieran_lafferty</a>](https://twitter.com/kieran_lafferty)) on Twitter</li>
+<li><a href="https://github.com/kieranlafferty">@kieranlafferty</a> on Github</li>
+<li><a href="mailTo:kieran.lafferty@gmail.com">kieran.lafferty [at] gmail [dot] com</a></li>
+</ul>
+
+
+<h2>License</h2>
+
+<p>Copyright &copy; 2012 Kieran Lafferty</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &ldquo;Software&rdquo;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/KLSwitch.html">KLSwitch</a></li>
+							
+						</ul>
+					</div>
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Kieran Lafferty. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

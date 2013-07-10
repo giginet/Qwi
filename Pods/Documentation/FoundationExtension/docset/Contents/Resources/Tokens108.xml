@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FSEventStreamDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FSEventStreamDelegate</TokenIdentifier>
+			<Abstract type="html">@brief FSEventSteam delegate</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>
+			
+			<NodeRef refid="108"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FSEventStreamDelegate/eventStream:path:event:id:</TokenIdentifier>
+			<Abstract type="html">@brief Event delegate for each event.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)eventStream:(FSEventStream *)eventStream path:(NSString *)path event:(FSEventStreamEventFlags)eventFlags id:(FSEventStreamEventId)eventId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>eventStream</Name>
+					<Abstract type="html">The event stream does send message.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path event triggered.</Abstract>
+				</Parameter><Parameter>
+					<Name>eventFlags</Name>
+					<Abstract type="html">Triggered event flags.</Abstract>
+				</Parameter><Parameter>
+					<Name>eventId</Name>
+					<Abstract type="html">Event id.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/eventStream:path:event:id:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+CommonCryptorString.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCryptorString)</TokenIdentifier>
+			<Abstract type="html">	@brief CommonCryptor NSData to NSString decryption shortcuts</Abstract>
+			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCryptorString)/decryptedAES128StringWithKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)decryptedAES128StringWithKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedAES128StringWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCryptorString)/decryptedAES256StringWithKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)decryptedAES256StringWithKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedAES256StringWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(CommonCryptorString)/decrypted3DESStringWithKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonCrypto.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)decrypted3DESStringWithKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/decrypted3DESStringWithKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

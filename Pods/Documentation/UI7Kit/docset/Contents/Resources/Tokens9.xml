@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7NavigationController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7NavigationController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7NavigationController.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSTimer+Delegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSTimer(Delegate)</TokenIdentifier>
+			<Abstract type="html">@brief NSTimer delegate interface
+@details Add delegate to NSTimer. With this extension, NSTimer is controllable by delegate pattern.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>
+			
+			<NodeRef refid="81"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Delegate)/initWithFireDate:interval:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize timer with delegate.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFireDate:(NSDate *)date interval:(NSTimeInterval)ti delegate:(id&lt;NSTimerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFireDate:interval:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Delegate)/timerWithTimeInterval:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns timer with delegate.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)timerWithTimeInterval:(NSTimeInterval)ti delegate:(id&lt;NSTimerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/timerWithTimeInterval:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Delegate)/scheduledTimerWithTimeInterval:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Creates, schedules and returns timer with delegate.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (id)scheduledTimerWithTimeInterval:(NSTimeInterval)ti delegate:(id&lt;NSTimerDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/scheduledTimerWithTimeInterval:delegate:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAOverridingMediator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAOverridingMediator</TokenIdentifier>
+			<Abstract type="html">@brief A mediator to select origin or overrided method. Useful for partial protocol implementation.</Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOverridingMediator/initWithOrigin:override:suppressive:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize partial overrider.</Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithOrigin:(id)origin override:(id)override suppressive:(BOOL)suppressive</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>origin</Name>
+					<Abstract type="html">Origin implementation.</Abstract>
+				</Parameter><Parameter>
+					<Name>override</Name>
+					<Abstract type="html">Overrided implementation.</Abstract>
+				</Parameter><Parameter>
+					<Name>suppressive</Name>
+					<Abstract type="html">Suppress overrided implementation or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a mediator of origin and overrided objects.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithOrigin:override:suppressive:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSAOverridingMediator/mediatorWithOrigin:override:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mediatorWithOrigin:(id)origin override:(id)override</Declaration>
+			
+			
+			<Anchor>//api/name/mediatorWithOrigin:override:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSAOverridingMediator/mediatorWithOrigin:override:suppressive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>+ (id)mediatorWithOrigin:(id)origin override:(id)override suppressive:(BOOL)suppressive</Declaration>
+			
+			
+			<Anchor>//api/name/mediatorWithOrigin:override:suppressive:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOverridingMediator/setOrigin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAOverridingMediator/origin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id origin</Declaration>
+			
+			
+			<Anchor>//api/name/origin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOverridingMediator/setOverride:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id override</Declaration>
+			
+			
+			<Anchor>//api/name/override</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAOverridingMediator/override</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) id override</Declaration>
+			
+			
+			<Anchor>//api/name/override</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAOverridingMediator/setSuppressive:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL suppressive</Declaration>
+			
+			
+			<Anchor>//api/name/suppressive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAOverridingMediator/suppressive</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAOverridingMediator.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL suppressive</Declaration>
+			
+			
+			<Anchor>//api/name/suppressive</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

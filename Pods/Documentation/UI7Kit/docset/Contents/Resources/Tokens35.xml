@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+Private.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(Private)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitPrivate.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Private)/_tintColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitPrivate.h</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)_tintColor</Declaration>
+			
+			
+			<Anchor>//api/name/_tintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Private)/__tintColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitPrivate.h</DeclaredIn>			
+			
+			<Declaration>- (UIColor *)__tintColor</Declaration>
+			
+			
+			<Anchor>//api/name/__tintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Private)/_tintColorUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitPrivate.h</DeclaredIn>			
+			
+			<Declaration>- (void)_tintColorUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/_tintColorUpdated</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

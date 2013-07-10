@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FoundationExtension 0.36.3 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">FoundationExtension 0.36.3 </a></h1>
+				<a id="developerHome" href="index.html">Jeong YunWon</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FoundationExtension 0.36.3 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FoundationExtension 0.36.3 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<p>@mainpage FoundationExtension</p>
+
+<p>This library includes small Cocoa/UIKit extensions. This library does not includes high-level data structure, algorithm or frameworks, but collection of code snippets.</p>
+
+<ul>
+<li>Many common snippets in a method call.</li>
+<li>Looks like native foundation methods &ndash; It follows Apple Coding Guideline and Foundation naming convention.</li>
+</ul>
+
+
+<p>See document on [Github] (<a href="http://youknowone.github.com/FoundationExtension">http://youknowone.github.com/FoundationExtension)</a>)</p>
+
+<h1>Download</h1>
+
+<pre><code>git clone git://github.com/youknowone/FoundationExtension.git
+cd FoundationExtension
+git submodule update --init
+</code></pre>
+
+<h1>How to use</h1>
+
+<ul>
+<li>Compiled library
+
+<ol>
+<li>Build project</li>
+<li>Add FoundationExtension or UIKitExtension target as dependency</li>
+</ol>
+</li>
+<li>Directy source
+
+<ol>
+<li>Add files what you need to your project</li>
+</ol>
+</li>
+<li>CocoaPod
+
+<ol>
+<li>Visit and follow <a href="http://cocoapods.org/">http://cocoapods.org/</a></li>
+</ol>
+</li>
+</ul>
+
+
+<p>If your compiler is gcc or old clang, add &lsquo;-force_load&rsquo; to static library.</p>
+
+<h1>Why useful</h1>
+
+<p>Make your code short! Do not allow evil objc to make your code verbose.
+This library includes many shortcuts for common work.</p>
+
+<h2>NSData from URL</h2>
+
+<p>Foundation</p>
+
+<pre><code>NSString *URLString = [NSSring stringWithFormat:@"http://"HOST_URL"/api/%@", key];
+NSURL *URL = [NSURL URLWithString:URLString];
+</code></pre>
+
+<p>FoundationExtension</p>
+
+<pre><code>NSURL *URL = [[@"http://"HOST_URL"/api/%@" format:key] URL];
+</code></pre>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/FSEventStream.html">FSEventStream</a></li>
+							
+							<li><a href="Classes/NSAArray.html">NSAArray</a></li>
+							
+							<li><a href="Classes/NSAClass.html">NSAClass</a></li>
+							
+							<li><a href="Classes/NSADictionary.html">NSADictionary</a></li>
+							
+							<li><a href="Classes/NSAImageWell.html">NSAImageWell</a></li>
+							
+							<li><a href="Classes/NSAMethod.html">NSAMethod</a></li>
+							
+							<li><a href="Classes/NSAMutableArray.html">NSAMutableArray</a></li>
+							
+							<li><a href="Classes/NSAMutableDictionary.html">NSAMutableDictionary</a></li>
+							
+							<li><a href="Classes/NSAMutableOrderedDictionary.html">NSAMutableOrderedDictionary</a></li>
+							
+							<li><a href="Classes/NSAMutableString.html">NSAMutableString</a></li>
+							
+							<li><a href="Classes/NSAMutableTriple.html">NSAMutableTriple</a></li>
+							
+							<li><a href="Classes/NSAMutableTuple.html">NSAMutableTuple</a></li>
+							
+							<li><a href="Classes/NSAOrderedDictionary.html">NSAOrderedDictionary</a></li>
+							
+							<li><a href="Classes/NSAOverridingMediator.html">NSAOverridingMediator</a></li>
+							
+							<li><a href="Classes/NSAString.html">NSAString</a></li>
+							
+							<li><a href="Classes/NSATriple.html">NSATriple</a></li>
+							
+							<li><a href="Classes/NSATuple.html">NSATuple</a></li>
+							
+							<li><a href="Classes/NSAURLRequestHTTPBodyMultiPartFormPostFormatter.html">NSAURLRequestHTTPBodyMultiPartFormPostFormatter</a></li>
+							
+							<li><a href="Classes/NSAttributedStringAttributeDictionary.html">NSAttributedStringAttributeDictionary</a></li>
+							
+							<li><a href="Classes/UIAColorComponents.html">UIAColorComponents</a></li>
+							
+							<li><a href="Classes/UIADimmingView.html">UIADimmingView</a></li>
+							
+							<li><a href="Classes/UIAPlaceholderTextView.html">UIAPlaceholderTextView</a></li>
+							
+							<li><a href="Classes/UIAPreparedCellTableView.html">UIAPreparedCellTableView</a></li>
+							
+							<li><a href="Classes/UIAResultDisplayController.html">UIAResultDisplayController</a></li>
+							
+							<li><a href="Classes/UIASegmentedImageView.html">UIASegmentedImageView</a></li>
+							
+							<li><a href="Classes/UIASubviewTableView.html">UIASubviewTableView</a></li>
+							
+							<li><a href="Classes/UIATableViewCellCopyable.html">UIATableViewCellCopyable</a></li>
+							
+							<li><a href="Classes/UIAView.html">UIAView</a></li>
+							
+							<li><a href="Classes/UIAViewController.html">UIAViewController</a></li>
+							
+							<li><a href="Classes/UIAViewHolder.html">UIAViewHolder</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/FSEventStreamDelegate.html">FSEventStreamDelegate</a></li>
+							
+							<li><a href="Protocols/NSAArrayLikeDataObject.html">NSAArrayLikeDataObject</a></li>
+							
+							<li><a href="Protocols/NSAImageWellDelegate.html">NSAImageWellDelegate</a></li>
+							
+							<li><a href="Protocols/NSTimerDelegate.html">NSTimerDelegate</a></li>
+							
+							<li><a href="Protocols/UIADimmingViewDelegate.html">UIADimmingViewDelegate</a></li>
+							
+							<li><a href="Protocols/UIAResultDisplayDelegate.html">UIAResultDisplayDelegate</a></li>
+							
+							<li><a href="Protocols/UIASubviewTableSubviewSource.html">UIASubviewTableSubviewSource</a></li>
+							
+							<li><a href="Protocols/UIATableViewCellCopyableDelegate.html">UIATableViewCellCopyableDelegate</a></li>
+							
+							<li><a href="Protocols/UIAViewLifeCycle.html">UIAViewLifeCycle</a></li>
+							
+						</ul>
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSArray+Creations.html">NSArray(Creations)</a></li>
+							
+							<li><a href="Categories/NSArray+Functional.html">NSArray(Functional)</a></li>
+							
+							<li><a href="Categories/NSArray+NSNumber.html">NSArray(NSNumber)</a></li>
+							
+							<li><a href="Categories/NSArray+NSURLRequest.html">NSArray(NSURLRequest)</a></li>
+							
+							<li><a href="Categories/NSArray+Random.html">NSArray(Random)</a></li>
+							
+							<li><a href="Categories/NSArray+Rearrange.html">NSArray(Rearrange)</a></li>
+							
+							<li><a href="Categories/NSArray+Shortcuts.html">NSArray(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSAttributedString+Shortcuts.html">NSAttributedString(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSBundle+Shortcuts.html">NSBundle(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSControl+Properties.html">NSControl(Properties)</a></li>
+							
+							<li><a href="Categories/NSData+CommonCrypto.html">NSData(CommonCrypto)</a></li>
+							
+							<li><a href="Categories/NSData+CommonCryptor.html">NSData(CommonCryptor)</a></li>
+							
+							<li><a href="Categories/NSData+CommonCryptorString.html">NSData(CommonCryptorString)</a></li>
+							
+							<li><a href="Categories/NSData+NSStringUTF8.html">NSData(NSStringUTF8)</a></li>
+							
+							<li><a href="Categories/NSData+NSURLRequest.html">NSData(NSURLRequest)</a></li>
+							
+							<li><a href="Categories/NSData+NSURL_deprecated.html">NSData(NSURL_deprecated)</a></li>
+							
+							<li><a href="Categories/NSData+Serialization.html">NSData(Serialization)</a></li>
+							
+							<li><a href="Categories/NSDate+Shortcuts.html">NSDate(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSDecimalNumber+Description.html">NSDecimalNumber(Description)</a></li>
+							
+							<li><a href="Categories/NSDictionary+Functional.html">NSDictionary(Functional)</a></li>
+							
+							<li><a href="Categories/NSDictionary+NSData.html">NSDictionary(NSData)</a></li>
+							
+							<li><a href="Categories/NSDictionary+NSURLRequest.html">NSDictionary(NSURLRequest)</a></li>
+							
+							<li><a href="Categories/NSDictionary+Shortcuts.html">NSDictionary(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSEnumerator+Functional.html">NSEnumerator(Functional)</a></li>
+							
+							<li><a href="Categories/NSImage+Shortcuts.html">NSImage(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSJSONSerialization+Shortcuts.html">NSJSONSerialization(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSMutableArray+Functional.html">NSMutableArray(Functional)</a></li>
+							
+							<li><a href="Categories/NSMutableAttributedString+AttributeProperties.html">NSMutableAttributedString(AttributeProperties)</a></li>
+							
+							<li><a href="Categories/NSMutableDictionary+Functional.html">NSMutableDictionary(Functional)</a></li>
+							
+							<li><a href="Categories/NSMutableURLRequest+HTTPMethod.html">NSMutableURLRequest(HTTPMethod)</a></li>
+							
+							<li><a href="Categories/NSMutableURLRequest+NSAURLRequestHTTPBodyMultiPartFormPostFormatter.html">NSMutableURLRequest(NSAURLRequestHTTPBodyMultiPartFormPostFormatter)</a></li>
+							
+							<li><a href="Categories/NSMutableURLRequest+Properties.html">NSMutableURLRequest(Properties)</a></li>
+							
+							<li><a href="Categories/NSNull+Tools.html">NSNull(Tools)</a></li>
+							
+							<li><a href="Categories/NSNumber+Description.html">NSNumber(Description)</a></li>
+							
+							<li><a href="Categories/NSNumberFormatter+Shortcuts.html">NSNumberFormatter(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSObject+NSAClass.html">NSObject(NSAClass)</a></li>
+							
+							<li><a href="Categories/NSObject+NSValue.html">NSObject(NSValue)</a></li>
+							
+							<li><a href="Categories/NSObject+ObjCRuntime.html">NSObject(ObjCRuntime)</a></li>
+							
+							<li><a href="Categories/NSObject+ObjCRuntimeClass.html">NSObject(ObjCRuntimeClass)</a></li>
+							
+							<li><a href="Categories/NSPasteboard+Shortcuts.html">NSPasteboard(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSString+CommonCrypto.html">NSString(CommonCrypto)</a></li>
+							
+							<li><a href="Categories/NSString+CommonCryptorString.html">NSString(CommonCryptorString)</a></li>
+							
+							<li><a href="Categories/NSString+Creations.html">NSString(Creations)</a></li>
+							
+							<li><a href="Categories/NSString+Evaluation.html">NSString(Evaluation)</a></li>
+							
+							<li><a href="Categories/NSString+NSPasteboard.html">NSString(NSPasteboard)</a></li>
+							
+							<li><a href="Categories/NSString+NSPathUtilities.html">NSString(NSPathUtilities)</a></li>
+							
+							<li><a href="Categories/NSString+NSURL.html">NSString(NSURL)</a></li>
+							
+							<li><a href="Categories/NSString+NSUTF8StringEncoding.html">NSString(NSUTF8StringEncoding)</a></li>
+							
+							<li><a href="Categories/NSString+Shortcuts.html">NSString(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSTextView+Placeholder.html">NSTextView(Placeholder)</a></li>
+							
+							<li><a href="Categories/NSTimer+Delegate.html">NSTimer(Delegate)</a></li>
+							
+							<li><a href="Categories/NSTimer+NSRunLoop.html">NSTimer(NSRunLoop)</a></li>
+							
+							<li><a href="Categories/NSTimer+Shortcuts.html">NSTimer(Shortcuts)</a></li>
+							
+							<li><a href="Categories/NSTimer+dispatch.html">NSTimer(dispatch)</a></li>
+							
+							<li><a href="Categories/NSURL+CFURL.html">NSURL(CFURL)</a></li>
+							
+							<li><a href="Categories/NSURL+Creations.html">NSURL(Creations)</a></li>
+							
+							<li><a href="Categories/NSURLRequest+Creations_deprecated.html">NSURLRequest(Creations_deprecated)</a></li>
+							
+							<li><a href="Categories/NSURLRequest+Properties.html">NSURLRequest(Properties)</a></li>
+							
+							<li><a href="Categories/UIActivityIndicatorView+Property.html">UIActivityIndicatorView(Property)</a></li>
+							
+							<li><a href="Categories/UIAlertView+Shortcuts.html">UIAlertView(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIApplication+Private.html">UIApplication(Private)</a></li>
+							
+							<li><a href="Categories/UIApplication+Shortcuts.html">UIApplication(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIBezierPath+UIImage.html">UIBezierPath(UIImage)</a></li>
+							
+							<li><a href="Categories/UIColor+Creations.html">UIColor(Creations)</a></li>
+							
+							<li><a href="Categories/UIColor+HTMLColor.html">UIColor(HTMLColor)</a></li>
+							
+							<li><a href="Categories/UIColor+Shortcuts.html">UIColor(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIColor+UIImage.html">UIColor(UIImage)</a></li>
+							
+							<li><a href="Categories/UIControl+Shortcuts.html">UIControl(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIDevice+Shortcuts.html">UIDevice(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIImage+Creations.html">UIImage(Creations)</a></li>
+							
+							<li><a href="Categories/UIImage+UIGraphics.html">UIImage(UIGraphics)</a></li>
+							
+							<li><a href="Categories/UIScrollView+Shortcuts.html">UIScrollView(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UITableViewCell+Shortcuts.html">UITableViewCell(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIView+Animation.html">UIView(Animation)</a></li>
+							
+							<li><a href="Categories/UIView+InterfaceBuilder.html">UIView(InterfaceBuilder)</a></li>
+							
+							<li><a href="Categories/UIViewController+Shortcuts.html">UIViewController(Shortcuts)</a></li>
+							
+							<li><a href="Categories/UIWebView+Shortcuts.html">UIWebView(Shortcuts)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jeong YunWon. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

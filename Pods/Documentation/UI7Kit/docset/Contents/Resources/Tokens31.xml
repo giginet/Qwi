@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIDevice+iOS7.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(iOS7)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Utilities.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(iOS7)/setNeedsUI7Kit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Utilities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL needsUI7Kit</Declaration>
+			
+			
+			<Anchor>//api/name/needsUI7Kit</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIDevice(iOS7)/needsUI7Kit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Utilities.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL needsUI7Kit</Declaration>
+			
+			
+			<Anchor>//api/name/needsUI7Kit</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIAViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAViewController</TokenIdentifier>
+			<Abstract type="html">@brief UIView with refined lifecycle. (testing)</Abstract>
+			<DeclaredIn>UIAViewController.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAViewController/setView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView&lt;UIAViewLifeCycle&gt; *view</Declaration>
+			
+			
+			<Anchor>//api/name/view</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAViewController/view</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIView&lt;UIAViewLifeCycle&gt; *view</Declaration>
+			
+			
+			<Anchor>//api/name/view</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

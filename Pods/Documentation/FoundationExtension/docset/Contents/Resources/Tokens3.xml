@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAClass.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAClass</TokenIdentifier>
+			<Abstract type="html">@brief Object wrapper for runtime Class
+@details This class supports accessing Objective-C runtime with Objective-C object model.
+This reduces usage of verbose C functions.
+@deprecated NSAClass is deprecated and merged to premitive Class. See @ref NSObject(ObjCRuntimeClass)</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/set__deprecated:</TokenIdentifier>
+			<Abstract type="html">@brief Objective-C class representation.
+@deprecated Use plain Class</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) Class class __deprecated</Declaration>
+			
+			
+			<Anchor>//api/name/__deprecated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAClass/__deprecated</TokenIdentifier>
+			<Abstract type="html">@brief Objective-C class representation.
+@deprecated Use plain Class</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) Class class __deprecated</Declaration>
+			
+			
+			<Anchor>//api/name/__deprecated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/class</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>- (Class)class</Declaration>
+			
+			
+			<Anchor>//api/name/class</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSAClass/classWithUTF8Name:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a class object for a given name.
+@deprecated Use NSClassFromString</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>+ (id)classWithUTF8Name:(const char *)name</Declaration>
+			
+			
+			<Anchor>//api/name/classWithUTF8Name:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSAClass/classWithName:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a class object for a given name.
+@deprecated Use NSClassFromString</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>+ (id)classWithName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/classWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/initWithClass:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize class object with class
+@deprecated Use plain Class</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithClass:(Class)aClass</Declaration>
+			
+			
+			<Anchor>//api/name/initWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSAClass/classWithClass:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns class object with class
+@deprecated Use plain Class</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+			<Declaration>+ (id)classWithClass:(Class)aClass</Declaration>
+			
+			
+			<Anchor>//api/name/classWithClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/methodForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (Method)methodForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/methodObjectForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns Method from given selector;</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSAMethod *)methodObjectForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodObjectForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/classMethodForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (Method)classMethodForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/classMethodForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/classMethodObjectForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns class Method from given selector;</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSAMethod *)classMethodObjectForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/classMethodObjectForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/methodImplementationForSelector:</TokenIdentifier>
+			<Abstract type="html">@brief Returns IMP from given method</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (IMP)methodImplementationForSelector:(SEL)selector</Declaration>
+			
+			
+			<Anchor>//api/name/methodImplementationForSelector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/addMethodForSelector:implementation:types:</TokenIdentifier>
+			<Abstract type="html">@brief Adds a new method to a class with a given name and implementation.</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntimeClass)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)addMethodForSelector:(SEL)selector implementation:(IMP)implementation types:(NSString *)implementationTypes</Declaration>
+			
+			
+			<Anchor>//api/name/addMethodForSelector:implementation:types:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/alloc</TokenIdentifier>
+			<Abstract type="html">@brief Allocator</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSAClass/class</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)alloc</Declaration>
+			
+			
+			<Anchor>//api/name/alloc</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAClass/allocWithZone:</TokenIdentifier>
+			<Abstract type="html">@brief Allocator</Abstract>
+			<DeclaredIn>NSAClassDeprecated.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSAClass/class</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)allocWithZone:(NSZone *)zone</Declaration>
+			
+			
+			<Anchor>//api/name/allocWithZone:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+NSURLRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(NSURLRequest)</TokenIdentifier>
+			<Abstract type="html">@brief Creation methods extension using NSURLRequest</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated data object initialized with the data from the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/dataWithContentsOfURLRequest:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithContentsOfURLRequest:(NSURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The URLRequest from which to read data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSData object initialized with the data from contents specified by request. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfURLRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/dataWithContentsOfURLRequest:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a data object with the data from the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)dataWithContentsOfURLRequest:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithContentsOfURLRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:error:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated data object initialized with the data from the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/dataWithContentsOfURLRequest:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithContentsOfURLRequest:(NSURLRequest *)request error:(NSError **)errorPtr</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The URLRequest from which to read data.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorPtr</Name>
+					<Abstract type="html">If there is an error reading in the data, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSData object initialized with the data from contents specified by request. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfURLRequest:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/dataWithContentsOfURLRequest:error:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a data object with the data from the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURLRequest:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)dataWithContentsOfURLRequest:(NSURLRequest *)request error:(NSError **)errorPtr</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithContentsOfURLRequest:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/initWithContentsOfURL:postBody:encoding:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use initWithContentsOfURLRequest: with NSMutableURLRequest</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentsOfURL:(NSURL *)url postBody:(NSDictionary *)bodyDictionary encoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/initWithContentsOfURL:postBody:encoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURLRequest)/dataWithContentsOfURL:postBody:encoding:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use dataWithContentsOfURLRequest: with NSMutableURLRequest</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)dataWithContentsOfURL:(NSURL *)url postBody:(NSDictionary *)bodyDictionary encoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithContentsOfURL:postBody:encoding:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

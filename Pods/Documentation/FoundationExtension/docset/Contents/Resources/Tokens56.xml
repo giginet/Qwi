@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSJSONSerialization+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSJSONSerialization(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [NSJSONSerialization][0] shortcuts
+[0]: http://developer.apple.com/library/mac/#documentation/Foundation/Reference/NSJSONSerialization_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSJSONSerialization.h</DeclaredIn>
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSJSONSerialization(Shortcuts)/JSONObjectWithString:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSJSONSerialization.h</DeclaredIn>			
+			
+			<Declaration>+ (id)JSONObjectWithString:(NSString *)string options:(NSJSONReadingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONObjectWithString:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSJSONSerialization(Shortcuts)/stringWithJSONObject:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSJSONSerialization.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)stringWithJSONObject:(id)obj options:(NSJSONWritingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithJSONObject:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSJSONSerialization(Shortcuts)/JSONObjectWithURLRequest:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSJSONSerialization.h</DeclaredIn>			
+			
+			<Declaration>+ (id)JSONObjectWithURLRequest:(NSURLRequest *)URLRequest options:(NSJSONWritingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONObjectWithURLRequest:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSJSONSerialization(Shortcuts)/JSONObjectWithURL:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSJSONSerialization.h</DeclaredIn>			
+			
+			<Declaration>+ (id)JSONObjectWithURL:(NSURL *)URL options:(NSJSONWritingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/JSONObjectWithURL:options:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

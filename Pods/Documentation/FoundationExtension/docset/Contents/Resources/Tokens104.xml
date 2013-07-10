@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIView+Animation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIView(Animation)</TokenIdentifier>
+			<Abstract type="html">@brief UIView animation shortcuts</Abstract>
+			<DeclaredIn>UIView.h</DeclaredIn>
+			
+			<NodeRef refid="104"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Animation)/animateWithDefaultDurationAnimations:</TokenIdentifier>
+			<Abstract type="html">*  @brief Animate changes to one or more views using the UIKit deafult animation duration @ref UIAViewAnimationDefaultDuraton.
+*  @param animations A block object containing the changes to commit to the views. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be NULL.
+*  @details
+        This method performs the specified animations immediately using the UIViewAnimationOptionCurveEaseInOut and UIViewAnimationOptionTransitionNone animation options.
+        During an animation, user interactions are temporarily disabled for the views being animated. (Prior to iOS 5, user interactions are disabled for the entire application.)
+*  @see [animateWithDuration:animations:][0]
+*      [0]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewClass/UIView/UIView.html#//appleref/occ/clm/UIView/animateWithDuration:animations:</Abstract>
+			<DeclaredIn>UIView.h</DeclaredIn>			
+			
+			<Declaration>+ (void)animateWithDefaultDurationAnimations:(UIAViewAnimationBlock)animations</Declaration>
+			
+			
+			<Anchor>//api/name/animateWithDefaultDurationAnimations:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIView(Animation)/setHidden:animated:</TokenIdentifier>
+			<Abstract type="html">*  @brief Set whether the view is hidden.
+*  @details If &apos;animated&apos; property is NO, this method calls [-setHidden:][0]; Otherwise, when starting, object&apos;s &apos;hidden&apos; property is set to NO. If given hidden parameter is YES, &apos;hidden&apos; property is set to YES after end of animation. This may cause confliction with other animations or accessors.
+*  @param hidden If YES, the view become hidden; otherwise, NO.
+*  @param animated If YES, animates the transition; otherwise, does not.
+*  @see [hidden][0]
+    [0]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewClass/UIView/UIView.html#//appleref/occ/instp/UIView/hidden</Abstract>
+			<DeclaredIn>UIView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHidden:(BOOL)hidden animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setHidden:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

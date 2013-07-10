@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAImageWell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAImageWell</TokenIdentifier>
+			<Abstract type="html">@brief Real image well, described as image well in Interface Builder - allow a user to drag an image to it.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAImageWell/setAcceptsStringDragging:</TokenIdentifier>
+			<Abstract type="html">@brief The acception state of the string dragging.
+@details YES if image well accepts string dragging; otherwise NO. Default is NO.
+If delegate response to @ref NSAImageWellDelegate::imageWellShouldAcceptURLString:, this value is ignored.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL acceptsStringDragging</Declaration>
+			
+			
+			<Anchor>//api/name/acceptsStringDragging</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAImageWell/acceptsStringDragging</TokenIdentifier>
+			<Abstract type="html">@brief The acception state of the string dragging.
+@details YES if image well accepts string dragging; otherwise NO. Default is NO.
+If delegate response to @ref NSAImageWellDelegate::imageWellShouldAcceptURLString:, this value is ignored.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL acceptsStringDragging</Declaration>
+			
+			
+			<Anchor>//api/name/acceptsStringDragging</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAImageWell/setImageURL:</TokenIdentifier>
+			<Abstract type="html">@brief The URL of dragged image.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSURL *imageURL</Declaration>
+			
+			
+			<Anchor>//api/name/imageURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAImageWell/imageURL</TokenIdentifier>
+			<Abstract type="html">@brief The URL of dragged image.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSURL *imageURL</Declaration>
+			
+			
+			<Anchor>//api/name/imageURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAImageWell/setDelegate:</TokenIdentifier>
+			<Abstract type="html">@brief The image well&apos;s delegate.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet id&lt;NSAImageWellDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAImageWell/delegate</TokenIdentifier>
+			<Abstract type="html">@brief The image well&apos;s delegate.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet id&lt;NSAImageWellDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -7,6 +7,7 @@
 
 
 #import "QWAccountManager.h"
+
 #import "QWUserManager.h"
 #import "MagicalRecord+Setup.h"
 #import "MagicalRecordShorthand.h"

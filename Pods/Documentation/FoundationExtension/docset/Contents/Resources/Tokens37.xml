@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief NSArray shortcut methods extension.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Shortcuts)/:</TokenIdentifier>
+			<Abstract type="html">@brief Extreme short form of &apos;ObjectAtIndex:&apos;
+@deprecated Use (array)[index] syntax instead of this.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (id):</Declaration>
+			
+			
+			<Anchor>//api/name/:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Shortcuts)/hasIndex:</TokenIdentifier>
+			<Abstract type="html">@brief index &lt; self.count</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasIndex:(NSUInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/hasIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

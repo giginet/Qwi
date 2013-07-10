@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>FoundationExtension 0.36.3</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						<NodeRef refid="70"/>
+						<NodeRef refid="71"/>
+						<NodeRef refid="72"/>
+						<NodeRef refid="73"/>
+						<NodeRef refid="74"/>
+						<NodeRef refid="75"/>
+						<NodeRef refid="76"/>
+						<NodeRef refid="77"/>
+						<NodeRef refid="78"/>
+						<NodeRef refid="79"/>
+						<NodeRef refid="80"/>
+						<NodeRef refid="81"/>
+						<NodeRef refid="82"/>
+						<NodeRef refid="83"/>
+						<NodeRef refid="84"/>
+						<NodeRef refid="85"/>
+						<NodeRef refid="86"/>
+						<NodeRef refid="87"/>
+						<NodeRef refid="88"/>
+						<NodeRef refid="89"/>
+						<NodeRef refid="90"/>
+						<NodeRef refid="91"/>
+						<NodeRef refid="92"/>
+						<NodeRef refid="93"/>
+						<NodeRef refid="94"/>
+						<NodeRef refid="95"/>
+						<NodeRef refid="96"/>
+						<NodeRef refid="97"/>
+						<NodeRef refid="98"/>
+						<NodeRef refid="99"/>
+						<NodeRef refid="100"/>
+						<NodeRef refid="101"/>
+						<NodeRef refid="102"/>
+						<NodeRef refid="103"/>
+						<NodeRef refid="104"/>
+						<NodeRef refid="105"/>
+						<NodeRef refid="106"/>
+						<NodeRef refid="107"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="108"/>
+						<NodeRef refid="109"/>
+						<NodeRef refid="110"/>
+						<NodeRef refid="111"/>
+						<NodeRef refid="112"/>
+						<NodeRef refid="113"/>
+						<NodeRef refid="114"/>
+						<NodeRef refid="115"/>
+						<NodeRef refid="116"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>FSEventStream</Name>
+			<Path>Classes/FSEventStream.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>NSAArray</Name>
+			<Path>Classes/NSAArray.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>NSAClass</Name>
+			<Path>Classes/NSAClass.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>NSADictionary</Name>
+			<Path>Classes/NSADictionary.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>NSAImageWell</Name>
+			<Path>Classes/NSAImageWell.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>NSAMethod</Name>
+			<Path>Classes/NSAMethod.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>NSAMutableArray</Name>
+			<Path>Classes/NSAMutableArray.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>NSAMutableDictionary</Name>
+			<Path>Classes/NSAMutableDictionary.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>NSAMutableOrderedDictionary</Name>
+			<Path>Classes/NSAMutableOrderedDictionary.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>NSAMutableString</Name>
+			<Path>Classes/NSAMutableString.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>NSAMutableTriple</Name>
+			<Path>Classes/NSAMutableTriple.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>NSAMutableTuple</Name>
+			<Path>Classes/NSAMutableTuple.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>NSAOrderedDictionary</Name>
+			<Path>Classes/NSAOrderedDictionary.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>NSAOverridingMediator</Name>
+			<Path>Classes/NSAOverridingMediator.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>NSAString</Name>
+			<Path>Classes/NSAString.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>NSATriple</Name>
+			<Path>Classes/NSATriple.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>NSATuple</Name>
+			<Path>Classes/NSATuple.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>NSAURLRequestHTTPBodyMultiPartFormPostFormatter</Name>
+			<Path>Classes/NSAURLRequestHTTPBodyMultiPartFormPostFormatter.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>NSAttributedStringAttributeDictionary</Name>
+			<Path>Classes/NSAttributedStringAttributeDictionary.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>UIAColorComponents</Name>
+			<Path>Classes/UIAColorComponents.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>UIADimmingView</Name>
+			<Path>Classes/UIADimmingView.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>UIAPlaceholderTextView</Name>
+			<Path>Classes/UIAPlaceholderTextView.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>UIAPreparedCellTableView</Name>
+			<Path>Classes/UIAPreparedCellTableView.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>UIAResultDisplayController</Name>
+			<Path>Classes/UIAResultDisplayController.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>UIASegmentedImageView</Name>
+			<Path>Classes/UIASegmentedImageView.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>UIASubviewTableView</Name>
+			<Path>Classes/UIASubviewTableView.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>UIATableViewCellCopyable</Name>
+			<Path>Classes/UIATableViewCellCopyable.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>UIAView</Name>
+			<Path>Classes/UIAView.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>UIAViewController</Name>
+			<Path>Classes/UIAViewController.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>UIAViewHolder</Name>
+			<Path>Classes/UIAViewHolder.html</Path>
+		</Node>
+		
+		<Node id="31">
+			<Name>NSArray(Creations)</Name>
+			<Path>Categories/NSArray+Creations.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>NSArray(Functional)</Name>
+			<Path>Categories/NSArray+Functional.html</Path>
+		</Node>
+		<Node id="33">
+			<Name>NSArray(NSNumber)</Name>
+			<Path>Categories/NSArray+NSNumber.html</Path>
+		</Node>
+		<Node id="34">
+			<Name>NSArray(NSURLRequest)</Name>
+			<Path>Categories/NSArray+NSURLRequest.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>NSArray(Random)</Name>
+			<Path>Categories/NSArray+Random.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>NSArray(Rearrange)</Name>
+			<Path>Categories/NSArray+Rearrange.html</Path>
+		</Node>
+		<Node id="37">
+			<Name>NSArray(Shortcuts)</Name>
+			<Path>Categories/NSArray+Shortcuts.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>NSAttributedString(Shortcuts)</Name>
+			<Path>Categories/NSAttributedString+Shortcuts.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>NSBundle(Shortcuts)</Name>
+			<Path>Categories/NSBundle+Shortcuts.html</Path>
+		</Node>
+		<Node id="40">
+			<Name>NSControl(Properties)</Name>
+			<Path>Categories/NSControl+Properties.html</Path>
+		</Node>
+		<Node id="41">
+			<Name>NSData(CommonCrypto)</Name>
+			<Path>Categories/NSData+CommonCrypto.html</Path>
+		</Node>
+		<Node id="42">
+			<Name>NSData(CommonCryptor)</Name>
+			<Path>Categories/NSData+CommonCryptor.html</Path>
+		</Node>
+		<Node id="43">
+			<Name>NSData(CommonCryptorString)</Name>
+			<Path>Categories/NSData+CommonCryptorString.html</Path>
+		</Node>
+		<Node id="44">
+			<Name>NSData(NSStringUTF8)</Name>
+			<Path>Categories/NSData+NSStringUTF8.html</Path>
+		</Node>
+		<Node id="45">
+			<Name>NSData(NSURLRequest)</Name>
+			<Path>Categories/NSData+NSURLRequest.html</Path>
+		</Node>
+		<Node id="46">
+			<Name>NSData(NSURL_deprecated)</Name>
+			<Path>Categories/NSData+NSURL_deprecated.html</Path>
+		</Node>
+		<Node id="47">
+			<Name>NSData(Serialization)</Name>
+			<Path>Categories/NSData+Serialization.html</Path>
+		</Node>
+		<Node id="48">
+			<Name>NSDate(Shortcuts)</Name>
+			<Path>Categories/NSDate+Shortcuts.html</Path>
+		</Node>
+		<Node id="49">
+			<Name>NSDecimalNumber(Description)</Name>
+			<Path>Categories/NSDecimalNumber+Description.html</Path>
+		</Node>
+		<Node id="50">
+			<Name>NSDictionary(Functional)</Name>
+			<Path>Categories/NSDictionary+Functional.html</Path>
+		</Node>
+		<Node id="51">
+			<Name>NSDictionary(NSData)</Name>
+			<Path>Categories/NSDictionary+NSData.html</Path>
+		</Node>
+		<Node id="52">
+			<Name>NSDictionary(NSURLRequest)</Name>
+			<Path>Categories/NSDictionary+NSURLRequest.html</Path>
+		</Node>
+		<Node id="53">
+			<Name>NSDictionary(Shortcuts)</Name>
+			<Path>Categories/NSDictionary+Shortcuts.html</Path>
+		</Node>
+		<Node id="54">
+			<Name>NSEnumerator(Functional)</Name>
+			<Path>Categories/NSEnumerator+Functional.html</Path>
+		</Node>
+		<Node id="55">
+			<Name>NSImage(Shortcuts)</Name>
+			<Path>Categories/NSImage+Shortcuts.html</Path>
+		</Node>
+		<Node id="56">
+			<Name>NSJSONSerialization(Shortcuts)</Name>
+			<Path>Categories/NSJSONSerialization+Shortcuts.html</Path>
+		</Node>
+		<Node id="57">
+			<Name>NSMutableArray(Functional)</Name>
+			<Path>Categories/NSMutableArray+Functional.html</Path>
+		</Node>
+		<Node id="58">
+			<Name>NSMutableAttributedString(AttributeProperties)</Name>
+			<Path>Categories/NSMutableAttributedString+AttributeProperties.html</Path>
+		</Node>
+		<Node id="59">
+			<Name>NSMutableDictionary(Functional)</Name>
+			<Path>Categories/NSMutableDictionary+Functional.html</Path>
+		</Node>
+		<Node id="60">
+			<Name>NSMutableURLRequest(HTTPMethod)</Name>
+			<Path>Categories/NSMutableURLRequest+HTTPMethod.html</Path>
+		</Node>
+		<Node id="61">
+			<Name>NSMutableURLRequest(NSAURLRequestHTTPBodyMultiPartFormPostFormatter)</Name>
+			<Path>Categories/NSMutableURLRequest+NSAURLRequestHTTPBodyMultiPartFormPostFormatter.html</Path>
+		</Node>
+		<Node id="62">
+			<Name>NSMutableURLRequest(Properties)</Name>
+			<Path>Categories/NSMutableURLRequest+Properties.html</Path>
+		</Node>
+		<Node id="63">
+			<Name>NSNull(Tools)</Name>
+			<Path>Categories/NSNull+Tools.html</Path>
+		</Node>
+		<Node id="64">
+			<Name>NSNumber(Description)</Name>
+			<Path>Categories/NSNumber+Description.html</Path>
+		</Node>
+		<Node id="65">
+			<Name>NSNumberFormatter(Shortcuts)</Name>
+			<Path>Categories/NSNumberFormatter+Shortcuts.html</Path>
+		</Node>
+		<Node id="66">
+			<Name>NSObject(NSAClass)</Name>
+			<Path>Categories/NSObject+NSAClass.html</Path>
+		</Node>
+		<Node id="67">
+			<Name>NSObject(NSValue)</Name>
+			<Path>Categories/NSObject+NSValue.html</Path>
+		</Node>
+		<Node id="68">
+			<Name>NSObject(ObjCRuntime)</Name>
+			<Path>Categories/NSObject+ObjCRuntime.html</Path>
+		</Node>
+		<Node id="69">
+			<Name>NSObject(ObjCRuntimeClass)</Name>
+			<Path>Categories/NSObject+ObjCRuntimeClass.html</Path>
+		</Node>
+		<Node id="70">
+			<Name>NSPasteboard(Shortcuts)</Name>
+			<Path>Categories/NSPasteboard+Shortcuts.html</Path>
+		</Node>
+		<Node id="71">
+			<Name>NSString(CommonCrypto)</Name>
+			<Path>Categories/NSString+CommonCrypto.html</Path>
+		</Node>
+		<Node id="72">
+			<Name>NSString(CommonCryptorString)</Name>
+			<Path>Categories/NSString+CommonCryptorString.html</Path>
+		</Node>
+		<Node id="73">
+			<Name>NSString(Creations)</Name>
+			<Path>Categories/NSString+Creations.html</Path>
+		</Node>
+		<Node id="74">
+			<Name>NSString(Evaluation)</Name>
+			<Path>Categories/NSString+Evaluation.html</Path>
+		</Node>
+		<Node id="75">
+			<Name>NSString(NSPasteboard)</Name>
+			<Path>Categories/NSString+NSPasteboard.html</Path>
+		</Node>
+		<Node id="76">
+			<Name>NSString(NSPathUtilities)</Name>
+			<Path>Categories/NSString+NSPathUtilities.html</Path>
+		</Node>
+		<Node id="77">
+			<Name>NSString(NSURL)</Name>
+			<Path>Categories/NSString+NSURL.html</Path>
+		</Node>
+		<Node id="78">
+			<Name>NSString(NSUTF8StringEncoding)</Name>
+			<Path>Categories/NSString+NSUTF8StringEncoding.html</Path>
+		</Node>
+		<Node id="79">
+			<Name>NSString(Shortcuts)</Name>
+			<Path>Categories/NSString+Shortcuts.html</Path>
+		</Node>
+		<Node id="80">
+			<Name>NSTextView(Placeholder)</Name>
+			<Path>Categories/NSTextView+Placeholder.html</Path>
+		</Node>
+		<Node id="81">
+			<Name>NSTimer(Delegate)</Name>
+			<Path>Categories/NSTimer+Delegate.html</Path>
+		</Node>
+		<Node id="82">
+			<Name>NSTimer(NSRunLoop)</Name>
+			<Path>Categories/NSTimer+NSRunLoop.html</Path>
+		</Node>
+		<Node id="83">
+			<Name>NSTimer(Shortcuts)</Name>
+			<Path>Categories/NSTimer+Shortcuts.html</Path>
+		</Node>
+		<Node id="84">
+			<Name>NSTimer(dispatch)</Name>
+			<Path>Categories/NSTimer+dispatch.html</Path>
+		</Node>
+		<Node id="85">
+			<Name>NSURL(CFURL)</Name>
+			<Path>Categories/NSURL+CFURL.html</Path>
+		</Node>
+		<Node id="86">
+			<Name>NSURL(Creations)</Name>
+			<Path>Categories/NSURL+Creations.html</Path>
+		</Node>
+		<Node id="87">
+			<Name>NSURLRequest(Creations_deprecated)</Name>
+			<Path>Categories/NSURLRequest+Creations_deprecated.html</Path>
+		</Node>
+		<Node id="88">
+			<Name>NSURLRequest(Properties)</Name>
+			<Path>Categories/NSURLRequest+Properties.html</Path>
+		</Node>
+		<Node id="89">
+			<Name>UIActivityIndicatorView(Property)</Name>
+			<Path>Categories/UIActivityIndicatorView+Property.html</Path>
+		</Node>
+		<Node id="90">
+			<Name>UIAlertView(Shortcuts)</Name>
+			<Path>Categories/UIAlertView+Shortcuts.html</Path>
+		</Node>
+		<Node id="91">
+			<Name>UIApplication(Private)</Name>
+			<Path>Categories/UIApplication+Private.html</Path>
+		</Node>
+		<Node id="92">
+			<Name>UIApplication(Shortcuts)</Name>
+			<Path>Categories/UIApplication+Shortcuts.html</Path>
+		</Node>
+		<Node id="93">
+			<Name>UIBezierPath(UIImage)</Name>
+			<Path>Categories/UIBezierPath+UIImage.html</Path>
+		</Node>
+		<Node id="94">
+			<Name>UIColor(Creations)</Name>
+			<Path>Categories/UIColor+Creations.html</Path>
+		</Node>
+		<Node id="95">
+			<Name>UIColor(HTMLColor)</Name>
+			<Path>Categories/UIColor+HTMLColor.html</Path>
+		</Node>
+		<Node id="96">
+			<Name>UIColor(Shortcuts)</Name>
+			<Path>Categories/UIColor+Shortcuts.html</Path>
+		</Node>
+		<Node id="97">
+			<Name>UIColor(UIImage)</Name>
+			<Path>Categories/UIColor+UIImage.html</Path>
+		</Node>
+		<Node id="98">
+			<Name>UIControl(Shortcuts)</Name>
+			<Path>Categories/UIControl+Shortcuts.html</Path>
+		</Node>
+		<Node id="99">
+			<Name>UIDevice(Shortcuts)</Name>
+			<Path>Categories/UIDevice+Shortcuts.html</Path>
+		</Node>
+		<Node id="100">
+			<Name>UIImage(Creations)</Name>
+			<Path>Categories/UIImage+Creations.html</Path>
+		</Node>
+		<Node id="101">
+			<Name>UIImage(UIGraphics)</Name>
+			<Path>Categories/UIImage+UIGraphics.html</Path>
+		</Node>
+		<Node id="102">
+			<Name>UIScrollView(Shortcuts)</Name>
+			<Path>Categories/UIScrollView+Shortcuts.html</Path>
+		</Node>
+		<Node id="103">
+			<Name>UITableViewCell(Shortcuts)</Name>
+			<Path>Categories/UITableViewCell+Shortcuts.html</Path>
+		</Node>
+		<Node id="104">
+			<Name>UIView(Animation)</Name>
+			<Path>Categories/UIView+Animation.html</Path>
+		</Node>
+		<Node id="105">
+			<Name>UIView(InterfaceBuilder)</Name>
+			<Path>Categories/UIView+InterfaceBuilder.html</Path>
+		</Node>
+		<Node id="106">
+			<Name>UIViewController(Shortcuts)</Name>
+			<Path>Categories/UIViewController+Shortcuts.html</Path>
+		</Node>
+		<Node id="107">
+			<Name>UIWebView(Shortcuts)</Name>
+			<Path>Categories/UIWebView+Shortcuts.html</Path>
+		</Node>
+		
+		<Node id="108">
+			<Name>FSEventStreamDelegate</Name>
+			<Path>Protocols/FSEventStreamDelegate.html</Path>
+		</Node>
+		<Node id="109">
+			<Name>NSAArrayLikeDataObject</Name>
+			<Path>Protocols/NSAArrayLikeDataObject.html</Path>
+		</Node>
+		<Node id="110">
+			<Name>NSAImageWellDelegate</Name>
+			<Path>Protocols/NSAImageWellDelegate.html</Path>
+		</Node>
+		<Node id="111">
+			<Name>NSTimerDelegate</Name>
+			<Path>Protocols/NSTimerDelegate.html</Path>
+		</Node>
+		<Node id="112">
+			<Name>UIADimmingViewDelegate</Name>
+			<Path>Protocols/UIADimmingViewDelegate.html</Path>
+		</Node>
+		<Node id="113">
+			<Name>UIAResultDisplayDelegate</Name>
+			<Path>Protocols/UIAResultDisplayDelegate.html</Path>
+		</Node>
+		<Node id="114">
+			<Name>UIASubviewTableSubviewSource</Name>
+			<Path>Protocols/UIASubviewTableSubviewSource.html</Path>
+		</Node>
+		<Node id="115">
+			<Name>UIATableViewCellCopyableDelegate</Name>
+			<Path>Protocols/UIATableViewCellCopyableDelegate.html</Path>
+		</Node>
+		<Node id="116">
+			<Name>UIAViewLifeCycle</Name>
+			<Path>Protocols/UIAViewLifeCycle.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

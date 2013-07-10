@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UIAResultDisplayDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UIAResultDisplayDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>
+			
+			<NodeRef refid="113"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:didLoadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller has loaded its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller didLoadResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which did loaded.
+@details Called whenever active becomes YES, regardless of result view is set or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:didLoadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:willUnloadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller will unload its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller willUnloadResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which will be unloaded.
+@details Called whenever active becomes NO, regardless of result view is unset or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:willUnloadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:didUnloadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller has unloaded its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller didUnloadResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which did unloaded.
+@details Called whenever active becomes NO, regardless of result view is unset or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:didUnloadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:willShowSearchResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller is about to display its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller willShowSearchResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which is about to be displayed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:willShowSearchResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:didShowSearchResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller just displayed its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller didShowSearchResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which is just displayed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:didShowSearchResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:willHideSearchResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller is about to hide its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller willHideSearchResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which is about to be hidden.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:willHideSearchResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:didHideSearchResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller just hid its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller didHideSearchResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which is just hidden.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:didHideSearchResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayControllerHidesNavigationBar:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the delegate if the navigation bar should be hidden.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)resultDisplayControllerHidesNavigationBar:(UIAResultDisplayController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the display controller should hide its navigation bar when active becomes YES, otherwise NO.
+@details Default is YES. If YES, this affect the navigation bar of contents view controller&apos;s navigation controller.</Abstract></ReturnValue>
+			<Anchor>//api/name/resultDisplayControllerHidesNavigationBar:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayControllerLoadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the delegate the result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)resultDisplayControllerLoadResultView:(UIAResultDisplayController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.
+@details If the result view is nil when active goes YES, this delegate method is called.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A view must not be nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/resultDisplayControllerLoadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayControllerShouldShowDimmingView:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the delegate if the result view should show dimming view. The result view will be hidden.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)resultDisplayControllerShouldShowDimmingView:(UIAResultDisplayController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.
+@details Called if -reloadResult is called. If you don&apos;t implement this method, dimming view is disabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the display controller should show dimming view now, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/resultDisplayControllerShouldShowDimmingView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayControllerShouldReloadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the delegate if the result view should reload its result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)resultDisplayControllerShouldReloadResultView:(UIAResultDisplayController *)controller</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.
+@details Called if -reloadResult is called and dimming view is not displayed. If you don&apos;t implement this method, result view is reloaded as soon as the -reloadResult is called.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the display controller should reload result view now, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/resultDisplayControllerShouldReloadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:reloadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller needs reload the result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller reloadResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which needs to be reloaded.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:reloadResultView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAResultDisplayDelegate/resultDisplayController:unloadResultView:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the controller needs unload the result view.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resultDisplayController:(UIAResultDisplayController *)controller unloadResultView:(id)resultView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The result display controller which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>resultView</Name>
+					<Abstract type="html">The result view which needs to be unloaded.
+@details Called if view is loaded by delegate, otherwise not.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resultDisplayController:unloadResultView:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

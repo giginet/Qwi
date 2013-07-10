@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIASubviewTableView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIASubviewTableView</TokenIdentifier>
+			<Abstract type="html">@brief Table view for various sized cell fit for subviews.
+@details This table view is designed to support various-sized cell for view source.
+dataSource is implemented internally. Implement subviewSource indtead of it.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASubviewTableView/setSubviewSource:</TokenIdentifier>
+			<Abstract type="html">@brief The table view&apos;s subview source.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIASubviewTableSubviewSource&gt; subviewSource</Declaration>
+			
+			
+			<Anchor>//api/name/subviewSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASubviewTableView/subviewSource</TokenIdentifier>
+			<Abstract type="html">@brief The table view&apos;s subview source.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIASubviewTableSubviewSource&gt; subviewSource</Declaration>
+			
+			
+			<Anchor>//api/name/subviewSource</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIAResultDisplayController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAResultDisplayController</TokenIdentifier>
+			<Abstract type="html">*  @brief A result display controller manages display of a input view and a result view that displays the results of a search of data by view insertion. This is working as a general version of UISearchDisplayController.
+    @details
+        You initialize a search display controller with a view controller responsible for managing the input view. When reloading is requested, the result display controller is responsible for superimposing the result interface over the original view controller’s view and showing the result view. The results are fully custumizable through delegate.
+        The delegate conforms to the UIAResultDisplayDelegate protocol. It is a wrapped interface to simplify output from raw inputs. 
+        Note that inputView should be subview of contentsViewController.view. And the contentsViewController&apos;s implementation should not depend on its view order. This controller will insert and remove others views to below and above of the inputView.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/initWithContentsController:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a display controller initialized with the given contents controller.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentsController:(UIViewController *)viewController</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewController</Name>
+					<Abstract type="html">The view controller that manages display of the original contents. The view of view controller must have inputView as its top level subview.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithContentsController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/reloadResult</TokenIdentifier>
+			<Abstract type="html">@brief Request to reload result view.
+@details Call whenever any change is found in input. Its specific behavior is determined by delegate.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)reloadResult</Declaration>
+			
+			
+			<Anchor>//api/name/reloadResult</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setDelegate:</TokenIdentifier>
+			<Abstract type="html">@brief The controller&apos;s delegate.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIAResultDisplayDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/delegate</TokenIdentifier>
+			<Abstract type="html">@brief The controller&apos;s delegate.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet id&lt;UIAResultDisplayDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setDimmingView:</TokenIdentifier>
+			<Abstract type="html">@brief The controller&apos;s dimming view.
+@details If nil, new one will be created.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIADimmingView *dimmingView</Declaration>
+			
+			
+			<Anchor>//api/name/dimmingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/dimmingView</TokenIdentifier>
+			<Abstract type="html">@brief The controller&apos;s dimming view.
+@details If nil, new one will be created.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIADimmingView *dimmingView</Declaration>
+			
+			
+			<Anchor>//api/name/dimmingView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setActive:</TokenIdentifier>
+			<Abstract type="html">@brief The visibility state of the search interface.
+@details The default value is NO.
+If you set this value directly, any change is performed without animation. Use setActive:animated: if a change in state should be animated.
+When the controller receive a message reloadResult, the result display controller automatically displays the search interface. You can use this property to force the search interface to appear.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, getter=isActive) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/active</TokenIdentifier>
+			<Abstract type="html">@brief The visibility state of the search interface.
+@details The default value is NO.
+If you set this value directly, any change is performed without animation. Use setActive:animated: if a change in state should be animated.
+When the controller receive a message reloadResult, the result display controller automatically displays the search interface. You can use this property to force the search interface to appear.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, getter=isActive) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setActive:animated:</TokenIdentifier>
+			<Abstract type="html">@brief Displays or hides the result interface, optionally with animation.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/active</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setActive:(BOOL)visible animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>visible</Name>
+					<Abstract type="html">YES to display the result interface if it is not already displayed; NO to hide the result interface if it is currently displayed.</Abstract>
+				</Parameter><Parameter>
+					<Name>animated</Name>
+					<Abstract type="html">YES to use animation for a change in visible state, otherwise NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setActive:animated:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setContentsController:</TokenIdentifier>
+			<Abstract type="html">@brief The view controller that manages the contents being searched. (read-only)
+@details The view controller must contain input view as one of its subviews.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) IBOutlet UIViewController *contentsController</Declaration>
+			
+			
+			<Anchor>//api/name/contentsController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/contentsController</TokenIdentifier>
+			<Abstract type="html">@brief The view controller that manages the contents being searched. (read-only)
+@details The view controller must contain input view as one of its subviews.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) IBOutlet UIViewController *contentsController</Declaration>
+			
+			
+			<Anchor>//api/name/contentsController</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setInputView:</TokenIdentifier>
+			<Abstract type="html">@brief The input view.
+@details When active becomes YES, the input view must not be nil. And it must should keep identical view unless active becomes NO.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet UIView *inputView</Declaration>
+			
+			
+			<Anchor>//api/name/inputView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/inputView</TokenIdentifier>
+			<Abstract type="html">@brief The input view.
+@details When active becomes YES, the input view must not be nil. And it must should keep identical view unless active becomes NO.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IBOutlet UIView *inputView</Declaration>
+			
+			
+			<Anchor>//api/name/inputView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAResultDisplayController/setResultView:</TokenIdentifier>
+			<Abstract type="html">@brief The result view.
+@details When active becomes YES, if the result view is nil, controller sends resultDisplayControllerLoadResultView: message to delegate. If the view is nil and delegate doesn&apos;t implement the message, controller raise an exception.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *resultView</Declaration>
+			
+			
+			<Anchor>//api/name/resultView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAResultDisplayController/resultView</TokenIdentifier>
+			<Abstract type="html">@brief The result view.
+@details When active becomes YES, if the result view is nil, controller sends resultDisplayControllerLoadResultView: message to delegate. If the view is nil and delegate doesn&apos;t implement the message, controller raise an exception.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) IBOutlet UIView *resultView</Declaration>
+			
+			
+			<Anchor>//api/name/resultView</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

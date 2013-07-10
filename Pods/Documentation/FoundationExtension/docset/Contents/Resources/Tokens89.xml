@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIActivityIndicatorView+Property.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIActivityIndicatorView(Property)</TokenIdentifier>
+			<Abstract type="html">@brief [UIActivityIndicatorView][0] shortcut properties.
+[0]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIActivityIndicatorView_Class/Reference/UIActivityIndicatorView.html</Abstract>
+			<DeclaredIn>UIActivityIndicatorView.h</DeclaredIn>
+			
+			<NodeRef refid="89"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIActivityIndicatorView(Property)/setAnimating:</TokenIdentifier>
+			<Abstract type="html">@brief The animating state of the activity indicator view.
+@details
+If you get this value, it redirects to [-isAnimating:][1]
+If you set this value YES, it redirects to [-startAnimating:][2]
+if you set this value NO, it redirects to [-stopAnimating:][3]
+[1]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/isAnimating
+[2]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/startAnimating
+[3]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/stopAnimating</Abstract>
+			<DeclaredIn>UIActivityIndicatorView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL animating</Declaration>
+			
+			
+			<Anchor>//api/name/animating</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIActivityIndicatorView(Property)/animating</TokenIdentifier>
+			<Abstract type="html">@brief The animating state of the activity indicator view.
+@details
+If you get this value, it redirects to [-isAnimating:][1]
+If you set this value YES, it redirects to [-startAnimating:][2]
+if you set this value NO, it redirects to [-stopAnimating:][3]
+[1]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/isAnimating
+[2]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/startAnimating
+[3]: http://developer.apple.com/library/ios/documentation/uikit/reference/UIActivityIndicatorViewClass/Reference/UIActivityIndicatorView.html#//appleref/occ/instm/UIActivityIndicatorView/stopAnimating</Abstract>
+			<DeclaredIn>UIActivityIndicatorView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL animating</Declaration>
+			
+			
+			<Anchor>//api/name/animating</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

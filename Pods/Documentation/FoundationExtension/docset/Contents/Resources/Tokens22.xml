@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIAPlaceholderTextView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAPlaceholderTextView</TokenIdentifier>
+			<Abstract type="html">@brief UITextView with placeholder.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderString:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder string</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderString</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder string</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *placeholderString</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/set__deprecated:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
+			
+			
+			<Anchor>//api/name/__deprecated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/__deprecated</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder color. Default is gray.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIColor *__deprecated</Declaration>
+			
+			
+			<Anchor>//api/name/__deprecated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderTextView:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderTextView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderTextView</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder text view to setup styles.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) UITextView *placeholderTextView</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderTextView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAPlaceholderTextView/setPlaceholderAnimated:</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderAnimated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAPlaceholderTextView/placeholderAnimated</TokenIdentifier>
+			<Abstract type="html">@brief Placeholder shows/hides with animation. Default is YES.</Abstract>
+			<DeclaredIn>UIAPlaceholderTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isPlaceholderAnimated) BOOL placeholderAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/placeholderAnimated</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

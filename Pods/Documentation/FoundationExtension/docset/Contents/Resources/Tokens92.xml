@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIApplication+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIApplication(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [UIApplication][0] shortcuts.
+[0]: http://developer.apple.com/library/ios/#DOCUMENTATION/UIKit/Reference/UIApplication_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Shortcuts)/setStatusBarFrameForCurrentOrientation:</TokenIdentifier>
+			<Abstract type="html">@brief statusbar size calculated for current orientation.</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect statusBarFrameForCurrentOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/statusBarFrameForCurrentOrientation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIApplication(Shortcuts)/statusBarFrameForCurrentOrientation</TokenIdentifier>
+			<Abstract type="html">@brief statusbar size calculated for current orientation.</Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect statusBarFrameForCurrentOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/statusBarFrameForCurrentOrientation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Shortcuts)/statusBarOrientationReducedSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			
+			<Declaration>- (CGSize)statusBarOrientationReducedSize</Declaration>
+			
+			
+			<Anchor>//api/name/statusBarOrientationReducedSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIApplication(Shortcuts)/statusBarSizeForOrientation:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIApplication.h</DeclaredIn>			
+			
+			<Declaration>- (CGSize)statusBarSizeForOrientation:(UIInterfaceOrientation)orientation</Declaration>
+			
+			
+			<Anchor>//api/name/statusBarSizeForOrientation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,807 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIAResultDisplayController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">FoundationExtension 0.36.3 </a></h1>
+				<a id="developerHome" href="../index.html">Jeong YunWon</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIAResultDisplayController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/active">&nbsp;&nbsp;&nbsp;&nbsp;active</option>
+	
+	<option value="//api/name/contentsController">&nbsp;&nbsp;&nbsp;&nbsp;contentsController</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/dimmingView">&nbsp;&nbsp;&nbsp;&nbsp;dimmingView</option>
+	
+	<option value="//api/name/inputView">&nbsp;&nbsp;&nbsp;&nbsp;inputView</option>
+	
+	<option value="//api/name/resultView">&nbsp;&nbsp;&nbsp;&nbsp;resultView</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithContentsController:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithContentsController:</option>
+	
+	<option value="//api/name/reloadResult">&nbsp;&nbsp;&nbsp;&nbsp;- reloadResult</option>
+	
+	<option value="//api/name/setActive:animated:">&nbsp;&nbsp;&nbsp;&nbsp;- setActive:animated:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/active">active</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentsController">contentsController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dimmingView">dimmingView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputView">inputView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultView">resultView</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithContentsController:">initWithContentsController:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadResult">reloadResult</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setActive:animated:">setActive:animated:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIAResultDisplayController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIAResultDisplayController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/UIADimmingViewDelegate.html">UIADimmingViewDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIAResultDisplayController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li>@brief A result display controller manages display of a input view and a result view that displays the results of a search of data by view insertion. This is working as a general version of UISearchDisplayController.
+ @details
+     You initialize a search display controller with a view controller responsible for managing the input view. When reloading is requested, the result display controller is responsible for superimposing the result interface over the original view controller’s view and showing the result view. The results are fully custumizable through <a href="#//api/name/delegate">delegate</a>.
+     The <a href="#//api/name/delegate">delegate</a> conforms to the <a href="../Protocols/UIAResultDisplayDelegate.html">UIAResultDisplayDelegate</a> protocol. It is a wrapped interface to simplify output from raw inputs.
+     Note that <a href="#//api/name/inputView">inputView</a> should be subview of contentsViewController.view. And the contentsViewController&rsquo;s implementation should not depend on its view order. This controller will insert and remove others views to below and above of the <a href="#//api/name/inputView">inputView</a>.</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithContentsController:">&ndash;&nbsp;initWithContentsController:</a></code>
+		<span class="tooltip"><p>@brief Returns a display controller initialized with the given contents controller.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadResult">&ndash;&nbsp;reloadResult</a></code>
+		<span class="tooltip"><p>@brief Request to reload result view.
+@details Call whenever any change is found in input. Its specific behavior is determined by <a href="#//api/name/delegate">delegate</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>@brief The controller&rsquo;s delegate.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dimmingView">&nbsp;&nbsp;dimmingView</a></code>
+		<span class="tooltip"><p>@brief The controller&rsquo;s dimming view.
+@details If nil, new one will be created.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/active">&nbsp;&nbsp;active</a></code>
+		<span class="tooltip"><p>@brief The visibility state of the search interface.
+@details The default value is NO.
+If you set this value directly, any change is performed without animation. Use <a href="#//api/name/setActive:animated:">setActive:animated:</a> if a change in state should be animated.
+When the controller receive a message <a href="#//api/name/reloadResult">reloadResult</a>, the result display controller automatically displays the search interface. You can use this property to force the search interface to appear.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setActive:animated:">&ndash;&nbsp;setActive:animated:</a></code>
+		<span class="tooltip"><p>@brief Displays or hides the result interface, optionally with animation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/contentsController">&nbsp;&nbsp;contentsController</a></code>
+		<span class="tooltip"><p>@brief The view controller that manages the contents being searched. (read-only)
+@details The view controller must contain input view as one of its subviews.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputView">&nbsp;&nbsp;inputView</a></code>
+		<span class="tooltip"><p>@brief The input view.
+@details When <a href="#//api/name/active">active</a> becomes YES, the input view must not be nil. And it must should keep identical view unless <a href="#//api/name/active">active</a> becomes NO.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultView">&nbsp;&nbsp;resultView</a></code>
+		<span class="tooltip"><p>@brief The result view.
+@details When <a href="#//api/name/active">active</a> becomes YES, if the result view is nil, controller sends resultDisplayControllerLoadResultView: message to <a href="#//api/name/delegate">delegate</a>. If the view is nil and <a href="#//api/name/delegate">delegate</a> doesn&rsquo;t implement the message, controller raise an exception.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/active" title="active"></a>
+	<h3 class="subsubtitle method-title">active</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The visibility state of the search interface.
+@details The default value is NO.
+If you set this value directly, any change is performed without animation. Use <a href="#//api/name/setActive:animated:">setActive:animated:</a> if a change in state should be animated.
+When the controller receive a message <a href="#//api/name/reloadResult">reloadResult</a>, the result display controller automatically displays the search interface. You can use this property to force the search interface to appear.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, getter=isActive) BOOL active</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The visibility state of the search interface.
+@details The default value is NO.
+If you set this value directly, any change is performed without animation. Use <a href="#//api/name/setActive:animated:">setActive:animated:</a> if a change in state should be animated.
+When the controller receive a message <a href="#//api/name/reloadResult">reloadResult</a>, the result display controller automatically displays the search interface. You can use this property to force the search interface to appear.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/contentsController" title="contentsController"></a>
+	<h3 class="subsubtitle method-title">contentsController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The view controller that manages the contents being searched. (read-only)
+@details The view controller must contain input view as one of its subviews.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) IBOutlet UIViewController *contentsController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The view controller that manages the contents being searched. (read-only)
+@details The view controller must contain input view as one of its subviews.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The controller&rsquo;s delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) IBOutlet id&lt;UIAResultDisplayDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The controller&rsquo;s delegate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dimmingView" title="dimmingView"></a>
+	<h3 class="subsubtitle method-title">dimmingView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The controller&rsquo;s dimming view.
+@details If nil, new one will be created.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIADimmingView *dimmingView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The controller&rsquo;s dimming view.
+@details If nil, new one will be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputView" title="inputView"></a>
+	<h3 class="subsubtitle method-title">inputView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The input view.
+@details When <a href="#//api/name/active">active</a> becomes YES, the input view must not be nil. And it must should keep identical view unless <a href="#//api/name/active">active</a> becomes NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) IBOutlet UIView *inputView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The input view.
+@details When <a href="#//api/name/active">active</a> becomes YES, the input view must not be nil. And it must should keep identical view unless <a href="#//api/name/active">active</a> becomes NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultView" title="resultView"></a>
+	<h3 class="subsubtitle method-title">resultView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief The result view.
+@details When <a href="#//api/name/active">active</a> becomes YES, if the result view is nil, controller sends resultDisplayControllerLoadResultView: message to <a href="#//api/name/delegate">delegate</a>. If the view is nil and <a href="#//api/name/delegate">delegate</a> doesn&rsquo;t implement the message, controller raise an exception.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) IBOutlet UIView *resultView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief The result view.
+@details When <a href="#//api/name/active">active</a> becomes YES, if the result view is nil, controller sends resultDisplayControllerLoadResultView: message to <a href="#//api/name/delegate">delegate</a>. If the view is nil and <a href="#//api/name/delegate">delegate</a> doesn&rsquo;t implement the message, controller raise an exception.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithContentsController:" title="initWithContentsController:"></a>
+	<h3 class="subsubtitle method-title">initWithContentsController:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Returns a display controller initialized with the given contents controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithContentsController:(UIViewController *)<em>viewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>viewController</em></dt>
+			<dd><p>The view controller that manages display of the original contents. The view of view controller must have <a href="#//api/name/inputView">inputView</a> as its top level subview.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Returns a display controller initialized with the given contents controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadResult" title="reloadResult"></a>
+	<h3 class="subsubtitle method-title">reloadResult</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Request to reload result view.
+@details Call whenever any change is found in input. Its specific behavior is determined by <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reloadResult</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Request to reload result view.
+@details Call whenever any change is found in input. Its specific behavior is determined by <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setActive:animated:" title="setActive:animated:"></a>
+	<h3 class="subsubtitle method-title">setActive:animated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Displays or hides the result interface, optionally with animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setActive:(BOOL)<em>visible</em> animated:(BOOL)<em>animated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>visible</em></dt>
+			<dd><p>YES to display the result interface if it is not already displayed; NO to hide the result interface if it is currently displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>YES to use animation for a change in visible state, otherwise NO.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Displays or hides the result interface, optionally with animation.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/active">@property active</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jeong YunWon. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

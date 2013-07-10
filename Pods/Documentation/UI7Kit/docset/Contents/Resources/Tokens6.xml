@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Font.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Font</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Font.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Font/systemFontOfSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Font.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)systemFontOfSize:(CGFloat)fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/systemFontOfSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Font/boldSystemFontOfSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Font.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)boldSystemFontOfSize:(CGFloat)fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/boldSystemFontOfSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Font/italicSystemFontOfSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Font.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)italicSystemFontOfSize:(CGFloat)fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/italicSystemFontOfSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Font/systemFontOfSize:attribute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Font.h</DeclaredIn>			
+			
+			<Declaration>+ (UIFont *)systemFontOfSize:(CGFloat)fontSize attribute:(NSString *)attribute</Declaration>
+			
+			
+			<Anchor>//api/name/systemFontOfSize:attribute:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

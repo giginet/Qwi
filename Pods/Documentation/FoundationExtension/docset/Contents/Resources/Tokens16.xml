@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSATriple.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSATriple</TokenIdentifier>
+			<Abstract type="html">@brief Manages ordered collections of 3 objects.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setFirst:</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/first</TokenIdentifier>
+			<Abstract type="html">@brief first object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id first</Declaration>
+			
+			
+			<Anchor>//api/name/first</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setSecond:</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/second</TokenIdentifier>
+			<Abstract type="html">@brief second object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id second</Declaration>
+			
+			
+			<Anchor>//api/name/second</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/setThird:</TokenIdentifier>
+			<Abstract type="html">@brief third object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id third</Declaration>
+			
+			
+			<Anchor>//api/name/third</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSATriple/third</TokenIdentifier>
+			<Abstract type="html">@brief third object</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) id third</Declaration>
+			
+			
+			<Anchor>//api/name/third</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSATriple/triple</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an empty triple.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)triple</Declaration>
+			
+			<ReturnValue><Abstract type="html">An empty triple.</Abstract></ReturnValue>
+			<Anchor>//api/name/triple</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSATriple/initWithFirst:second:third:</TokenIdentifier>
+			<Abstract type="html">@brief Initilize a triple containing first as first object, second as second object and third as third object.
+@param first
+Value for first
+@param second
+Value for second
+@param third
+Value for third</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFirst:(id)first second:(id)second third:(id)third</Declaration>
+			
+			<ReturnValue><Abstract type="html">A tuple with first, second and third value.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFirst:second:third:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/NSATriple/tripleWithFirst:second:third:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns a triple containing first as first object, second as second object and third as third object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSATriple/initWithFirst:second:third:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)tripleWithFirst:(id)first second:(id)second third:(id)third</Declaration>
+			
+			
+			<Anchor>//api/name/tripleWithFirst:second:third:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

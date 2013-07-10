@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+CommonCrypto.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(CommonCrypto)</TokenIdentifier>
+			<Abstract type="html">@brief Shortcuts for CommonCrypto digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestByMD2UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief MD2 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestByMD2UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestByMD2UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestByMD4UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief MD4 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestByMD4UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestByMD4UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestByMD5UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief MD5 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestByMD5UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestByMD5UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA1UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief SHA1 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA1UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA1UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA224UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief SHA224 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA224UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA224UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA256UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief SSH256 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA256UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA256UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA384UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief SSH384 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA384UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA384UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA512UsingEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief SSH512 digest.</Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA512UsingEncoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA512UsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestByMD5</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestByMD5</Declaration>
+			
+			
+			<Anchor>//api/name/digestByMD5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestBySHA1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)digestBySHA1</Declaration>
+			
+			
+			<Anchor>//api/name/digestBySHA1</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestStringByMD5</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)digestStringByMD5</Declaration>
+			
+			
+			<Anchor>//api/name/digestStringByMD5</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(CommonCrypto)/digestStringBySHA1</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSACommonDigest.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)digestStringBySHA1</Declaration>
+			
+			
+			<Anchor>//api/name/digestStringBySHA1</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+NSURLRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(NSURLRequest)</TokenIdentifier>
+			<Abstract type="html">@brief Creation methods extension using NSURLRequest</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array with the contents of the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:format:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/arrayWithContentsOfURLRequest:format:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithContentsOfURLRequest:(NSURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The URLRequest of a file containing a string representation of an array produced by the [NSData writeToURL:atomically:][0] method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the contents specified by request. Returns nil if the location can’t be opened or if the contents of the request can’t be parsed into an array. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfURLRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/arrayWithContentsOfURLRequest:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an array containing the contents of the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)arrayWithContentsOfURLRequest:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/arrayWithContentsOfURLRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array with the contents of the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/arrayWithContentsOfURLRequest:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithContentsOfURLRequest:(NSURLRequest *)request format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The URLRequest of a file containing a string representation of an array produced by the &apos;-writeToURL:atomically:&apos; method.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">A property list format. Possible values for format are described in &apos;NSPropertyListFormat&apos;.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If the method does not complete successfully, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the contents specified by request. Returns nil if the location can’t be opened or if the contents of the request can’t be parsed into an array. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfURLRequest:format:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/arrayWithContentsOfURLRequest:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an array containing the contents of the result specified by a given request.</Abstract>
+			<DeclaredIn>NSURLRequestCreations.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSURLRequest)/initWithContentsOfURLRequest:format:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)arrayWithContentsOfURLRequest:(NSURLRequest *)request format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/arrayWithContentsOfURLRequest:format:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

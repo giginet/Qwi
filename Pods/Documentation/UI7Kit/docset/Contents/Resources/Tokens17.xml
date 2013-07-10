@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Stepper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Stepper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Stepper.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

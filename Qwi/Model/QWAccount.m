@@ -22,7 +22,7 @@
 - (BOOL)isEqual:(id)object {
     if ([object isKindOfClass:[self class]]) {
         QWAccount *account = (QWAccount *)object;
-        return [account.user isEqual:self.user];
+        return [account.user.pk isEqual:self.user.pk];
     }
     return NO;
 }

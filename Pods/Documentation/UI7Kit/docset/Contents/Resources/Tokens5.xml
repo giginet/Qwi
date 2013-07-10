@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Color.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Color</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/defaultBarColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)defaultBarColor</Declaration>
+			
+			
+			<Anchor>//api/name/defaultBarColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/blackBarColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)blackBarColor</Declaration>
+			
+			
+			<Anchor>//api/name/blackBarColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/defaultBackgroundColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)defaultBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/defaultBackgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/defaultTintColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)defaultTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/defaultEmphasizedColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)defaultEmphasizedColor</Declaration>
+			
+			
+			<Anchor>//api/name/defaultEmphasizedColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/defaultTrackTintColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)defaultTrackTintColor</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTrackTintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Color/groupedTableViewSectionBackgroundColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Color.h</DeclaredIn>			
+			
+			<Declaration>+ (UIColor *)groupedTableViewSectionBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/groupedTableViewSectionBackgroundColor</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

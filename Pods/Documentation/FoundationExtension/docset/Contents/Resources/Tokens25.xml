@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIASegmentedImageView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIASegmentedImageView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setCenterImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *centerImage</Declaration>
+			
+			
+			<Anchor>//api/name/centerImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/centerImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *centerImage</Declaration>
+			
+			
+			<Anchor>//api/name/centerImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setTopImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topImage</Declaration>
+			
+			
+			<Anchor>//api/name/topImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/topImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topImage</Declaration>
+			
+			
+			<Anchor>//api/name/topImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setBottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/bottomImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setLeftImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *leftImage</Declaration>
+			
+			
+			<Anchor>//api/name/leftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/leftImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *leftImage</Declaration>
+			
+			
+			<Anchor>//api/name/leftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setRightImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *rightImage</Declaration>
+			
+			
+			<Anchor>//api/name/rightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/rightImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *rightImage</Declaration>
+			
+			
+			<Anchor>//api/name/rightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setTopLeftImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topLeftImage</Declaration>
+			
+			
+			<Anchor>//api/name/topLeftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/topLeftImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topLeftImage</Declaration>
+			
+			
+			<Anchor>//api/name/topLeftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setTopRightImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topRightImage</Declaration>
+			
+			
+			<Anchor>//api/name/topRightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/topRightImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *topRightImage</Declaration>
+			
+			
+			<Anchor>//api/name/topRightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setBottomLeftImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomLeftImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomLeftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/bottomLeftImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomLeftImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomLeftImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setBottomRightImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomRightImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomRightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/bottomRightImage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *bottomRightImage</Declaration>
+			
+			
+			<Anchor>//api/name/bottomRightImage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setAutosizing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autosizing</Declaration>
+			
+			
+			<Anchor>//api/name/autosizing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/autosizing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL autosizing</Declaration>
+			
+			
+			<Anchor>//api/name/autosizing</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/setRightMargin:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat topMargin , bottomMargin , leftMargin , rightMargin</Declaration>
+			
+			
+			<Anchor>//api/name/rightMargin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIASegmentedImageView/rightMargin</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat topMargin , bottomMargin , leftMargin , rightMargin</Declaration>
+			
+			
+			<Anchor>//api/name/rightMargin</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/initWithCenterImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCenterImage:(UIImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCenterImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/initWithTopImage:centerImage:bottomImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTopImage:(UIImage *)topImage centerImage:(UIImage *)centerImage bottomImage:(UIImage *)bottomImage</Declaration>
+			
+			
+			<Anchor>//api/name/initWithTopImage:centerImage:bottomImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/initWithLeftImage:centerImage:rightImage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithLeftImage:(UIImage *)leftImage centerImage:(UIImage *)centerImage rightImage:(UIImage *)rightImage</Declaration>
+			
+			
+			<Anchor>//api/name/initWithLeftImage:centerImage:rightImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIASegmentedImageView/arrange</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIASegmentedImageView.h</DeclaredIn>			
+			
+			<Declaration>- (void)arrange</Declaration>
+			
+			
+			<Anchor>//api/name/arrange</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

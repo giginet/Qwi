@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+NSNumber.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(NSNumber)</TokenIdentifier>
+			<Abstract type="html">@brief NSArray shortcut methods for [NSNumber][1].
+[1]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSNumber_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSNumber)/integerAtIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Returns the integer located at index.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)integerAtIndex:(NSUInteger)index</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">An index within the bounds of the array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The integer decoded from NSNumber object located at index.</Abstract></ReturnValue>
+			<Anchor>//api/name/integerAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(NSNumber)/indexOfInteger:</TokenIdentifier>
+			<Abstract type="html">@brief Returns the lowest index whose corresponding array value is equal to a given integer.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)indexOfInteger:(NSInteger)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">A value.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The lowest index whose corresponding array value is equal to value. If none of the objects in the array is equal to NSNumber with value, returns [NSNotFound][NSNotFound].</Abstract></ReturnValue>
+			<Anchor>//api/name/indexOfInteger:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

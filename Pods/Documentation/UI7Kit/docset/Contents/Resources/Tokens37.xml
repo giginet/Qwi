@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UI7Patch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UI7Patch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UI7Patch/patch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>+ (void)patch</Declaration>
+			
+			
+			<Anchor>//api/name/patch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UI7Patch/patchIfNeeded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>+ (void)patchIfNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/patchIfNeeded</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSControl+Properties.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSControl(Properties)</TokenIdentifier>
+			<Abstract type="html">@brief [NSControl][0] missing properties.
+[0]: http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSControl_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSControl.h</DeclaredIn>
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSControl(Properties)/setEnabled:</TokenIdentifier>
+			<Abstract type="html">@brief The value of enabled.</Abstract>
+			<DeclaredIn>NSControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled, setter=setEnabled, :) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSControl(Properties)/enabled</TokenIdentifier>
+			<Abstract type="html">@brief The value of enabled.</Abstract>
+			<DeclaredIn>NSControl.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isEnabled, setter=setEnabled, :) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

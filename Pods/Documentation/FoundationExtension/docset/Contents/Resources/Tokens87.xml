@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURLRequest+Creations_deprecated.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURLRequest(Creations_deprecated)</TokenIdentifier>
+			<Abstract type="html">@brief Deprecated creation shortcuts
+@deprecated Use NSURLRequest initWithURL:, @ref NSString(Shortcuts) and @ref NSURL(Creations)</Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>
+			
+			<NodeRef refid="87"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/initWithURLFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURLFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURLFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/initWithFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFilePath:(NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFilePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/initWithFilePathFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFilePathFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFilePathFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/initWithAbstractPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAbstractPath:(NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/initWithAbstractPathFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAbstractPathFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAbstractPathFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/URLRequestWithURLFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLRequestWithURLFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestWithURLFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/URLRequestWithFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLRequestWithFilePath:(NSString *)filepath</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestWithFilePath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/URLRequestWithFilePathFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLRequestWithFilePathFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestWithFilePathFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/URLRequestWithAbstractPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLRequestWithAbstractPath:(NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestWithAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURLRequest(Creations_deprecated)/URLRequestWithAbstractPathFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>+ (id)URLRequestWithAbstractPathFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/URLRequestWithAbstractPathFormat:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

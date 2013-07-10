@@ -1,0 +1,1125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>UIAResultDisplayDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">FoundationExtension 0.36.3 </a></h1>
+				<a id="developerHome" href="../index.html">Jeong YunWon</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIAResultDisplayDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/resultDisplayController:didHideSearchResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:didHideSearchResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:didLoadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:didLoadResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:didShowSearchResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:didShowSearchResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:didUnloadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:didUnloadResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:reloadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:reloadResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:unloadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:unloadResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:willHideSearchResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:willHideSearchResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:willShowSearchResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:willShowSearchResultView:</option>
+	
+	<option value="//api/name/resultDisplayController:willUnloadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayController:willUnloadResultView:</option>
+	
+	<option value="//api/name/resultDisplayControllerHidesNavigationBar:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayControllerHidesNavigationBar:</option>
+	
+	<option value="//api/name/resultDisplayControllerLoadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayControllerLoadResultView:</option>
+	
+	<option value="//api/name/resultDisplayControllerShouldReloadResultView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayControllerShouldReloadResultView:</option>
+	
+	<option value="//api/name/resultDisplayControllerShouldShowDimmingView:">&nbsp;&nbsp;&nbsp;&nbsp;- resultDisplayControllerShouldShowDimmingView:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:didHideSearchResultView:">resultDisplayController:didHideSearchResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:didLoadResultView:">resultDisplayController:didLoadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:didShowSearchResultView:">resultDisplayController:didShowSearchResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:didUnloadResultView:">resultDisplayController:didUnloadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:reloadResultView:">resultDisplayController:reloadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:unloadResultView:">resultDisplayController:unloadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:willHideSearchResultView:">resultDisplayController:willHideSearchResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:willShowSearchResultView:">resultDisplayController:willShowSearchResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayController:willUnloadResultView:">resultDisplayController:willUnloadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayControllerHidesNavigationBar:">resultDisplayControllerHidesNavigationBar:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayControllerLoadResultView:">resultDisplayControllerLoadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayControllerShouldReloadResultView:">resultDisplayControllerShouldReloadResultView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resultDisplayControllerShouldShowDimmingView:">resultDisplayControllerShouldShowDimmingView:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIAResultDisplayDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIAResultDisplayDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIAResultDisplayController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:didLoadResultView:">&ndash;&nbsp;resultDisplayController:didLoadResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller has loaded its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:willUnloadResultView:">&ndash;&nbsp;resultDisplayController:willUnloadResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller will unload its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:didUnloadResultView:">&ndash;&nbsp;resultDisplayController:didUnloadResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller has unloaded its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:willShowSearchResultView:">&ndash;&nbsp;resultDisplayController:willShowSearchResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller is about to display its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:didShowSearchResultView:">&ndash;&nbsp;resultDisplayController:didShowSearchResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller just displayed its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:willHideSearchResultView:">&ndash;&nbsp;resultDisplayController:willHideSearchResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller is about to hide its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:didHideSearchResultView:">&ndash;&nbsp;resultDisplayController:didHideSearchResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller just hid its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayControllerHidesNavigationBar:">&ndash;&nbsp;resultDisplayControllerHidesNavigationBar:</a></code>
+		<span class="tooltip"><p>@brief Asks the delegate if the navigation bar should be hidden.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayControllerLoadResultView:">&ndash;&nbsp;resultDisplayControllerLoadResultView:</a></code>
+		<span class="tooltip"><p>@brief Asks the delegate the result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayControllerShouldShowDimmingView:">&ndash;&nbsp;resultDisplayControllerShouldShowDimmingView:</a></code>
+		<span class="tooltip"><p>@brief Asks the delegate if the result view should show dimming view. The result view will be hidden.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayControllerShouldReloadResultView:">&ndash;&nbsp;resultDisplayControllerShouldReloadResultView:</a></code>
+		<span class="tooltip"><p>@brief Asks the delegate if the result view should reload its result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:reloadResultView:">&ndash;&nbsp;resultDisplayController:reloadResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller needs reload the result view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resultDisplayController:unloadResultView:">&ndash;&nbsp;resultDisplayController:unloadResultView:</a></code>
+		<span class="tooltip"><p>@brief Tells the delegate that the controller needs unload the result view.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:didHideSearchResultView:" title="resultDisplayController:didHideSearchResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:didHideSearchResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller just hid its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> didHideSearchResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which is just hidden.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller just hid its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:didLoadResultView:" title="resultDisplayController:didLoadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:didLoadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller has loaded its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> didLoadResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which did loaded.
+@details Called whenever active becomes YES, regardless of result view is set or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller has loaded its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:didShowSearchResultView:" title="resultDisplayController:didShowSearchResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:didShowSearchResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller just displayed its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> didShowSearchResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which is just displayed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller just displayed its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:didUnloadResultView:" title="resultDisplayController:didUnloadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:didUnloadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller has unloaded its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> didUnloadResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which did unloaded.
+@details Called whenever active becomes NO, regardless of result view is unset or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller has unloaded its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:reloadResultView:" title="resultDisplayController:reloadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:reloadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller needs reload the result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> reloadResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which needs to be reloaded.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller needs reload the result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:unloadResultView:" title="resultDisplayController:unloadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:unloadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller needs unload the result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> unloadResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which needs to be unloaded.
+@details Called if view is loaded by delegate, otherwise not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller needs unload the result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:willHideSearchResultView:" title="resultDisplayController:willHideSearchResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:willHideSearchResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller is about to hide its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> willHideSearchResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which is about to be hidden.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller is about to hide its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:willShowSearchResultView:" title="resultDisplayController:willShowSearchResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:willShowSearchResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller is about to display its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> willShowSearchResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which is about to be displayed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller is about to display its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayController:willUnloadResultView:" title="resultDisplayController:willUnloadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayController:willUnloadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Tells the delegate that the controller will unload its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resultDisplayController:(UIAResultDisplayController *)<em>controller</em> willUnloadResultView:(id)<em>resultView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resultView</em></dt>
+			<dd><p>The result view which will be unloaded.
+@details Called whenever active becomes NO, regardless of result view is unset or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Tells the delegate that the controller will unload its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayControllerHidesNavigationBar:" title="resultDisplayControllerHidesNavigationBar:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayControllerHidesNavigationBar:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the delegate if the navigation bar should be hidden.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resultDisplayControllerHidesNavigationBar:(UIAResultDisplayController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the display controller should hide its navigation bar when active becomes YES, otherwise NO.
+@details Default is YES. If YES, this affect the navigation bar of contents view controller&rsquo;s navigation controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the delegate if the navigation bar should be hidden.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayControllerLoadResultView:" title="resultDisplayControllerLoadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayControllerLoadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the delegate the result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIView *)resultDisplayControllerLoadResultView:(UIAResultDisplayController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.
+@details If the result view is nil when active goes YES, this delegate method is called.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A view must not be nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the delegate the result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayControllerShouldReloadResultView:" title="resultDisplayControllerShouldReloadResultView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayControllerShouldReloadResultView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the delegate if the result view should reload its result view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resultDisplayControllerShouldReloadResultView:(UIAResultDisplayController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.
+@details Called if -reloadResult is called and dimming view is not displayed. If you don&rsquo;t implement this method, result view is reloaded as soon as the -reloadResult is called.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the display controller should reload result view now, otherwise NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the delegate if the result view should reload its result view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resultDisplayControllerShouldShowDimmingView:" title="resultDisplayControllerShouldShowDimmingView:"></a>
+	<h3 class="subsubtitle method-title">resultDisplayControllerShouldShowDimmingView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the delegate if the result view should show dimming view. The result view will be hidden.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resultDisplayControllerShouldShowDimmingView:(UIAResultDisplayController *)<em>controller</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>controller</em></dt>
+			<dd><p>The result display controller which the receiver is the delegate.
+@details Called if -reloadResult is called. If you don&rsquo;t implement this method, dimming view is disabled.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the display controller should show dimming view now, otherwise NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the delegate if the result view should show dimming view. The result view will be hidden.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIAResultDisplayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jeong YunWon. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

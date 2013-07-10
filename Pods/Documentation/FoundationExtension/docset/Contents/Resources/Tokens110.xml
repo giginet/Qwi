@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSAImageWellDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSAImageWellDelegate</TokenIdentifier>
+			<Abstract type="html">@brief This protocol defines delegate methods for NSAImageWell objects.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>
+			
+			<NodeRef refid="110"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAImageWellDelegate/imageWellShouldAcceptURLString:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the delegate if the image well should accept URL string.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)imageWellShouldAcceptURLString:(NSAImageWell *)imageWell</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageWell</Name>
+					<Abstract type="html">The image well which the receiver is the delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the display controller should accepts string as URL of image; otherwise NO.
+@details Default is NO. If YES, the image well accepts string value as URL of image. This methods override image well&apos;s acceptStringDragging value.</Abstract></ReturnValue>
+			<Anchor>//api/name/imageWellShouldAcceptURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAImageWellDelegate/imageWell:didDraggingEntered:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that a user dragged an image into the area of image well.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>- (void)imageWell:(NSAImageWell *)imageWell didDraggingEntered:(id&lt;NSDraggingInfo&gt;)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageWell</Name>
+					<Abstract type="html">The image well which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The dragging info.
+@details Called whenever a user dragged an image into image well.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageWell:didDraggingEntered:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAImageWellDelegate/imageWell:didDraggingExited:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that a user dragged an image out of the area of image well.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>- (void)imageWell:(NSAImageWell *)imageWell didDraggingExited:(id&lt;NSDraggingInfo&gt;)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageWell</Name>
+					<Abstract type="html">The image well which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The dragging info.
+@details Called whenever a user dragged an image out of image well.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageWell:didDraggingExited:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAImageWellDelegate/imageWell:willReceiveDragging:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that a user dropped an image into the area of image well.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>- (void)imageWell:(NSAImageWell *)imageWell willReceiveDragging:(id&lt;NSDraggingInfo&gt;)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageWell</Name>
+					<Abstract type="html">The image well which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The dragging info.
+@details Called whenever a user dropped an image into image well.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageWell:willReceiveDragging:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAImageWellDelegate/imageWell:didReceiveDragging:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the image well loaded the dropped image.</Abstract>
+			<DeclaredIn>NSAImageWell.h</DeclaredIn>			
+			
+			<Declaration>- (void)imageWell:(NSAImageWell *)imageWell didReceiveDragging:(id&lt;NSDraggingInfo&gt;)sender</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageWell</Name>
+					<Abstract type="html">The image well which the receiver is the delegate.</Abstract>
+				</Parameter><Parameter>
+					<Name>sender</Name>
+					<Abstract type="html">The dragging info.
+@details Called whenever the image well loaded the dropped image.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/imageWell:didReceiveDragging:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

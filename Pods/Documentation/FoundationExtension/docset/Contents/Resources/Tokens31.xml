@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSArray+Creations.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(Creations)</TokenIdentifier>
+			<Abstract type="html">@brief NSArray creation methods extension with [NSData][1] or [NSFastEnumeration][2]
+[1]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/Reference/Reference.html
+[2]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/NSFastEnumerationprotocol/Reference/NSFastEnumeration.html#//appleref/doc/uid/TP40004559
+@details Data must be property list.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array with the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:format:error:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithData:format:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithData:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object containing bytes of plist file representation.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the contents in data. Returns nil if the contents of the request can’t be parsed into an array. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array with the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithData:(NSData *)data format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">An NSData object containing bytes of plist file representation.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">A property list format. Possible values for format are described in [NSPropertyListFormat][1].</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If the method does not complete successfully, upon return contains an NSError object that describes the problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the contents in data. Returns nil if the contents of the request can’t be parsed into an array. The returned object might be different than the original receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithData:format:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithEnumerator:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array by placing in it the objects enumerated in a given enumerator.
+@details This initilizer is not optimized.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithEnumerator:copyItems:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithEnumerator:(id&lt;NSFastEnumeration&gt;)enumerator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enumerator</Name>
+					<Abstract type="html">An object with NSFastEnumeration implementation</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the objects — or if flag is YES, copies of the objects - enumerated in a given enumerator.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithEnumerator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithEnumerator:copyItems:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly allocated array by placing in it the objects enumerated in a given enumerator.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithEnumerator:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithEnumerator:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithEnumerator:(id&lt;NSFastEnumeration&gt;)enumerator copyItems:(BOOL)flag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enumerator</Name>
+					<Abstract type="html">An object with NSFastEnumeration implementation</Abstract>
+				</Parameter><Parameter>
+					<Name>flag</Name>
+					<Abstract type="html">If YES, each object in array receives a [copyWithZone:][0] message to create a copy of the object—objects must conform to the [NSCopying][1] protocol. In a managed memory environment, this is instead of the retain message the object would otherwise receive. The object copy is then added to the returned array.
+If NO, then in a managed memory environment each object in array simply receives a retain message when it is added to the returned array.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array initialized to contain the objects — or if flag is YES, copies of the objects - enumerated in a given enumerator.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithEnumerator:copyItems:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithData:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an array containing the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)arrayWithData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/arrayWithData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithData:format:error:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an array containing the contents of data. Data must be property list.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithData:format:error:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)arrayWithData:(NSData *)data format:(NSPropertyListFormat *)format error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/arrayWithData:format:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/arrayWithEnumerator:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an array containing the objects enumerated in a given enumerator.</Abstract>
+			<DeclaredIn>NSArray.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSArray(Creations)/initWithEnumerator:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)arrayWithEnumerator:(id&lt;NSFastEnumeration&gt;)enumerator</Declaration>
+			
+			
+			<Anchor>//api/name/arrayWithEnumerator:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

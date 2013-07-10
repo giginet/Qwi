@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSAttributedString+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSAttributedString(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief NSAttributedString common shortcuts</Abstract>
+			<DeclaredIn>NSAttributedString.h</DeclaredIn>
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAttributedString(Shortcuts)/attributedString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSAttributedString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)attributedString</Declaration>
+			
+			
+			<Anchor>//api/name/attributedString</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

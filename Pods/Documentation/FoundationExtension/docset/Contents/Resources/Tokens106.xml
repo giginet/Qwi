@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIViewController+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [UIViewController][0] shortcut extension</Abstract>
+			<DeclaredIn>UIViewController.h</DeclaredIn>
+			
+			<NodeRef refid="106"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(Shortcuts)/initWithPlatformSuffixedNibName:bundle:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a newly initialized view controller with the nib file in the specified bundle. This method attach platform suffix &apos;iPhone&apos; or &apos;iPad&apos; end of its nib name.</Abstract>
+			<DeclaredIn>UIViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPlatformSuffixedNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nibNameOrNil</Name>
+					<Abstract type="html">The name of the nib file except &apos;iPhone&apos; or &apos;iPad&apos; suffix to associate with the view controller. The nib file name should not contain any leading path information. If you specify nil, the nibName property is set to nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>nibBundleOrNil</Name>
+					<Abstract type="html">The bundle in which to search for the nib file. This method looks for the nib file in the bundle&apos;s language-specific project directories first, followed by the Resources directory. If nil, this method looks for the nib file in the main bundle.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized UIViewController object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPlatformSuffixedNibName:bundle:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

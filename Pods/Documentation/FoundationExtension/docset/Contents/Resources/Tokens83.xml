@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSTimer+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSTimer(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief NSTimer shortcuts - deprecated candidates.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>
+			
+			<NodeRef refid="83"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Shortcuts)/zeroDelayedTimerWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (NSTimer *)zeroDelayedTimerWithTarget:(id)aTarget selector:(SEL)aSelector</Declaration>
+			
+			
+			<Anchor>//api/name/zeroDelayedTimerWithTarget:selector:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Shortcuts)/zeroDelayedTimerWithTarget:selector:userInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (NSTimer *)zeroDelayedTimerWithTarget:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo</Declaration>
+			
+			
+			<Anchor>//api/name/zeroDelayedTimerWithTarget:selector:userInfo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(Shortcuts)/delayedTimerWithTimeInterval:target:selector:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (NSTimer *)delayedTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector</Declaration>
+			
+			
+			<Anchor>//api/name/delayedTimerWithTimeInterval:target:selector:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

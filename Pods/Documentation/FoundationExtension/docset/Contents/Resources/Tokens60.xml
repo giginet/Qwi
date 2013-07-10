@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableURLRequest+HTTPMethod.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableURLRequest(HTTPMethod)</TokenIdentifier>
+			<Abstract type="html">@brief NSMutableURLRequest POST extension</Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(HTTPMethod)/setHTTPPostBody:encoding:</TokenIdentifier>
+			<Abstract type="html">@brief Sets the request body of the receiver to the specified data from bodyDictionary and given encoding as url form format.</Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>- (void)setHTTPPostBody:(NSDictionary *)bodyDictionary encoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bodyDictionary</Name>
+					<Abstract type="html">The new request body of the receiver to the specified data from dictionary with url form encoding. Objects should be NSString compatible objects only.</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">String encoding of bodyDictionary values.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHTTPPostBody:encoding:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

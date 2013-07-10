@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief NSString method shortcuts</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>
+			
+			<NodeRef refid="79"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/hasSubstring:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a Boolean value that indicates whether a given string is contained in the receiver.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasSubstring:(NSString *)aString</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aString</Name>
+					<Abstract type="html">A string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if aString is contained in the receiver, otherwise NO. Returns NO if aString is empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasSubstring:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a string made by using self as a format string template into which the argument values are substituted.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format0:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSString *)format:(id)first, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>first,</Name>
+					<Abstract type="html">... A comma-separated list of arguments to substitute into format. first should be id type.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string created by using self as a template into which the argument values are substituted according to the canonical locale.
+@details This requires first argument type to be id. To avoid this problems, use @link format0: @endlink.</Abstract></ReturnValue>
+			<Anchor>//api/name/format:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format0:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a string made by using self as a format string template into which the remaining argument values are substituted.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/format:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSString *)format0:(id)dummyLikeNil, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dummyLikeNil</Name>
+					<Abstract type="html">Do nothing. Value will be ignored. This is placeholder</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">A comma-separated list of arguments to substitute into format.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string created by using self as a template into which the remaining argument values are substituted according to the canonical locale.
+@details This ignores first argument. Pass anything.</Abstract></ReturnValue>
+			<Anchor>//api/name/format0:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/range</TokenIdentifier>
+			<Abstract type="html">@brief Returns range of string.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (NSRange)range</Declaration>
+			
+			
+			<Anchor>//api/name/range</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/substringFromIndex:length:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a new string containing the characters of the receiver from the one at a given index with a given length.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)substringFromIndex:(NSUInteger)from length:(NSUInteger)length</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+				</Parameter><Parameter>
+					<Name>length</Name>
+					<Abstract type="html">A length. The summation of this value and from index must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">new string containing the characters of the receiver from the one at from index with given length.</Abstract></ReturnValue>
+			<Anchor>//api/name/substringFromIndex:length:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Shortcuts)/substringFromIndex:toIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a new string containing the characters of the receiver from the one at a given index to the other given index.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)substringFromIndex:(NSUInteger)from toIndex:(NSUInteger)to</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">new string containing the characters of the receiver from the one at from index to to index.</Abstract></ReturnValue>
+			<Anchor>//api/name/substringFromIndex:toIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

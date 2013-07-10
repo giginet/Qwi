@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Kit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Kit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UI7Kit/setTintColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *tintColor</Declaration>
+			
+			
+			<Anchor>//api/name/tintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UI7Kit/tintColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *tintColor</Declaration>
+			
+			
+			<Anchor>//api/name/tintColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UI7Kit/setBackgroundColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UI7Kit/backgroundColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *backgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UI7Kit/kit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7KitCore.h</DeclaredIn>			
+			
+			<Declaration>+ (UI7Kit *)kit</Declaration>
+			
+			
+			<Anchor>//api/name/kit</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

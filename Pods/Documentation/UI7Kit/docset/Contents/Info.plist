@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.ui7kit.UI7Kit-0.0.18</string>
+	<key>CFBundleName</key>
+	<string>UI7Kit 0.0.18 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>UI7Kit is a GUI toolkit to implement iOS7 look &amp; feel UIKit under iOS5/iOS6. It is also supported that patching UIKit to UI7Kit in runtime.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>UI7Kit 0.0.18 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.ui7kit.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Jeong YunWon</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Jeong YunWon</string>
+</dict>
+</plist>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURL+CFURL.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(CFURL)</TokenIdentifier>
+			<Abstract type="html">@brief NSURL missing bridge of CFURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>
+			
+			<NodeRef refid="85"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(CFURL)/setHasDirectoryPath:</TokenIdentifier>
+			<Abstract type="html">@brief The URL status if a given URL&apos;s path represents a directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasDirectoryPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the URL represents a directory; otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasDirectoryPath</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSURL(CFURL)/hasDirectoryPath</TokenIdentifier>
+			<Abstract type="html">@brief The URL status if a given URL&apos;s path represents a directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasDirectoryPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the URL represents a directory; otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasDirectoryPath</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

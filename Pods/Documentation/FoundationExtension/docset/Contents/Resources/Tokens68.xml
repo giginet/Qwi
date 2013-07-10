@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+ObjCRuntime.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(ObjCRuntime)</TokenIdentifier>
+			<Abstract type="html">@brief NSObject [&lt;objc/runtime.h&gt;][0] extensions
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setClassName:</TokenIdentifier>
+			<Abstract type="html">@brief Class name of object.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *className</Declaration>
+			
+			
+			<Anchor>//api/name/className</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSObject(ObjCRuntime)/className</TokenIdentifier>
+			<Abstract type="html">@brief Class name of object.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *className</Declaration>
+			
+			
+			<Anchor>//api/name/className</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/variableForName:</TokenIdentifier>
+			<Abstract type="html">@brief Obtains the value of an instance variable of a class instance.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/getVariable:forName:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setVariable:forName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)variableForName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the instance variable definition to obtain.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/variableForName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/methodName</TokenIdentifier>
+			<Abstract type="html">@brief Implement property getter for an instance variable.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/variableForName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)methodName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>methodName</Name>
+					<Abstract type="html">The name of property getter.</Abstract>
+				</Parameter><Parameter>
+					<Name>nameString</Name>
+					<Abstract type="html">A C String to represent the name of instance variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/methodName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/getVariable:forName:</TokenIdentifier>
+			<Abstract type="html">@brief Obtains the value of an instance variable of a class instance.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/variableForName:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setVariable:forName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)getVariable:(void **)outValue forName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outValue</Name>
+					<Abstract type="html">On return, contains a pointer to the value of the instance variable.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the instance variable definition to obtain.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getVariable:forName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setVariable:forName:</TokenIdentifier>
+			<Abstract type="html">@brief Changes the value of an instance variable of a class instance.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/variableForName:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/getVariable:forName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setVariable:(void *)value forName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The new value for the instance variable.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">A string. Pass the name of the instance variable whose value you wish to modify.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setVariable:forName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/methodName:{:</TokenIdentifier>
+			<Abstract type="html">@brief Implement property assign setter for an instance variable.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setVariable:forName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)methodName:(id)value {</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>methodName</Name>
+					<Abstract type="html">The name of property getter.</Abstract>
+				</Parameter><Parameter>
+					<Name>nameString</Name>
+					<Abstract type="html">A C String to represent the name of instance variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/methodName:{:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/methodName:</TokenIdentifier>
+			<Abstract type="html">@brief Implement property retain setter for an instance variable.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/setVariable:forName:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)methodName:(id)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>methodName</Name>
+					<Abstract type="html">The name of property getter.</Abstract>
+				</Parameter><Parameter>
+					<Name>nameString</Name>
+					<Abstract type="html">A C String to represent the name of instance variable.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/methodName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/performSelector:withObject:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">@brief Invokes a method of the receiver with 3 parameter</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/performSelector:withObject:withObject:withObject:withObject:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)performSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2 withObject:(id)object3</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aSelector</Name>
+					<Abstract type="html">A selector that identifies the method to invoke. The method should take 3 argument of type id.</Abstract>
+				</Parameter><Parameter>
+					<Name>object1</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter><Parameter>
+					<Name>object2</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter><Parameter>
+					<Name>object3</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performSelector:withObject:withObject:withObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/performSelector:withObject:withObject:withObject:withObject:</TokenIdentifier>
+			<Abstract type="html">@brief Invokes a method of the receiver with 4 parameter</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSObject(ObjCRuntime)/performSelector:withObject:withObject:withObject:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)performSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2 withObject:(id)object3 withObject:(id)object4</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aSelector</Name>
+					<Abstract type="html">A selector that identifies the method to invoke. The method should take 4 argument of type id.</Abstract>
+				</Parameter><Parameter>
+					<Name>object1</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter><Parameter>
+					<Name>object2</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter><Parameter>
+					<Name>object3</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter><Parameter>
+					<Name>object4</Name>
+					<Abstract type="html">a parameter</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performSelector:withObject:withObject:withObject:withObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

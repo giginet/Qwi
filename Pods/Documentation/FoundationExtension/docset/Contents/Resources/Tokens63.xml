@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSNull+Tools.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNull(Tools)</TokenIdentifier>
+			<Abstract type="html">@brief [NSNull][0] tools.
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSNull_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNull(Tools)/objectIsNull:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)objectIsNull:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/objectIsNull:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNull(Tools)/objectIsNilOrNull:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)objectIsNilOrNull:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/objectIsNilOrNull:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNull(Tools)/nullIfObjectIsNil:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>			
+			
+			<Declaration>+ (id)nullIfObjectIsNil:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/nullIfObjectIsNil:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNull(Tools)/nilIfObjectIsNull:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNull.h</DeclaredIn>			
+			
+			<Declaration>+ (id)nilIfObjectIsNull:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/nilIfObjectIsNull:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

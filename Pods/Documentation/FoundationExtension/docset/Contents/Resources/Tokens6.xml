@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/NSAMethod.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/NSAMethod</TokenIdentifier>
+			<Abstract type="html">@brief Object wrapper for Method</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setMethod:</TokenIdentifier>
+			<Abstract type="html">@brief Wrapped value of type [Method][0]
+[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html#//apple_ref/c/tdef/Method</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) Method method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/method</TokenIdentifier>
+			<Abstract type="html">@brief Wrapped value of type [Method][0]
+[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html#//apple_ref/c/tdef/Method</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) Method method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setImplementation:</TokenIdentifier>
+			<Abstract type="html">@brief Implementation of the method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IMP implementation</Declaration>
+			
+			
+			<Anchor>//api/name/implementation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/implementation</TokenIdentifier>
+			<Abstract type="html">@brief Implementation of the method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) IMP implementation</Declaration>
+			
+			
+			<Anchor>//api/name/implementation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/setTypeEncoding:</TokenIdentifier>
+			<Abstract type="html">@brief Type encoding of the method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *typeEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/typeEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/NSAMethod/typeEncoding</TokenIdentifier>
+			<Abstract type="html">@brief Type encoding of the method.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSString *typeEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/typeEncoding</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSAMethod/exchangeImplementationWith:</TokenIdentifier>
+			<Abstract type="html">@brief Exchanges the implementation of tho methods.</Abstract>
+			<DeclaredIn>NSObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)exchangeImplementationWith:(NSAMethod *)method</Declaration>
+			
+			
+			<Anchor>//api/name/exchangeImplementationWith:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

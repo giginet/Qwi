@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>UI7Kit 0.0.18</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="37"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>UI7ActionSheet</Name>
+			<Path>Classes/UI7ActionSheet.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>UI7AlertView</Name>
+			<Path>Classes/UI7AlertView.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>UI7BarButtonItem</Name>
+			<Path>Classes/UI7BarButtonItem.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>UI7Button</Name>
+			<Path>Classes/UI7Button.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>UI7Color</Name>
+			<Path>Classes/UI7Color.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>UI7Font</Name>
+			<Path>Classes/UI7Font.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>UI7Kit</Name>
+			<Path>Classes/UI7Kit.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>UI7NavigationBar</Name>
+			<Path>Classes/UI7NavigationBar.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>UI7NavigationController</Name>
+			<Path>Classes/UI7NavigationController.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>UI7NavigationItem</Name>
+			<Path>Classes/UI7NavigationItem.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>UI7PickerView</Name>
+			<Path>Classes/UI7PickerView.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>UI7ProgressView</Name>
+			<Path>Classes/UI7ProgressView.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>UI7RoundedRectButton</Name>
+			<Path>Classes/UI7RoundedRectButton.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>UI7SearchBar</Name>
+			<Path>Classes/UI7SearchBar.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>UI7SegmentedControl</Name>
+			<Path>Classes/UI7SegmentedControl.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>UI7Slider</Name>
+			<Path>Classes/UI7Slider.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>UI7Stepper</Name>
+			<Path>Classes/UI7Stepper.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>UI7Switch</Name>
+			<Path>Classes/UI7Switch.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>UI7TabBar</Name>
+			<Path>Classes/UI7TabBar.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>UI7TabBarController</Name>
+			<Path>Classes/UI7TabBarController.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>UI7TabBarItem</Name>
+			<Path>Classes/UI7TabBarItem.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>UI7TableView</Name>
+			<Path>Classes/UI7TableView.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>UI7TableViewCell</Name>
+			<Path>Classes/UI7TableViewCell.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>UI7TableViewController</Name>
+			<Path>Classes/UI7TableViewController.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>UI7TextField</Name>
+			<Path>Classes/UI7TextField.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>UI7Toolbar</Name>
+			<Path>Classes/UI7Toolbar.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>UI7ViewController</Name>
+			<Path>Classes/UI7ViewController.html</Path>
+		</Node>
+		
+		<Node id="28">
+			<Name>NSObject(MethodCopying)</Name>
+			<Path>Categories/NSObject+MethodCopying.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>NSObject(Pointer)</Name>
+			<Path>Categories/NSObject+Pointer.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>UIColor(UI7Kit)</Name>
+			<Path>Categories/UIColor+UI7Kit.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>UIDevice(iOS7)</Name>
+			<Path>Categories/UIDevice+iOS7.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>UIFont(iOS7)</Name>
+			<Path>Categories/UIFont+iOS7.html</Path>
+		</Node>
+		<Node id="33">
+			<Name>UIImage(Images)</Name>
+			<Path>Categories/UIImage+Images.html</Path>
+		</Node>
+		<Node id="34">
+			<Name>UITabBar(iOS7)</Name>
+			<Path>Categories/UITabBar+iOS7.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>UIView(Private)</Name>
+			<Path>Categories/UIView+Private.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>UIView(iOS7)</Name>
+			<Path>Categories/UIView+iOS7.html</Path>
+		</Node>
+		
+		<Node id="37">
+			<Name>UI7Patch</Name>
+			<Path>Protocols/UI7Patch.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

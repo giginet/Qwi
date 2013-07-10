@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableURLRequest+Properties.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableURLRequest(Properties)</TokenIdentifier>
+			<Abstract type="html">@brief NSURLRequest property shortcuts for legacy compilers.</Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/URL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setCachePolicy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSURLRequestCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/cachePolicy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSURLRequestCachePolicy cachePolicy</Declaration>
+			
+			
+			<Anchor>//api/name/cachePolicy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setTimeoutInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSTimeInterval timeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/timeoutInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSTimeInterval timeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeoutInterval</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setNetworkServiceType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSURLRequestNetworkServiceType networkServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/networkServiceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/networkServiceType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property NSURLRequestNetworkServiceType networkServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/networkServiceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setMainDocumentURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *mainDocumentURL</Declaration>
+			
+			
+			<Anchor>//api/name/mainDocumentURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/mainDocumentURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSURL *mainDocumentURL</Declaration>
+			
+			
+			<Anchor>//api/name/mainDocumentURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setAllHTTPHeaderFields:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *allHTTPHeaderFields</Declaration>
+			
+			
+			<Anchor>//api/name/allHTTPHeaderFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/allHTTPHeaderFields</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSDictionary *allHTTPHeaderFields</Declaration>
+			
+			
+			<Anchor>//api/name/allHTTPHeaderFields</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setHTTPMethod:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *HTTPMethod</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/HTTPMethod</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSString *HTTPMethod</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPMethod</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setHTTPBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSData *HTTPBody</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/HTTPBody</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSData *HTTPBody</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBody</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setHTTPBodyStream:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSInputStream *HTTPBodyStream</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBodyStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/HTTPBodyStream</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSInputStream *HTTPBodyStream</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPBodyStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setHTTPShouldHandleCookies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL HTTPShouldHandleCookies</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPShouldHandleCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/HTTPShouldHandleCookies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL HTTPShouldHandleCookies</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPShouldHandleCookies</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableURLRequest(Properties)/setHTTPShouldUsePipelining:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL HTTPShouldUsePipelining</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPShouldUsePipelining</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSMutableURLRequest(Properties)/HTTPShouldUsePipelining</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURLRequest.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL HTTPShouldUsePipelining</Declaration>
+			
+			
+			<Anchor>//api/name/HTTPShouldUsePipelining</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

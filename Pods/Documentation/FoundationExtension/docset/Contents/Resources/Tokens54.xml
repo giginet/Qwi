@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSEnumerator+Functional.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSEnumerator(Functional)</TokenIdentifier>
+			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(Functional)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/applyProcedure:</TokenIdentifier>
+			<Abstract type="html">@brief Apply procedure to objects.
+@details Shallow wrapper of @link NSAApply @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyProcedure:(NSAObjectProcedure)procedure</Declaration>
+			
+			
+			<Anchor>//api/name/applyProcedure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/applyProcedureWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Apply procedure with index to objects.
+@details Shallow wrapper of @link NSAApply @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyProcedureWithIndex:(NSAObjectProcedureWithIndex)procedure</Declaration>
+			
+			
+			<Anchor>//api/name/applyProcedureWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByMappingOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMap @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByMappingOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByMappingOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByMappingOperatorWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper with index to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMapWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByMappingOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByMappingOperatorWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByMapFilteringOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilter @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByMapFilteringOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByMapFilteringOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByMapFilteringOperatorWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper with index to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilterWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByMapFilteringOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByMapFilteringOperatorWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByFilteringOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Filters objects and returns result as array.
+@details Shallow wrapper of @link NSAFilter @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByFilteringOperator:(NSAObjectPicker)filter</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByFilteringOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/arrayByFilteringOperatorWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Filters objects with index and returns result as array.
+@details Shallow wrapper of @link NSAFilterWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)arrayByFilteringOperatorWithIndex:(NSAObjectPickerWithIndex)filter</Declaration>
+			
+			
+			<Anchor>//api/name/arrayByFilteringOperatorWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/reduce:</TokenIdentifier>
+			<Abstract type="html">@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduce @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (id)reduce:(NSAObjectBinaryOperator)reduce</Declaration>
+			
+			
+			<Anchor>//api/name/reduce:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEnumerator(Functional)/reduce:initialObject:</TokenIdentifier>
+			<Abstract type="html">@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduceWithInitialObject @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (id)reduce:(NSAObjectBinaryOperator)reduce initialObject:(id)initialObject</Declaration>
+			
+			
+			<Anchor>//api/name/reduce:initialObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableArray+Functional.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableArray(Functional)</TokenIdentifier>
+			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSArray(Functional)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/map:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper to every item and replace original item to new one.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)map:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/map:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/mapWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper with index to every item and replace original item to new one.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/mapFilter:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper to every item and replace original item to new one or remove if new one is nil.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapFilter:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapFilter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/mapFilterWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper with index to every item and replace original item to new one or remove if new one is nil.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapFilterWithIndex:(NSAObjectUnaryOperatorWithIndex)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapFilterWithIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/filter:</TokenIdentifier>
+			<Abstract type="html">@brief Applies filter to every item and remove it if result is NO.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)filter:(NSAObjectPicker)filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableArray(Functional)/filterWithIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Applies filter with index to every item and remove it if result is NO.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)filterWithIndex:(NSAObjectPickerWithIndex)filter</Declaration>
+			
+			
+			<Anchor>//api/name/filterWithIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

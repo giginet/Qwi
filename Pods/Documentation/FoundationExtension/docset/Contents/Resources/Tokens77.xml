@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+NSURL.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(NSURL)</TokenIdentifier>
+			<Abstract type="html">@brief NSString shortcut to detect URL and to create an NSURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/hasHTTPPrefix</TokenIdentifier>
+			<Abstract type="html">@brief Returns a Boolean value that indicates whether &apos;http://&apos; or &apos;https://&apos; matches the beginning characters of the receiver.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasHTTPPrefix</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if &apos;http://&apos; or &apos;https://&apos; matches the beginning characters of the receiver, otherwise NO. Returns NO if aString is empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasHTTPPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/hasSmartURLPrefix</TokenIdentifier>
+			<Abstract type="html">@brief Returns a Boolean value that indicates whether &apos;http://&apos;, &apos;https://&apos;, &apos;res://&apos; or &apos;conf://&apos; matches the beginning characters of the receiver.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasSmartURLPrefix</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if &apos;http://&apos;, &apos;https://&apos;, &apos;res://&apos; or &apos;conf://&apos; matches the beginning characters of the receiver, otherwise NO. Returns NO if aString is empty.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasSmartURLPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/URLProtocol</TokenIdentifier>
+			<Abstract type="html">@brief Returns a String value that prefix matches &quot;(^[a-zA-Z])://.&quot; or nil</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)URLProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/URLProtocol</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/URL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)URL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of [NSURL -URLWithString:][0]
+[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLClass/Reference/Reference.html#//appleref/occ/clm/NSURL/URLWithString:</Abstract></ReturnValue>
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/fileURL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a file URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)fileURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of [NSURL -fileURLWithPath:][0]
+[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLClass/Reference/Reference.html#//appleref/occ/clm/NSURL/fileURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/fileURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/resourceURL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a resource URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)resourceURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of @ref NSURL(Creations)::resourceURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/resourceURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/configurationURL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a configuration URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)configurationURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of @ref NSURL(Creations)::configurationURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/configurationURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/temporaryURL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a temporary URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)temporaryURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of @ref NSURL(Creations)::temporaryURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/temporaryURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/smartURL</TokenIdentifier>
+			<Abstract type="html">@brief Returns a smart URL from self value.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)smartURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">Result of @ref NSURL(Creations)::smartURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/smartURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/abstractURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSURL *)abstractURL</Declaration>
+			
+			
+			<Anchor>//api/name/abstractURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/hasURLPrefix</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasURLPrefix</Declaration>
+			
+			
+			<Anchor>//api/name/hasURLPrefix</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSURL)/pathProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)pathProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/pathProtocol</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

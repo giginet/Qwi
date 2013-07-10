@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIAlertView+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIAlertView(Shortcuts)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAlertView.h</DeclaredIn>
+			
+			<NodeRef refid="90"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAlertView(Shortcuts)/showLog:file:line:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAlertView.h</DeclaredIn>			
+			
+			<Declaration>+ (UIAlertView *)showLog:(NSString *)log file:(char *)filename line:(int)line</Declaration>
+			
+			
+			<Anchor>//api/name/showLog:file:line:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAlertView(Shortcuts)/initNoticeWithTitle:message:cancelButtonTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAlertView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initNoticeWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle</Declaration>
+			
+			
+			<Anchor>//api/name/initNoticeWithTitle:message:cancelButtonTitle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIAlertView(Shortcuts)/showNoticeWithTitle:message:cancelButtonTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIAlertView.h</DeclaredIn>			
+			
+			<Declaration>+ (UIAlertView *)showNoticeWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle</Declaration>
+			
+			
+			<Anchor>//api/name/showNoticeWithTitle:message:cancelButtonTitle:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

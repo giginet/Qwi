@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSEnumerator(Functional) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">FoundationExtension 0.36.3 </a></h1>
+				<a id="developerHome" href="../index.html">Jeong YunWon</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSEnumerator(Functional) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/applyProcedure:">&nbsp;&nbsp;&nbsp;&nbsp;- applyProcedure:</option>
+	
+	<option value="//api/name/applyProcedureWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- applyProcedureWithIndex:</option>
+	
+	<option value="//api/name/arrayByFilteringOperator:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByFilteringOperator:</option>
+	
+	<option value="//api/name/arrayByFilteringOperatorWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByFilteringOperatorWithIndex:</option>
+	
+	<option value="//api/name/arrayByMapFilteringOperator:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByMapFilteringOperator:</option>
+	
+	<option value="//api/name/arrayByMapFilteringOperatorWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByMapFilteringOperatorWithIndex:</option>
+	
+	<option value="//api/name/arrayByMappingOperator:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByMappingOperator:</option>
+	
+	<option value="//api/name/arrayByMappingOperatorWithIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayByMappingOperatorWithIndex:</option>
+	
+	<option value="//api/name/reduce:">&nbsp;&nbsp;&nbsp;&nbsp;- reduce:</option>
+	
+	<option value="//api/name/reduce:initialObject:">&nbsp;&nbsp;&nbsp;&nbsp;- reduce:initialObject:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyProcedure:">applyProcedure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyProcedureWithIndex:">applyProcedureWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByFilteringOperator:">arrayByFilteringOperator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByFilteringOperatorWithIndex:">arrayByFilteringOperatorWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByMapFilteringOperator:">arrayByMapFilteringOperator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByMapFilteringOperatorWithIndex:">arrayByMapFilteringOperatorWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByMappingOperator:">arrayByMappingOperator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayByMappingOperatorWithIndex:">arrayByMappingOperatorWithIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reduce:">reduce:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reduce:initialObject:">reduce:initialObject:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSEnumerator(Functional) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSEnumerator(Functional) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSAFunctional.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@brief See @ref Map/Filter/Reduce for concept of functional tools.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyProcedure:">&ndash;&nbsp;applyProcedure:</a></code>
+		<span class="tooltip"><p>@brief Apply procedure to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyProcedureWithIndex:">&ndash;&nbsp;applyProcedureWithIndex:</a></code>
+		<span class="tooltip"><p>@brief Apply procedure with index to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByMappingOperator:">&ndash;&nbsp;arrayByMappingOperator:</a></code>
+		<span class="tooltip"><p>@brief Maps mapper to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMap @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByMappingOperatorWithIndex:">&ndash;&nbsp;arrayByMappingOperatorWithIndex:</a></code>
+		<span class="tooltip"><p>@brief Maps mapper with index to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMapWithIndex @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByMapFilteringOperator:">&ndash;&nbsp;arrayByMapFilteringOperator:</a></code>
+		<span class="tooltip"><p>@brief Maps mapper to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilter @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByMapFilteringOperatorWithIndex:">&ndash;&nbsp;arrayByMapFilteringOperatorWithIndex:</a></code>
+		<span class="tooltip"><p>@brief Maps mapper with index to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilterWithIndex @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByFilteringOperator:">&ndash;&nbsp;arrayByFilteringOperator:</a></code>
+		<span class="tooltip"><p>@brief Filters objects and returns result as array.
+@details Shallow wrapper of @link NSAFilter @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayByFilteringOperatorWithIndex:">&ndash;&nbsp;arrayByFilteringOperatorWithIndex:</a></code>
+		<span class="tooltip"><p>@brief Filters objects with index and returns result as array.
+@details Shallow wrapper of @link NSAFilterWithIndex @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reduce:">&ndash;&nbsp;reduce:</a></code>
+		<span class="tooltip"><p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduce @endlink</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reduce:initialObject:">&ndash;&nbsp;reduce:initialObject:</a></code>
+		<span class="tooltip"><p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduceWithInitialObject @endlink</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/applyProcedure:" title="applyProcedure:"></a>
+	<h3 class="subsubtitle method-title">applyProcedure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Apply procedure to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyProcedure:(NSAObjectProcedure)<em>procedure</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Apply procedure to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyProcedureWithIndex:" title="applyProcedureWithIndex:"></a>
+	<h3 class="subsubtitle method-title">applyProcedureWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Apply procedure with index to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyProcedureWithIndex:(NSAObjectProcedureWithIndex)<em>procedure</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Apply procedure with index to objects.
+@details Shallow wrapper of @link NSAApply @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByFilteringOperator:" title="arrayByFilteringOperator:"></a>
+	<h3 class="subsubtitle method-title">arrayByFilteringOperator:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Filters objects and returns result as array.
+@details Shallow wrapper of @link NSAFilter @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByFilteringOperator:(NSAObjectPicker)<em>filter</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Filters objects and returns result as array.
+@details Shallow wrapper of @link NSAFilter @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByFilteringOperatorWithIndex:" title="arrayByFilteringOperatorWithIndex:"></a>
+	<h3 class="subsubtitle method-title">arrayByFilteringOperatorWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Filters objects with index and returns result as array.
+@details Shallow wrapper of @link NSAFilterWithIndex @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByFilteringOperatorWithIndex:(NSAObjectPickerWithIndex)<em>filter</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Filters objects with index and returns result as array.
+@details Shallow wrapper of @link NSAFilterWithIndex @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByMapFilteringOperator:" title="arrayByMapFilteringOperator:"></a>
+	<h3 class="subsubtitle method-title">arrayByMapFilteringOperator:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Maps mapper to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilter @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByMapFilteringOperator:(NSAObjectUnaryOperator)<em>mapper</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Maps mapper to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilter @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByMapFilteringOperatorWithIndex:" title="arrayByMapFilteringOperatorWithIndex:"></a>
+	<h3 class="subsubtitle method-title">arrayByMapFilteringOperatorWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Maps mapper with index to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilterWithIndex @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByMapFilteringOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)<em>mapper</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Maps mapper with index to objects and filters nil result and returns the result as array.
+@details Shallow wrapper of @link NSAMapFilterWithIndex @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByMappingOperator:" title="arrayByMappingOperator:"></a>
+	<h3 class="subsubtitle method-title">arrayByMappingOperator:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Maps mapper to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMap @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByMappingOperator:(NSAObjectUnaryOperator)<em>mapper</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Maps mapper to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMap @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayByMappingOperatorWithIndex:" title="arrayByMappingOperatorWithIndex:"></a>
+	<h3 class="subsubtitle method-title">arrayByMappingOperatorWithIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Maps mapper with index to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMapWithIndex @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayByMappingOperatorWithIndex:(NSAObjectUnaryOperatorWithIndex)<em>mapper</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Maps mapper with index to objects and returns the result as array.
+@details Shallow wrapper of @link NSAMapWithIndex @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reduce:" title="reduce:"></a>
+	<h3 class="subsubtitle method-title">reduce:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduce @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)reduce:(NSAObjectBinaryOperator)<em>reduce</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduce @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reduce:initialObject:" title="reduce:initialObject:"></a>
+	<h3 class="subsubtitle method-title">reduce:initialObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduceWithInitialObject @endlink</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)reduce:(NSAObjectBinaryOperator)<em>reduce</em> initialObject:(id)<em>initialObject</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Reduces objects and returns the result.
+@details Shallow wrapper of @link NSAReduceWithInitialObject @endlink</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSAFunctional.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jeong YunWon. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

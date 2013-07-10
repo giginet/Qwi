@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Switch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Switch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Switch.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+Creations.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(Creations)</TokenIdentifier>
+			<Abstract type="html">@brief NSString creation method extension</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/initWithInteger:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize an NSString from integer value.
+@details Implemented with [NSString initWithFormat:][0]
+[0]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSStringClass/Reference/NSString.html#//appleref/occ/instm/NSString/initWithFormat:</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithInteger:(NSInteger)value</Declaration>
+			
+			
+			<Anchor>//api/name/initWithInteger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/initWithConcatnatingStrings:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize an NSString object with concatnating given arguments.
+@details Appends all arguments to first string one by one by order.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithConcatnatingStrings:(NSString *)first, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithConcatnatingStrings:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/stringWithInteger:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSString from integer value.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/initWithInteger:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)stringWithInteger:(NSInteger)value</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithInteger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/stringWithFormat:arguments:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSString object initialized by using a given format string as a template into which the remaining argument values are substituted according to the user’s default locale.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)stringWithFormat:(NSString *)format arguments:(va_list)argList</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithFormat:arguments:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/stringWithData:encoding:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSString object initialized by converting given data into Unicode characters using a given encoding.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)stringWithData:(NSData *)data encoding:(NSStringEncoding)encoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithData:encoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(Creations)/stringWithConcatnatingStrings:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSString object with concatnating given arguments.</Abstract>
+			<DeclaredIn>NSString.h</DeclaredIn>			
+			
+			<Declaration>+ (id)stringWithConcatnatingStrings:(NSString *)first, ...</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithConcatnatingStrings:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

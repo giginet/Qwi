@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSURL+Creations.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSURL(Creations)</TokenIdentifier>
+			<Abstract type="html">@brief Creation method extension</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>
+			
+			<NodeRef refid="86"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initResourceURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly created NSURL referencing the local file or directory at path based on resource directory of main bundle.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initResourceURLWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path that the NSURL object will represent. path should be a valid system path. If path begins with the prefix &apos;res://&apos;, it will be removed. path should be a relative path from main bundle resource directory.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURL object initialized with path based on resource directory of main bundle.</Abstract></ReturnValue>
+			<Anchor>//api/name/initResourceURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initConfigurationURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly created NSURL referencing the local file or directory at path based on configuration directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initConfigurationURLWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path that the NSURL object will represent. path should be a valid system path. If path begins with the prefix &apos;conf://&apos;, it will be removed. path should be a relative path from configuration directory</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURL object initialized with path based on configuration directory.</Abstract></ReturnValue>
+			<Anchor>//api/name/initConfigurationURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initTemporaryURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly created NSURL referencing the local file or directory at path based on temporary directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initTemporaryURLWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path that the NSURL object will represent. path should be a valid system path. If path begins with the prefix &apos;conf://&apos;, it will be removed. path should be a relative path from temporary directory</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURL object initialized with path based on temporary directory.</Abstract></ReturnValue>
+			<Anchor>//api/name/initTemporaryURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initSmartURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes a newly created NSURL referencing any URL decodable by protocol prefix.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initSmartURLWithPath:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path that the NSURL object will represent. path should contains known protocol prefix or be a valid system path. If path begins with the prefix &quot;http://&quot; or &quot;https://&quot;, it would be initialized with [initWithString:][1]. If path begins with the prefix &quot;res://&quot;, it would be initialized with @link initResourceURLWithPath: @endlink. If path begins with the prefix &quot;conf://&quot;, it would be initialized with @link initConfigurationURLWithPath: @endlink. Else path should be a valid file system path. It would be initialized with [initFileURLWithPath:][2].</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An NSURL object initialized with path based on protocol prefix.
+[1]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLClass/Reference/Reference.html#//appleref/occ/instm/NSURL/initWithString:
+[2]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSURLClass/Reference/Reference.html#//appleref/occ/instm/NSURL/initFileURLWithPath:</Abstract></ReturnValue>
+			<Anchor>//api/name/initSmartURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/resourceURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes and returns a newly created NSURL object as a file URL with a specified path based on resource directory of main bundle.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initResourceURLWithPath:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)resourceURLWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/resourceURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/configurationURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes and returns a newly created NSURL object as a file URL with a specified path based on configuration directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initConfigurationURLWithPath:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)configurationURLWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/configurationURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/temporaryURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes and returns a newly created NSURL object as a file URL with a specified path based on temporary directory.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initTemporaryURLWithPath:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)temporaryURLWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/temporaryURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/smartURLWithPath:</TokenIdentifier>
+			<Abstract type="html">@brief Initializes and returns a newly created NSURL referencing any URL decodable by protocol prefix.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initSmartURLWithPath:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)smartURLWithPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/smartURLWithPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initWithAbstractPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAbstractPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initWithAbstractFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAbstractFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAbstractFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initWithFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/initFileURLWithFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initFileURLWithFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/initFileURLWithFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/URLWithAbstractPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLWithAbstractPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/URLWithAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/URLWithAbstractFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLWithAbstractFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/URLWithAbstractFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/URLWithFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)URLWithFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/URLWithFormat:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSURL(Creations)/fileURLWithFormat:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)fileURLWithFormat:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/fileURLWithFormat:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

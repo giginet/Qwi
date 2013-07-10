@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+NSURL_deprecated.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(NSURL_deprecated)</TokenIdentifier>
+			<Abstract type="html">@brief NSData creation shortcuts from URL.
+@deprecated This category is deprecated. See each method deprecated section about replacement.</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/initWithContentsOfAbstractPath:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use initWithContentOfURL: and @ref NSString(NSURL)::smartURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentsOfAbstractPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/initWithContentsOfAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/dataWithContentsOfAbstractPath:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use dataWithContentOfURL: and @ref NSString(NSURL)::smartURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)dataWithContentsOfAbstractPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithContentsOfAbstractPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/initWithContentsOfAbstractPath:options:error:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use initWithContentOfURL:options:error and @ref NSString(NSURL)::smartURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithContentsOfAbstractPath:(NSString *)path options:(NSDataReadingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/initWithContentsOfAbstractPath:options:error:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSData(NSURL_deprecated)/dataWithContentsOfAbstractPath:options:error:</TokenIdentifier>
+			<Abstract type="html">@deprecated Use dataWithContentOfURL:options:error and @ref NSString(NSURL)::smartURL</Abstract>
+			<DeclaredIn>NSURL.h</DeclaredIn>			
+			
+			<Declaration>+ (NSData *)dataWithContentsOfAbstractPath:(NSString *)path options:(NSDataReadingOptions)opt error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataWithContentsOfAbstractPath:options:error:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

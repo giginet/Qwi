@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.cdebug.cdebug-0.1.1</string>
+	<key>CFBundleName</key>
+	<string>cdebug 0.1.1 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>Debug mode log/assertion macro for c/objc in a file.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>cdebug 0.1.1 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.cdebug.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Jeong YunWon</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Jeong YunWon</string>
+</dict>
+</plist>

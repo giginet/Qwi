@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UIASubviewTableSubviewSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UIASubviewTableSubviewSource</TokenIdentifier>
+			<Abstract type="html">@brief This protocol defines data source and subview source methods for UIASubviewTableView objects.
+@details This covers optional methods of data source, because table view self-implemented its required methods.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>
+			
+			<NodeRef refid="114"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/subviewTableViewNumberOfSubviews:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the subview source the number of subviews.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)subviewTableViewNumberOfSubviews:(UIASubviewTableView *)scrollView</Declaration>
+			
+			
+			<Anchor>//api/name/subviewTableViewNumberOfSubviews:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/subviewTableView:viewForRow:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the subview source the view for given row.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (UIView *)subviewTableView:(UIASubviewTableView *)scrollView viewForRow:(NSUInteger)row</Declaration>
+			
+			
+			<Anchor>//api/name/subviewTableView:viewForRow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/subviewTableView:viewHeightForRow:</TokenIdentifier>
+			<Abstract type="html">@brief Asks the subview source the height of view for given row.
+@details This is used to avoid referencing real view for row to calculate height for the row. If not implemented, default value is view.frame.size.height for each view.</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)subviewTableView:(UIASubviewTableView *)scrollView viewHeightForRow:(NSUInteger)row</Declaration>
+			
+			
+			<Anchor>//api/name/subviewTableView:viewHeightForRow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/tableView:canEditRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">@brief Forwarding method for UITableViewDataSource</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:canEditRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/tableView:canMoveRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">@brief Forwarding method for UITableViewDataSource</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:canMoveRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/tableView:sectionForSectionIndexTitle:atIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Forwarding method for UITableViewDataSource</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:sectionForSectionIndexTitle:atIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/tableView:commitEditingStyle:forRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">@brief Forwarding method for UITableViewDataSource</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:commitEditingStyle:forRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIASubviewTableSubviewSource/tableView:moveRowAtIndexPath:toIndexPath:</TokenIdentifier>
+			<Abstract type="html">@brief Forwarding method for UITableViewDataSource</Abstract>
+			<DeclaredIn>UIASubviewTableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath</Declaration>
+			
+			
+			<Anchor>//api/name/tableView:moveRowAtIndexPath:toIndexPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

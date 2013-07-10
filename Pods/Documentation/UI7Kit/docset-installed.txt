@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/giginet/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.ui7kit.UI7Kit-0.0.18.docset
+Time: 2013-07-10 09:57:27 +0000

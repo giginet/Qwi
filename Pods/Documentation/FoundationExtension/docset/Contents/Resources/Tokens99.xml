@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIDevice+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIDevice(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [UIDevice][0] shortcuts.
+[0]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIDevice_Class/Reference/UIDevice.html</Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>
+			
+			<NodeRef refid="99"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Shortcuts)/currentDeviceType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>			
+			
+			<Declaration>+ (UIADeviceType)currentDeviceType</Declaration>
+			
+			
+			<Anchor>//api/name/currentDeviceType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Shortcuts)/uniqueIdentifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)uniqueIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueIdentifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Shortcuts)/uniqueToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)uniqueToken</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Shortcuts)/MACAddressData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)MACAddressData</Declaration>
+			
+			
+			<Anchor>//api/name/MACAddressData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIDevice(Shortcuts)/MACAddress</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIDevice.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MACAddress</Declaration>
+			
+			
+			<Anchor>//api/name/MACAddress</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

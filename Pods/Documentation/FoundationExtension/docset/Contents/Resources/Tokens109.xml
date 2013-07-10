@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSAArrayLikeDataObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSAArrayLikeDataObject</TokenIdentifier>
+			<Abstract type="html">@brief This protocol defines NSArray-like interface methods for data objects.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>
+			
+			<NodeRef refid="109"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAArrayLikeDataObject/setCount:</TokenIdentifier>
+			<Abstract type="html">@brief Returns the number of objects currently in the data object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSAArrayLikeDataObject/count</TokenIdentifier>
+			<Abstract type="html">@brief Returns the number of objects currently in the data object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAArrayLikeDataObject/objectAtIndex:</TokenIdentifier>
+			<Abstract type="html">@brief Returns the object located at index.
+@param index
+An index within the bounds of data object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectAtIndex:(NSUInteger)index</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object located at index.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAArrayLikeDataObject/:</TokenIdentifier>
+			<Abstract type="html">@brief Returns the object located at index. Shortcut of @ref objectAtIndex:
+@param index
+An index within the bounds of data object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (id):</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object located at index.</Abstract></ReturnValue>
+			<Anchor>//api/name/:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAArrayLikeDataObject/indexOfObject:</TokenIdentifier>
+			<Abstract type="html">*  @brief Returns the lowest index whose corresponding member value is equal to a given object.
+*  @param anObject
+        An object.
+*  @return The lowest index whose corresponding member value is equal to anObject. If none of the objects in the data object is equal to anObject, returns NSNotFound.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)indexOfObject:(id)anObject</Declaration>
+			
+			
+			<Anchor>//api/name/indexOfObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSAArrayLikeDataObject/containsObject:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a Boolean value that indicates whether a given object is present in the array.
+@param anObject
+An object.</Abstract>
+			<DeclaredIn>NSADataObject.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containsObject:(id)anObject</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if anObject is present in the array, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsObject:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

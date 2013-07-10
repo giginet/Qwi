@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSTimer+NSRunLoop.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSTimer(NSRunLoop)</TokenIdentifier>
+			<Abstract type="html">@brief NSTimer extension for [NSRunLoop][0] shortcuts.
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSRunLoop_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>
+			
+			<NodeRef refid="82"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(NSRunLoop)/schedule</TokenIdentifier>
+			<Abstract type="html">@brief Add timer to current run loop with default run loop mode</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(NSRunLoop)/scheduleWithRunLoop:mode:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)schedule</Declaration>
+			
+			
+			<Anchor>//api/name/schedule</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(NSRunLoop)/scheduleWithRunLoop:mode:</TokenIdentifier>
+			<Abstract type="html">@brief Add timer to given runLoop with given mode.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(NSRunLoop)/schedule</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)scheduleWithRunLoop:(NSRunLoop *)runLoop mode:(NSString *)mode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>runLoop</Name>
+					<Abstract type="html">runLoop to add timer.</Abstract>
+				</Parameter><Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">runLoop mode.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/scheduleWithRunLoop:mode:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

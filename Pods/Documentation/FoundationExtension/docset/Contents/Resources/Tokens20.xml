@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UIAColorComponents.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UIAColorComponents</TokenIdentifier>
+			<Abstract type="html">@brief UIColor component interface</Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/setRed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat red</Declaration>
+			
+			
+			<Anchor>//api/name/red</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAColorComponents/red</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat red</Declaration>
+			
+			
+			<Anchor>//api/name/red</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/setGreen:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat green</Declaration>
+			
+			
+			<Anchor>//api/name/green</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAColorComponents/green</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat green</Declaration>
+			
+			
+			<Anchor>//api/name/green</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/setBlue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat blue</Declaration>
+			
+			
+			<Anchor>//api/name/blue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAColorComponents/blue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat blue</Declaration>
+			
+			
+			<Anchor>//api/name/blue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/setAlpha:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat alpha</Declaration>
+			
+			
+			<Anchor>//api/name/alpha</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIAColorComponents/alpha</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat alpha</Declaration>
+			
+			
+			<Anchor>//api/name/alpha</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/initWithColor:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize color components from color
+@param color
+An UIColor</Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithColor:(UIColor *)color</Declaration>
+			
+			
+			<Anchor>//api/name/initWithColor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/UIAColorComponents/componentsWithColor:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns color components from color</Abstract>
+			<DeclaredIn>UIColor.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/UIAColorComponents/initWithColor:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)componentsWithColor:(UIColor *)color</Declaration>
+			
+			
+			<Anchor>//api/name/componentsWithColor:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

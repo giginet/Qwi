@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+Functional.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(Functional)</TokenIdentifier>
+			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.
+@details Dictionary is not fit for this functional tools. But this implementation takes concept of them.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(Functional)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/applyProcedureWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Apply procedure with key to objects.
+@details Works as like NSAApply is adjusted to values of dictionary.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)applyProcedureWithKey:(NSAObjectProcedureWithKey)procedure</Declaration>
+			
+			
+			<Anchor>//api/name/applyProcedureWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMappingOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper to objects and returns the result as dictionary.
+@details Works as like @link NSAMap @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByMappingOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByMappingOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMappingOperatorWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper with key to objects and returns the result as array.
+@details Works as like @link NSAMapWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByMappingOperatorWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByMappingOperatorWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMapFilteringOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper to objects and filters nil result and returns the result as array.
+@details Works as like @link NSAMapFilter @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByMapFilteringOperator:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByMapFilteringOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByMapFilteringOperatorWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Maps mapper with index to objects and filters nil result and returns the result as array.
+@details Works as like @link NSAMapFilterWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByMapFilteringOperatorWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByMapFilteringOperatorWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByFilteringOperator:</TokenIdentifier>
+			<Abstract type="html">@brief Filters objects and returns result as array.
+@details Works as like @link NSAFilter @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByFilteringOperator:(NSAObjectPicker)filter</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByFilteringOperator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Functional)/dictionaryByFilteringOperatorWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Filters objects with key and returns result as array.
+@details Works as like @link NSAFilterWithIndex @endlink</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)dictionaryByFilteringOperatorWithKey:(NSAObjectPickerWithKey)filter</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryByFilteringOperatorWithKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

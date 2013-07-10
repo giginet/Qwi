@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSPasteboard+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSPasteboard(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [NSPasteboard][0] shortcuts
+[0]: http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSPasteboard_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSPasteboard.h</DeclaredIn>
+			
+			<NodeRef refid="70"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPasteboard(Shortcuts)/readObjectForClass:options:</TokenIdentifier>
+			<Abstract type="html">@brief Reads a object from the receiver object that best match the specified class.</Abstract>
+			<DeclaredIn>NSPasteboard.h</DeclaredIn>			
+			
+			<Declaration>- (id)readObjectForClass:(Class)aClass options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/readObjectForClass:options:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSMutableDictionary+Functional.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSMutableDictionary(Functional)</TokenIdentifier>
+			<Abstract type="html">@brief See @ref Map/Filter/Reduce for concept of functional tools.
+@details Dictionary is not fit for this functional tools. But this implementation takes concept of them.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(Functional)</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/map:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper to every item and replace original item to new one.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)map:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/map:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/mapWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper with key to every item and replace original item to new one.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/mapFilter:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper to every item and replace original item to new one or remove if new one is nil.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapFilter:(NSAObjectUnaryOperator)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapFilter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/mapFilterWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Applies mapper with key to every item and replace original item to new one or remove if new one is nil.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)mapFilterWithKey:(NSAObjectUnaryOperatorWithKey)mapper</Declaration>
+			
+			
+			<Anchor>//api/name/mapFilterWithKey:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/filter:</TokenIdentifier>
+			<Abstract type="html">@brief Applies filter to every item and remove it if result is NO.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)filter:(NSAObjectPicker)filter</Declaration>
+			
+			
+			<Anchor>//api/name/filter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSMutableDictionary(Functional)/filterWithKey:</TokenIdentifier>
+			<Abstract type="html">@brief Applies filter with key to every item and remove it if result is NO.</Abstract>
+			<DeclaredIn>NSAFunctional.h</DeclaredIn>			
+			
+			<Declaration>- (void)filterWithKey:(NSAObjectPickerWithKey)filter</Declaration>
+			
+			
+			<Anchor>//api/name/filterWithKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

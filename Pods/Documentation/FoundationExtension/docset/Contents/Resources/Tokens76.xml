@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+NSPathUtilities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(NSPathUtilities)</TokenIdentifier>
+			<Abstract type="html">@brief Extensions of NSString(NSStringPathExtensions)</Abstract>
+			<DeclaredIn>NSPathUtilities.h</DeclaredIn>
+			
+			<NodeRef refid="76"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(NSPathUtilities)/stringByAppendingPathFormat:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a new string made by appending to the receiver a given string.</Abstract>
+			<DeclaredIn>NSPathUtilities.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAppendingPathFormat:(NSString *)format, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>format</Name>
+					<Abstract type="html">A format string.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">A comma-separated list of arguments to substitute into format.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stringByAppendingPathFormat:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

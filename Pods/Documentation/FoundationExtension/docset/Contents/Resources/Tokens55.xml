@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSImage+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSImage(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief [NSImage][0] shortcuts.
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/ApplicationKit/Classes/NSImage_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/imageWithContentsOfURL:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSImage instance with the contents of the specified URL.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>+ (id)imageWithContentsOfURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/imageWithContentsOfURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/imageByReferencingURL:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSImage instance and associates it with the specified URL.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>+ (id)imageByReferencingURL:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/imageByReferencingURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/imageWithPasteboard:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns an NSImage instance with data from the specified pasteboard.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>+ (id)imageWithPasteboard:(NSPasteboard *)pasteboard</Declaration>
+			
+			
+			<Anchor>//api/name/imageWithPasteboard:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/setPNGRepresentation:</TokenIdentifier>
+			<Abstract type="html">@brief PNG representation of image.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *PNGRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/PNGRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSImage(Shortcuts)/PNGRepresentation</TokenIdentifier>
+			<Abstract type="html">@brief PNG representation of image.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *PNGRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/PNGRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/setJPEGRepresentation:</TokenIdentifier>
+			<Abstract type="html">@brief JPEG representation of image.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *JPEGRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/JPEGRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSImage(Shortcuts)/JPEGRepresentation</TokenIdentifier>
+			<Abstract type="html">@brief JPEG representation of image.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSData *JPEGRepresentation</Declaration>
+			
+			
+			<Anchor>//api/name/JPEGRepresentation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSImage(Shortcuts)/JPEGRepresentationWithCompressionFactor:</TokenIdentifier>
+			<Abstract type="html">@brief JPEG representation of image using given compression factor.</Abstract>
+			<DeclaredIn>NSImage.h</DeclaredIn>			
+			
+			<Declaration>- (NSData *)JPEGRepresentationWithCompressionFactor:(CGFloat)compressionFactor</Declaration>
+			
+			
+			<Anchor>//api/name/JPEGRepresentationWithCompressionFactor:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

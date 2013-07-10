@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7TabBar.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7TabBar</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7TabBar.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

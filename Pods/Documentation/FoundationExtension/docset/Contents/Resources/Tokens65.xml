@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSNumberFormatter+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSNumberFormatter(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief Common shortcuts</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formatter</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns default formatter.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumberFormatter *)formatter</Declaration>
+			
+			
+			<Anchor>//api/name/formatter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/initWithNumberStyle:</TokenIdentifier>
+			<Abstract type="html">@brief Initialize with number style.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithNumberStyle:(NSNumberFormatterStyle)style</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNumberStyle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formatterWithNumberStyle:</TokenIdentifier>
+			<Abstract type="html">@brief Creates and returns with number style.</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/initWithNumberStyle:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (NSNumberFormatter *)formatterWithNumberStyle:(NSNumberFormatterStyle)style</Declaration>
+			
+			
+			<Anchor>//api/name/formatterWithNumberStyle:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForNumber:</TokenIdentifier>
+			<Abstract type="html">@brief Quick decimal formatting for NSNumber</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)formattedStringByDecimalStyleForNumber:(NSNumber *)number</Declaration>
+			
+			
+			<Anchor>//api/name/formattedStringByDecimalStyleForNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForInteger:</TokenIdentifier>
+			<Abstract type="html">@brief Quick decimal formatting for NSInteger</Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/formattedStringByDecimalStyleForNumber:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (NSString *)formattedStringByDecimalStyleForInteger:(NSInteger)integer</Declaration>
+			
+			
+			<Anchor>//api/name/formattedStringByDecimalStyleForInteger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/setNumberStyle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSNumberFormatterStyle numberStyle</Declaration>
+			
+			
+			<Anchor>//api/name/numberStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSNumberFormatter(Shortcuts)/numberStyle</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSNumberFormatterStyle numberStyle</Declaration>
+			
+			
+			<Anchor>//api/name/numberStyle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/setGeneratesDecimalNumbers:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL generatesDecimalNumbers</Declaration>
+			
+			
+			<Anchor>//api/name/generatesDecimalNumbers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSNumberFormatter(Shortcuts)/generatesDecimalNumbers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) BOOL generatesDecimalNumbers</Declaration>
+			
+			
+			<Anchor>//api/name/generatesDecimalNumbers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSNumberFormatter(Shortcuts)/setLocale:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSLocale *locale</Declaration>
+			
+			
+			<Anchor>//api/name/locale</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/NSNumberFormatter(Shortcuts)/locale</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSNumberFormatter.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) NSLocale *locale</Declaration>
+			
+			
+			<Anchor>//api/name/locale</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

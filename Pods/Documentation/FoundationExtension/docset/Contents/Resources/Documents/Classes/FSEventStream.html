@@ -1,0 +1,987 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>FSEventStream Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">FoundationExtension 0.36.3 </a></h1>
+				<a id="developerHome" href="../index.html">Jeong YunWon</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FSEventStream Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/latestEventId">&nbsp;&nbsp;&nbsp;&nbsp;latestEventId</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/scheduledEventStreamWithPath:latency:flags:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ scheduledEventStreamWithPath:latency:flags:delegate:</option>
+	
+	<option value="//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ scheduledEventStreamWithPaths:latency:flags:delegate:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/flushAsync">&nbsp;&nbsp;&nbsp;&nbsp;- flushAsync</option>
+	
+	<option value="//api/name/flushSync">&nbsp;&nbsp;&nbsp;&nbsp;- flushSync</option>
+	
+	<option value="//api/name/initWithPaths:latency:flags:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithPaths:latency:flags:delegate:</option>
+	
+	<option value="//api/name/invalidate">&nbsp;&nbsp;&nbsp;&nbsp;- invalidate</option>
+	
+	<option value="//api/name/scheduleWithRunLoop:mode:">&nbsp;&nbsp;&nbsp;&nbsp;- scheduleWithRunLoop:mode:</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/unscheduleFromRunLoop:mode:">&nbsp;&nbsp;&nbsp;&nbsp;- unscheduleFromRunLoop:mode:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/latestEventId">latestEventId</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scheduledEventStreamWithPath:latency:flags:delegate:">scheduledEventStreamWithPath:latency:flags:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:">scheduledEventStreamWithPaths:latency:flags:delegate:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flushAsync">flushAsync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flushSync">flushSync</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithPaths:latency:flags:delegate:">initWithPaths:latency:flags:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidate">invalidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scheduleWithRunLoop:mode:">scheduleWithRunLoop:mode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unscheduleFromRunLoop:mode:">unscheduleFromRunLoop:mode:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="FSEventStream Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FSEventStream Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">FSEventStream.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@brief FSEventSteam object wrapper
+@details Interface design is based on NSTimer, if available. This doesn&rsquo;t work with App sandbox model.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/latestEventId">&nbsp;&nbsp;latestEventId</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithPaths:latency:flags:delegate:">&ndash;&nbsp;initWithPaths:latency:flags:delegate:</a></code>
+		<span class="tooltip"><p>@brief Returns an initiailized event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:">+&nbsp;scheduledEventStreamWithPaths:latency:flags:delegate:</a></code>
+		<span class="tooltip"><p>@brief Returns a created and scheduled event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scheduledEventStreamWithPath:latency:flags:delegate:">+&nbsp;scheduledEventStreamWithPath:latency:flags:delegate:</a></code>
+		<span class="tooltip"><p>@brief Returns a created and scheduled event stream with given path, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidate">&ndash;&nbsp;invalidate</a></code>
+		<span class="tooltip"><ul>
+<li>@brief Invalidates the stream.</li>
+<li>@details Invalidates the stream, like CFRunLoopSourceInvalidate() does for a CFRunLoopSourceRef. It will be unscheduled from any runloops or dispatch queues upon which it had been scheduled.</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		<span class="tooltip"><ul>
+<li>@brief Attempts to register with the FS Events service to receive events per the parameters in the stream.</li>
+<li>@details This method can only be called once the stream has been scheduled on at least one runloop, via @link <a href="#//api/name/scheduleWithRunLoop:mode:">scheduleWithRunLoop:mode:</a> @endlink.</li>
+</ul>
+</span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>@brief Unregisters with the FS Events service.
+@details The client callback will not be called for this stream while it is stopped.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scheduleWithRunLoop:mode:">&ndash;&nbsp;scheduleWithRunLoop:mode:</a></code>
+		<span class="tooltip"><p>@brief Schedules the stream on the specified run loop.
+@details This method schedules the stream on the specified run loop, like CFRunLoopAddSource() does for a CFRunLoopSourceRef. The caller is responsible for ensuring that the stream is scheduled on at least one run loop and that at least one of the run loops on which the stream is scheduled is being run.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unscheduleFromRunLoop:mode:">&ndash;&nbsp;unscheduleFromRunLoop:mode:</a></code>
+		<span class="tooltip"><p>@brief This method removes the stream from the specified run loop.
+@details Like CFRunLoopRemoveSource() does for a CFRunLoopSourceRef.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flushAsync">&ndash;&nbsp;flushAsync</a></code>
+		<span class="tooltip"><p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs asynchronously &mdash; do not expect the events to have already been delivered by the time this call returns.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flushSync">&ndash;&nbsp;flushSync</a></code>
+		<span class="tooltip"><p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs synchronously &mdash; by the time this call returns, your callback will have been invoked for every event that had already occurred at the time you made this call.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;FSEventStreamDelegate&gt; delegate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/latestEventId" title="latestEventId"></a>
+	<h3 class="subsubtitle method-title">latestEventId</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) FSEventStreamEventId latestEventId</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/scheduledEventStreamWithPath:latency:flags:delegate:" title="scheduledEventStreamWithPath:latency:flags:delegate:"></a>
+	<h3 class="subsubtitle method-title">scheduledEventStreamWithPath:latency:flags:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Returns a created and scheduled event stream with given path, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)scheduledEventStreamWithPath:(NSString *)<em>path</em> latency:(NSTimeInterval)<em>latency</em> flags:(FSEventStreamCreateFlags)<em>flags</em> delegate:(id)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Returns a created and scheduled event stream with given path, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithPaths:latency:flags:delegate:">&ndash; initWithPaths:latency:flags:delegate:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:">+ scheduledEventStreamWithPaths:latency:flags:delegate:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/scheduleWithRunLoop:mode:">&ndash; scheduleWithRunLoop:mode:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:" title="scheduledEventStreamWithPaths:latency:flags:delegate:"></a>
+	<h3 class="subsubtitle method-title">scheduledEventStreamWithPaths:latency:flags:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Returns a created and scheduled event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)scheduledEventStreamWithPaths:(NSArray *)<em>paths</em> latency:(NSTimeInterval)<em>latency</em> flags:(FSEventStreamCreateFlags)<em>flags</em> delegate:(id)<em>delegate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Returns a created and scheduled event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithPaths:latency:flags:delegate:">&ndash; initWithPaths:latency:flags:delegate:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/scheduleWithRunLoop:mode:">&ndash; scheduleWithRunLoop:mode:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/flushAsync" title="flushAsync"></a>
+	<h3 class="subsubtitle method-title">flushAsync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs asynchronously &mdash; do not expect the events to have already been delivered by the time this call returns.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (FSEventStreamEventId)flushAsync</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The largest event id of any event ever queued for this stream, otherwise zero if no events have been queued for this stream.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs asynchronously &mdash; do not expect the events to have already been delivered by the time this call returns.</p>
+
+<p>This method can only be called after the stream has been started, via @link <a href="#//api/name/start">start</a> @endlink.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flushSync" title="flushSync"></a>
+	<h3 class="subsubtitle method-title">flushSync</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs synchronously &mdash; by the time this call returns, your callback will have been invoked for every event that had already occurred at the time you made this call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)flushSync</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs synchronously &mdash; by the time this call returns, your callback will have been invoked for every event that had already occurred at the time you made this call.</p>
+
+<p>This method can only be called after the stream has been started, via @link <a href="#//api/name/start">start</a> @endlink.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithPaths:latency:flags:delegate:" title="initWithPaths:latency:flags:delegate:"></a>
+	<h3 class="subsubtitle method-title">initWithPaths:latency:flags:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Returns an initiailized event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithPaths:(NSArray *)<em>paths</em> latency:(NSTimeInterval)<em>latency</em> flags:(FSEventStreamCreateFlags)<em>flags</em> delegate:(id)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>paths</em></dt>
+			<dd><p>Array of NSString, each specifying a path to a directory, signifying the root of a filesystem hierarchy to be watched for modifications.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>latency</em></dt>
+			<dd><p>The number of seconds the service should wait after hearing about an event from the kernel before passing it along to the client via its callback. Specifying a larger value may result in more effective temporal coalescing, resulting in fewer callbacks and greater overall efficiency.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>flags</em></dt>
+			<dd><p>Flags that modify the behavior of the stream being created. See [FSEventStreamCreateFlags][0].</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>The <a href="#//api/name/delegate">delegate</a> object for the connection. The <a href="#//api/name/delegate">delegate</a> will receive <a href="#//api/name/delegate">delegate</a> messages as the file system event. Messages to the <a href="#//api/name/delegate">delegate</a> will be sent on the thread that calls this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Returns an initiailized event stream with given paths, latency, create flags and <a href="#//api/name/delegate">delegate</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/FSEvents_Ref/Reference/reference.html#//apple_ref/doc/c_ref/FSEventStreamCreate">FSEventStreamCreate</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidate" title="invalidate"></a>
+	<h3 class="subsubtitle method-title">invalidate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>@brief Invalidates the stream.</li>
+<li>@details Invalidates the stream, like CFRunLoopSourceInvalidate() does for a CFRunLoopSourceRef. It will be unscheduled from any runloops or dispatch queues upon which it had been scheduled.</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>@brief Invalidates the stream.</li>
+<li><p>@details Invalidates the stream, like CFRunLoopSourceInvalidate() does for a CFRunLoopSourceRef. It will be unscheduled from any runloops or dispatch queues upon which it had been scheduled.</p>
+
+<p> @link invalidate @endlink can only be called on the stream after you have called @link <a href="#//api/name/scheduleWithRunLoop:mode:">scheduleWithRunLoop:mode:</a> @endlink or FSEventStreamSetDispatchQueue().</p></li>
+<li>@see [FSEventStreamInvalidate][0]</li>
+<li>   [0]: https://developer.apple.com/library/mac/#documentation/Darwin/Reference/FSEvents_Ref/Reference/reference.html#//apple_ref/doc/c_ref/FSEventStreamInvalidate</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scheduleWithRunLoop:mode:" title="scheduleWithRunLoop:mode:"></a>
+	<h3 class="subsubtitle method-title">scheduleWithRunLoop:mode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Schedules the stream on the specified run loop.
+@details This method schedules the stream on the specified run loop, like CFRunLoopAddSource() does for a CFRunLoopSourceRef. The caller is responsible for ensuring that the stream is scheduled on at least one run loop and that at least one of the run loops on which the stream is scheduled is being run.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scheduleWithRunLoop:(NSRunLoop *)<em>runLoop</em> mode:(NSString *)<em>mode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>runLoop</em></dt>
+			<dd><p>The run loop on which to schedule the stream.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mode</em></dt>
+			<dd><p>A run loop mode on which to schedule the stream.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Schedules the stream on the specified run loop.
+@details This method schedules the stream on the specified run loop, like CFRunLoopAddSource() does for a CFRunLoopSourceRef. The caller is responsible for ensuring that the stream is scheduled on at least one run loop and that at least one of the run loops on which the stream is scheduled is being run.</p>
+
+<p>To <a href="#//api/name/start">start</a> receiving events on the stream, call @link <a href="#//api/name/start">start</a> @endlink.</p>
+
+<p>To remove the stream from the run loops upon which it has been scheduled, call @link <a href="#//api/name/unscheduleFromRunLoop:mode:">unscheduleFromRunLoop:mode:</a> @endlink or @link <a href="#//api/name/invalidate">invalidate</a> @endlink.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>@brief Attempts to register with the FS Events service to receive events per the parameters in the stream.</li>
+<li>@details This method can only be called once the stream has been scheduled on at least one runloop, via @link <a href="#//api/name/scheduleWithRunLoop:mode:">scheduleWithRunLoop:mode:</a> @endlink.</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)start</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>@brief Attempts to register with the FS Events service to receive events per the parameters in the stream.</li>
+<li><p>@details This method can only be called once the stream has been scheduled on at least one runloop, via @link <a href="#//api/name/scheduleWithRunLoop:mode:">scheduleWithRunLoop:mode:</a> @endlink.</p>
+
+<p> Once started, the stream can be stopped via FSEventStreamStop().</p></li>
+<li>@return True if it succeeds, otherwise False if it fails. It ought to always succeed, but in the event it does not then your code should fall back to performing recursive scans of the directories of interest as appropriate.</li>
+<li>@see [FSEventStreamStart][0]</li>
+<li>   [0]: https://developer.apple.com/library/mac/#documentation/Darwin/Reference/FSEvents_Ref/Reference/reference.html#//apple_ref/doc/c_ref/FSEventStreamStart</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief Unregisters with the FS Events service.
+@details The client callback will not be called for this stream while it is stopped.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief Unregisters with the FS Events service.
+@details The client callback will not be called for this stream while it is stopped.</p>
+
+<p>This method can only be called if the stream has been started, via @link <a href="#//api/name/start">start</a> @endlink.</p>
+
+<p>Once stopped, the stream can be restarted via @link <a href="#//api/name/start">start</a> @endlink, at which point it will resume receiving events from where it left off (&ldquo;sinceWhen&rdquo;).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unscheduleFromRunLoop:mode:" title="unscheduleFromRunLoop:mode:"></a>
+	<h3 class="subsubtitle method-title">unscheduleFromRunLoop:mode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@brief This method removes the stream from the specified run loop.
+@details Like CFRunLoopRemoveSource() does for a CFRunLoopSourceRef.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)unscheduleFromRunLoop:(NSRunLoop *)<em>runLoop</em> mode:(NSString *)<em>mode</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@brief This method removes the stream from the specified run loop.
+@details Like CFRunLoopRemoveSource() does for a CFRunLoopSourceRef.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FSEventStream.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jeong YunWon. All rights reserved. (Last updated: 2013-07-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

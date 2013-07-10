@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSTimer+dispatch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSTimer(dispatch)</TokenIdentifier>
+			<Abstract type="html">@brief [dispatch][0] Shortcuts, not really NSTimer-related implementation.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>
+			
+			<NodeRef refid="84"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSTimer(dispatch)/dispatchTimerWithTimeInterval:block:</TokenIdentifier>
+			<Abstract type="html">@brief Dispatch a block.</Abstract>
+			<DeclaredIn>NSTimer.h</DeclaredIn>			
+			
+			<Declaration>+ (void)dispatchTimerWithTimeInterval:(NSTimeInterval)ti block:(NSATimerBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ti</Name>
+					<Abstract type="html">Time Interval</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block to dispatch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dispatchTimerWithTimeInterval:block:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

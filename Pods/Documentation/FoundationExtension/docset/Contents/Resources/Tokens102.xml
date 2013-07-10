@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIScrollView+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIScrollView(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief UIScrollView shortcuts</Abstract>
+			<DeclaredIn>UIScrollView.h</DeclaredIn>
+			
+			<NodeRef refid="102"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIScrollView(Shortcuts)/setContentFrame:</TokenIdentifier>
+			<Abstract type="html">@brief Frame representation for contentSize</Abstract>
+			<DeclaredIn>UIScrollView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentFrame</Declaration>
+			
+			
+			<Anchor>//api/name/contentFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIScrollView(Shortcuts)/contentFrame</TokenIdentifier>
+			<Abstract type="html">@brief Frame representation for contentSize</Abstract>
+			<DeclaredIn>UIScrollView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentFrame</Declaration>
+			
+			
+			<Anchor>//api/name/contentFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIScrollView(Shortcuts)/setContentBounds:</TokenIdentifier>
+			<Abstract type="html">@brief Bounds representation for contentSize</Abstract>
+			<DeclaredIn>UIScrollView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentBounds</Declaration>
+			
+			
+			<Anchor>//api/name/contentBounds</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/UIScrollView(Shortcuts)/contentBounds</TokenIdentifier>
+			<Abstract type="html">@brief Bounds representation for contentSize</Abstract>
+			<DeclaredIn>UIScrollView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CGRect contentBounds</Declaration>
+			
+			
+			<Anchor>//api/name/contentBounds</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UI7Button.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UI7Button</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UI7Button.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

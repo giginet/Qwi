@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+NSValue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(NSValue)</TokenIdentifier>
+			<Abstract type="html">@brief NSObject extension cateogory collection for [NSValue][0].
+[0]: https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSValue_Class/Reference/Reference.html</Abstract>
+			<DeclaredIn>NSValue.h</DeclaredIn>
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(NSValue)/value</TokenIdentifier>
+			<Abstract type="html">@brief NSValue instant creation method for NSObject.
+@details NSValue -valueWithNonretainedObject:</Abstract>
+			<DeclaredIn>NSValue.h</DeclaredIn>			
+			
+			<Declaration>- (NSValue *)value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

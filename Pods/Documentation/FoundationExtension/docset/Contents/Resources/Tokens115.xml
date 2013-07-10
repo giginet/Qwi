@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UIATableViewCellCopyableDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UIATableViewCellCopyableDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIATableView.h</DeclaredIn>
+			
+			<NodeRef refid="115"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIATableViewCellCopyableDelegate/selectionStyleForCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIATableView.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCellSelectionStyle)selectionStyleForCell:(UIATableViewCellCopyable *)cell</Declaration>
+			
+			
+			<Anchor>//api/name/selectionStyleForCell:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIATableViewCellCopyableDelegate/stringForCell:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIATableView.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringForCell:(UIATableViewCellCopyable *)cell</Declaration>
+			
+			
+			<Anchor>//api/name/stringForCell:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIATableViewCellCopyableDelegate/cellWillShowMenu:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIATableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)cellWillShowMenu:(UIATableViewCellCopyable *)cell</Declaration>
+			
+			
+			<Anchor>//api/name/cellWillShowMenu:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIATableViewCellCopyableDelegate/cellWillHideMenu:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIATableView.h</DeclaredIn>			
+			
+			<Declaration>- (void)cellWillHideMenu:(UIATableViewCellCopyable *)cell</Declaration>
+			
+			
+			<Anchor>//api/name/cellWillHideMenu:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

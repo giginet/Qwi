@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+Shortcuts.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(Shortcuts)</TokenIdentifier>
+			<Abstract type="html">@brief NSDictionary shortcut methods extension.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Shortcuts)/:</TokenIdentifier>
+			<Abstract type="html">@brief Extreme short form of &apos;ObjectForKey:&apos;
+@deprecated Use (array)[index] syntax instead of this.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (id):</Declaration>
+			
+			
+			<Anchor>//api/name/:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSDictionary(Shortcuts)/containsKey:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a Boolean value that indicates whether a given object is present in the keys.</Abstract>
+			<DeclaredIn>NSDictionary.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)containsKey:(id)aKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aKey</Name>
+					<Abstract type="html">A key to test dictionary has it.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if aKey is present in the dictionary, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/containsKey:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

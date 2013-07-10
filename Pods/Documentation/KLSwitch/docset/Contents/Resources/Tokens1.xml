@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KLSwitch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KLSwitch</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/set_0:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *NS_AVAILABLE_IOS ( 5 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/_0</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIImage *NS_AVAILABLE_IOS ( 5 _0</Declaration>
+			
+			
+			<Anchor>//api/name/_0</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setContrastColor:</TokenIdentifier>
+			<Abstract type="html">Additional color options provided by KLSwitch only</Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *contrastColor</Declaration>
+			
+			
+			<Anchor>//api/name/contrastColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/contrastColor</TokenIdentifier>
+			<Abstract type="html">Additional color options provided by KLSwitch only</Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *contrastColor</Declaration>
+			
+			
+			<Anchor>//api/name/contrastColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setThumbBorderColor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *thumbBorderColor</Declaration>
+			
+			
+			<Anchor>//api/name/thumbBorderColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/thumbBorderColor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIColor *thumbBorderColor</Declaration>
+			
+			
+			<Anchor>//api/name/thumbBorderColor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setOn:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, getter=isOn) BOOL on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/on</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, getter=isOn) BOOL on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setDidChangeHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) changeHandler didChangeHandler</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeHandler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/didChangeHandler</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) changeHandler didChangeHandler</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeHandler</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setPanActivationThreshold:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat panActivationThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/panActivationThreshold</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/panActivationThreshold</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGFloat panActivationThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/panActivationThreshold</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setShouldConstrainFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL shouldConstrainFrame</Declaration>
+			
+			
+			<Anchor>//api/name/shouldConstrainFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KLSwitch/shouldConstrainFrame</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL shouldConstrainFrame</Declaration>
+			
+			
+			<Anchor>//api/name/shouldConstrainFrame</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/initWithFrame:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/initWithFrame:didChangeHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)frame didChangeHandler:(changeHandler)didChangeHandler</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:didChangeHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KLSwitch/setOn:animated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>KLSwitch.h</DeclaredIn>			
+			
+			<Declaration>- (void)setOn:(BOOL)on animated:(BOOL)animated</Declaration>
+			
+			
+			<Anchor>//api/name/setOn:animated:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

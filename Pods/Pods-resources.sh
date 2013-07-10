@@ -25,3 +25,15 @@ install_resource()
       ;;
   esac
 }
+install_resource 'UI7Kit/Resources/UI7ButtonImageAdd.png'
+install_resource 'UI7Kit/Resources/UI7ButtonImageAdd@2x.png'
+install_resource 'UI7Kit/Resources/UI7ButtonImageInfo.png'
+install_resource 'UI7Kit/Resources/UI7ButtonImageInfo@2x.png'
+install_resource 'UI7Kit/Resources/UI7NavigationBarBackButton.png'
+install_resource 'UI7Kit/Resources/UI7NavigationBarBackButton@2x.png'
+install_resource 'UI7Kit/Resources/UI7TabBarItemFavoriteSelected.png'
+install_resource 'UI7Kit/Resources/UI7TabBarItemFavoriteSelected@2x.png'
+install_resource 'UI7Kit/Resources/UI7TabBarItemFavoriteUnselected.png'
+install_resource 'UI7Kit/Resources/UI7TabBarItemFavoriteUnselected@2x.png'
+install_resource 'UI7Kit/Resources/UI7TableViewCellDisclosureIndicator.png'
+install_resource 'UI7Kit/Resources/UI7TableViewCellDisclosureIndicator@2x.png'

@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/giginet/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.cdebug.cdebug-0.1.1.docset
+Time: 2013-07-10 09:57:31 +0000

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FSEventStream.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FSEventStream</TokenIdentifier>
+			<Abstract type="html">@brief FSEventSteam object wrapper
+@details Interface design is based on NSTimer, if available. This doesn&apos;t work with App sandbox model.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;FSEventStreamDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FSEventStream/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;FSEventStreamDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/setLatestEventId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) FSEventStreamEventId latestEventId</Declaration>
+			
+			
+			<Anchor>//api/name/latestEventId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FSEventStream/latestEventId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) FSEventStreamEventId latestEventId</Declaration>
+			
+			
+			<Anchor>//api/name/latestEventId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/initWithPaths:latency:flags:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Returns an initiailized event stream with given paths, latency, create flags and delegate.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithPaths:(NSArray *)paths latency:(NSTimeInterval)latency flags:(FSEventStreamCreateFlags)flags delegate:(id)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paths</Name>
+					<Abstract type="html">Array of NSString, each specifying a path to a directory, signifying the root of a filesystem hierarchy to be watched for modifications.</Abstract>
+				</Parameter><Parameter>
+					<Name>latency</Name>
+					<Abstract type="html">The number of seconds the service should wait after hearing about an event from the kernel before passing it along to the client via its callback. Specifying a larger value may result in more effective temporal coalescing, resulting in fewer callbacks and greater overall efficiency.</Abstract>
+				</Parameter><Parameter>
+					<Name>flags</Name>
+					<Abstract type="html">Flags that modify the behavior of the stream being created. See [FSEventStreamCreateFlags][0].</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate object for the connection. The delegate will receive delegate messages as the file system event. Messages to the delegate will be sent on the thread that calls this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPaths:latency:flags:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FSEventStream/scheduledEventStreamWithPaths:latency:flags:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a created and scheduled event stream with given paths, latency, create flags and delegate.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/initWithPaths:latency:flags:delegate:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/scheduleWithRunLoop:mode:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)scheduledEventStreamWithPaths:(NSArray *)paths latency:(NSTimeInterval)latency flags:(FSEventStreamCreateFlags)flags delegate:(id)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/scheduledEventStreamWithPaths:latency:flags:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FSEventStream/scheduledEventStreamWithPath:latency:flags:delegate:</TokenIdentifier>
+			<Abstract type="html">@brief Returns a created and scheduled event stream with given path, latency, create flags and delegate.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/initWithPaths:latency:flags:delegate:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/clm/FSEventStream/scheduledEventStreamWithPaths:latency:flags:delegate:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/scheduleWithRunLoop:mode:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (id)scheduledEventStreamWithPath:(NSString *)path latency:(NSTimeInterval)latency flags:(FSEventStreamCreateFlags)flags delegate:(id)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/scheduledEventStreamWithPath:latency:flags:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/invalidate</TokenIdentifier>
+			<Abstract type="html">*  @brief Invalidates the stream.
+*  @details Invalidates the stream, like CFRunLoopSourceInvalidate() does for a CFRunLoopSourceRef. It will be unscheduled from any runloops or dispatch queues upon which it had been scheduled.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)invalidate</Declaration>
+			
+			
+			<Anchor>//api/name/invalidate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/start</TokenIdentifier>
+			<Abstract type="html">*  @brief Attempts to register with the FS Events service to receive events per the parameters in the stream.
+*  @details This method can only be called once the stream has been scheduled on at least one runloop, via @link scheduleWithRunLoop:mode: @endlink.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/stop</TokenIdentifier>
+			<Abstract type="html">@brief Unregisters with the FS Events service.
+@details The client callback will not be called for this stream while it is stopped.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/scheduleWithRunLoop:mode:</TokenIdentifier>
+			<Abstract type="html">@brief Schedules the stream on the specified run loop.
+@details This method schedules the stream on the specified run loop, like CFRunLoopAddSource() does for a CFRunLoopSourceRef. The caller is responsible for ensuring that the stream is scheduled on at least one run loop and that at least one of the run loops on which the stream is scheduled is being run.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)scheduleWithRunLoop:(NSRunLoop *)runLoop mode:(NSString *)mode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>runLoop</Name>
+					<Abstract type="html">The run loop on which to schedule the stream.</Abstract>
+				</Parameter><Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">A run loop mode on which to schedule the stream.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/scheduleWithRunLoop:mode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/unscheduleFromRunLoop:mode:</TokenIdentifier>
+			<Abstract type="html">@brief This method removes the stream from the specified run loop.
+@details Like CFRunLoopRemoveSource() does for a CFRunLoopSourceRef.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)unscheduleFromRunLoop:(NSRunLoop *)runLoop mode:(NSString *)mode</Declaration>
+			
+			
+			<Anchor>//api/name/unscheduleFromRunLoop:mode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/flushAsync</TokenIdentifier>
+			<Abstract type="html">@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs asynchronously -- do not expect the events to have already been delivered by the time this call returns.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (FSEventStreamEventId)flushAsync</Declaration>
+			
+			<ReturnValue><Abstract type="html">The largest event id of any event ever queued for this stream, otherwise zero if no events have been queued for this stream.</Abstract></ReturnValue>
+			<Anchor>//api/name/flushAsync</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FSEventStream/flushSync</TokenIdentifier>
+			<Abstract type="html">@brief Asks the FS Events service to flush out any events that have occurred but have not yet been delivered, due to the latency parameter that was supplied when the stream was created.
+@details This flushing occurs synchronously -- by the time this call returns, your callback will have been invoked for every event that had already occurred at the time you made this call.</Abstract>
+			<DeclaredIn>FSEventStream.h</DeclaredIn>			
+			
+			<Declaration>- (void)flushSync</Declaration>
+			
+			
+			<Anchor>//api/name/flushSync</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

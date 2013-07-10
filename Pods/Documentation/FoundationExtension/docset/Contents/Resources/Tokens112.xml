@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UIADimmingViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UIADimmingViewDelegate</TokenIdentifier>
+			<Abstract type="html">@brief This protocol defines delegate methods for UIDimmingView objects.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>
+			
+			<NodeRef refid="112"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIADimmingViewDelegate/dimmingViewDidCancel:</TokenIdentifier>
+			<Abstract type="html">@brief Tells the delegate that the dimming view has been touched.</Abstract>
+			<DeclaredIn>UIAResultDisplayController.h</DeclaredIn>			
+			
+			<Declaration>- (void)dimmingViewDidCancel:(UIADimmingView *)view</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>view</Name>
+					<Abstract type="html">The dimming view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dimmingViewDidCancel:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
