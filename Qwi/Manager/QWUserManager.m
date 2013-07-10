@@ -124,12 +124,13 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     return [QWUser MR_countOfEntitiesWithPredicate:[NSPredicate predicateWithFormat:@"screenName = %@", name]];
 }
 
-- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account {
-    [self updateFriends:screenName via:account count:1000];
+- (void)fetchFriends:(NSString *)screenName via:(ACAccount *)account completion:(void (^)(QWUser *user, NSSet *friends, BOOL success))completion {
+    [self fetchFriends:screenName via:account count:1000 completion:completion];
 }
 
-- (void)updateFriends:(NSString *)screenName via:(ACAccount *)account count:(int)count {
+- (void)fetchFriends:(NSString *)screenName via:(ACAccount *)account count:(int)count completion:(void (^)(QWUser *user, NSSet *friends, BOOL success))completion {
     NSLog(@"fetch friends of %@ limit %d", account.username, count);
+    QWUser *user = [[QWUserManager sharedManager] selectUserByName:screenName];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"screen_name" : screenName,
             @"count" : [NSString stringWithFormat:@"%d", count]}];
     SLRequest *listRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
@@ -137,22 +138,35 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                           URL:[self buildURL:kFriendsIdsAPI]
                                                    parameters:params];
     listRequest.account = account;
-    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[listRequest preparedURLRequest]
+    AFJSONRequestOperation *operation;
+    operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[listRequest preparedURLRequest]
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                 NSArray *ids = JSON[@"ids"];
                 int count = [ids count];
-                for (int i = 0; i < count; i += kIDLimit) {
-                    [self updateFriendsWithIDs:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))] via:account];
-                }
-                //[self.managedObjectContext save:nil];
+                NSLog(@"friend count = %d", count);
+                __block int i = 0;
+                __block NSMutableSet *set = [NSMutableSet set];
+                void (^block)(NSSet *friends, BOOL success) = ^(NSSet *friends, BOOL success) {
+                    NSLog(@"fetchFriend from %d", i);
+                    if (friends) {
+                        [set setByAddingObjectsFromSet:friends];
+                    }
+                    if (i < count) {
+                        [self createUsersWithIDs:[ids subarrayWithRange:NSMakeRange(i, MIN(kIDLimit, count - i))] via:account completion:block];
+                    } else {
+                        completion(user, set, YES);
+                    }
+                    i += kIDLimit;
+                };
+                block(nil, NO);
             }
             failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-
+                completion(user, nil, NO);
             }];
     [self.queue addOperation:operation];
 }
 
-- (void)updateFriendsWithIDs:(NSArray *)ids via:(ACAccount *)account {
+- (void)createUsersWithIDs:(NSArray *)ids via:(ACAccount *)account completion:(void (^)(NSSet *friends, BOOL success))completion {
     NSString *users = [ids componentsJoinedByString:@","];
     NSDictionary *params = @{@"user_id" : users};
     SLRequest *lookupRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
@@ -162,24 +176,30 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     lookupRequest.account = account;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[lookupRequest preparedURLRequest]
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                NSMutableSet *friends = [NSMutableSet set];
                 for (NSDictionary *userInfo in JSON) {
                     NSString *screenName = userInfo[@"screen_name"];
                     if ([self isCachedByName:screenName]) {
                         // 保存済みの時
                         QWUser *user = [self selectUserByName:screenName];
                         [user updateFromJSON:userInfo];
+                        [friends addObject:user];
                         NSLog(@"update %@", screenName);
                     } else {
                         // 保存されていなかったとき。新規生成してあげるよ！
                         QWUser *user = [self insertNewUser];
                         [user updateFromJSON:userInfo];
+                        [friends addObject:user];
                         NSLog(@"create %@", screenName);
                     }
                 }
+                completion(friends, YES);
             }
             failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
                 // ToDo 上手くいかなかったとき。スルー
+                completion(nil, NO);
             }];
+    [self.queue addOperation:operation];
 }
 
 #pragma mark private

@@ -57,11 +57,10 @@ const NSString *kLastAccountKey = @"lastAccount";
                         }
                     }];
                 } else { // 保存されているとき
-                    if (![self containsUser:cache]) {
-                        QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
-                        if (![_accounts containsObject:account]) {
-                            [_accounts addObject:account];
-                        }
+                    QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
+                    if (![_accounts containsObject:account]) {
+                        NSLog(@"load account %@", account.user.screenName);
+                        [_accounts addObject:account];
                     }
                 }
             }
@@ -83,7 +82,6 @@ const NSString *kLastAccountKey = @"lastAccount";
                 [manager updateUserByName:cache.screenName
                                       via:acAccount
                                   succeed:onSucceed];
-                [manager updateFriends:cache.screenName via:acAccount];
             }
         }
     }];

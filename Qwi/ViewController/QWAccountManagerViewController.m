@@ -8,6 +8,7 @@
 
 #import "QWAccountManagerViewController.h"
 #import "QWAccountManager.h"
+#import "QWUserManager.h"
 
 @interface QWAccountManagerViewController ()
 
@@ -36,6 +37,7 @@
     [manager loadAccounts:^(BOOL granted, NSError *error) {
         [indicator stopAnimating];
         [self.tableView reloadData];
+        NSLog(@"coutn = %d", [manager.accounts count]);
     }];
 }
 
@@ -45,18 +47,15 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
     return [[[QWAccountManager sharedManager] accounts] count];
 }
 
@@ -78,7 +77,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     int row = indexPath.row;
     QWAccountManager *manager = [QWAccountManager sharedManager];
-    manager.currentAccount = [manager.accounts objectAtIndex:row];
+    QWAccount *account = manager.accounts[row];
+    manager.currentAccount = account;
+    if (account) {
+        [[QWUserManager sharedManager] fetchFriends:account.user.screenName via:account.account completion:^(QWUser *user, NSSet *friends, BOOL success) {
+            NSLog(@"fetch friend complete");
+        }];
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
