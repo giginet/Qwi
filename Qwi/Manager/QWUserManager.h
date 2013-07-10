@@ -37,5 +37,6 @@
 - (void)createUsersWithIDs:(NSArray *)ids
                        via:(ACAccount *)account
                 completion:(void (^)(NSSet *friends, BOOL success))completion;
+- (void)save:(void (^)(BOOL success, NSError *error))succeed;
 
 @end

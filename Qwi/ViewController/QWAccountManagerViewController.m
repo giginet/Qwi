@@ -36,8 +36,10 @@
     QWAccountManager *manager = [QWAccountManager sharedManager];
     [manager loadAccounts:^(BOOL granted, NSError *error) {
         [indicator stopAnimating];
-        [self.tableView reloadData];
-        NSLog(@"coutn = %d", [manager.accounts count]);
+        QWUserManager *userManager = [QWUserManager sharedManager];
+        [userManager save:^(BOOL success, NSError *error) {
+            [self.tableView reloadData];
+        }];
     }];
 }
 
@@ -82,6 +84,10 @@
     if (account) {
         [[QWUserManager sharedManager] fetchFriends:account.user.screenName via:account.account completion:^(QWUser *user, NSSet *friends, BOOL success) {
             NSLog(@"fetch friend complete");
+            QWUserManager *userManager = [QWUserManager sharedManager];
+            [userManager save:^(BOOL success, NSError *error) {
+
+            }];
         }];
     }
     [self dismissViewControllerAnimated:YES completion:nil];

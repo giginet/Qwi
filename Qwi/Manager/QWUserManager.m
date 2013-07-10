@@ -70,11 +70,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                 NSLog(@"create %@", user.screenName);
                 [_users setObject:user forKey:screenName];
                 NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
-                [context MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
-                    if (onSucceed) {
-                        onSucceed(user, request, nil);
-                    }
-                }];
+                onSucceed(user, request, nil);
             } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 
             }];
@@ -146,7 +142,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                 NSLog(@"friend count = %d", count);
                 __block int i = 0;
                 __block NSMutableSet *set = [NSMutableSet set];
-                void (^block)(NSSet *friends, BOOL success) = ^(NSSet *friends, BOOL success) {
+                __block void (^block)(NSSet *friends, BOOL success) = ^(NSSet *friends, BOOL success) {
                     NSLog(@"fetchFriend from %d", i);
                     if (friends) {
                         [set setByAddingObjectsFromSet:friends];
@@ -200,6 +196,11 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                 completion(nil, NO);
             }];
     [self.queue addOperation:operation];
+}
+
+- (void)save:(void (^)(BOOL success, NSError *error))succeed {
+    NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+    [context MR_saveToPersistentStoreWithCompletion:succeed];
 }
 
 #pragma mark private
