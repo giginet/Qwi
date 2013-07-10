@@ -31,8 +31,12 @@
 		07FD925B16E621BC00688022 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FD925A16E621BC00688022 /* Accounts.framework */; };
 		1AB8911AE6E4C999F1C8F1B0 /* QWAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8973C120821ACEEBECEC9 /* QWAccountManager.m */; };
 		1AB892553DE7D9FC79D72E98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB89219F9A6A0B4BF0190AA /* CoreData.framework */; };
+		1AB8954747F1C0A02E164E21 /* add_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB89C867ECA4574FFD824A6 /* add_account.png */; };
+		1AB895BE2DB917D076658448 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB897E8C2D584CDA43FE86A /* logo@2x.png */; };
 		1AB899A01AF2E37F367B00C5 /* QWQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8936B6A2C6B6715F4465A /* QWQuiz.m */; };
+		1AB89C1D98FCA4C4AF0E2257 /* add_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB89F6B080FCF12AD750A27 /* add_account@2x.png */; };
 		1AB89D748565F5852CC9FC5C /* QWGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB892CCD76F36E5B70BB544 /* QWGame.m */; };
+		1AB89DADDC330BA918BC0C1A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB898A09E520DCDCBC9B4FF /* logo.png */; };
 		1AB89F2F11A5B546F94454D8 /* QWWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8958C114064F5FB5F7EA3 /* QWWelcomeViewController.m */; };
 		1AB89F57694C6DE44F84EB43 /* QWSelectQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB89D366A4C806E3235C4C0 /* QWSelectQuiz.m */; };
 		1AB89F612007AF43C898B516 /* QWQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB894BA70F7BC41EE86434E /* QWQuizViewController.m */; };
@@ -83,9 +87,13 @@
 		1AB8958C114064F5FB5F7EA3 /* QWWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWWelcomeViewController.m; path = ViewController/QWWelcomeViewController.m; sourceTree = "<group>"; };
 		1AB896EB093E35CDB6437C70 /* QWAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWAccountManager.h; path = Manager/QWAccountManager.h; sourceTree = "<group>"; };
 		1AB8973C120821ACEEBECEC9 /* QWAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QWAccountManager.m; path = Manager/QWAccountManager.m; sourceTree = "<group>"; };
+		1AB897E8C2D584CDA43FE86A /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		1AB898A09E520DCDCBC9B4FF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		1AB89AC76DFFF9D12FFC6645 /* QWWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWWelcomeViewController.h; path = ViewController/QWWelcomeViewController.h; sourceTree = "<group>"; };
+		1AB89C867ECA4574FFD824A6 /* add_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_account.png; sourceTree = "<group>"; };
 		1AB89D08D34FC64329896668 /* QWQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QWQuizViewController.h; path = ViewController/QWQuizViewController.h; sourceTree = "<group>"; };
 		1AB89D366A4C806E3235C4C0 /* QWSelectQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWSelectQuiz.m; sourceTree = "<group>"; };
+		1AB89F6B080FCF12AD750A27 /* add_account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_account@2x.png"; sourceTree = "<group>"; };
 		AFF396E4896D41888D75CB33 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D09E824178C5428D96534543 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +173,7 @@
 				07FD923716E61A7900688022 /* Supporting Files */,
 				073D3A08173F9EDB0051DAFB /* Qwi.xcdatamodeld */,
 				1AB89D000DCF66B622D83297 /* Quiz */,
+				1AB89E5B9424849CA971F69A /* Resources */,
 			);
 			path = Qwi;
 			sourceTree = "<group>";
@@ -227,6 +236,17 @@
 			path = Quiz;
 			sourceTree = "<group>";
 		};
+		1AB89E5B9424849CA971F69A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AB898A09E520DCDCBC9B4FF /* logo.png */,
+				1AB897E8C2D584CDA43FE86A /* logo@2x.png */,
+				1AB89C867ECA4574FFD824A6 /* add_account.png */,
+				1AB89F6B080FCF12AD750A27 /* add_account@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +306,10 @@
 				07FD924716E61A7A00688022 /* Default-568h@2x.png in Resources */,
 				07FD924A16E61A7A00688022 /* MainStoryboard_iPhone.storyboard in Resources */,
 				07FD924D16E61A7A00688022 /* MainStoryboard_iPad.storyboard in Resources */,
+				1AB89DADDC330BA918BC0C1A /* logo.png in Resources */,
+				1AB895BE2DB917D076658448 /* logo@2x.png in Resources */,
+				1AB8954747F1C0A02E164E21 /* add_account.png in Resources */,
+				1AB89C1D98FCA4C4AF0E2257 /* add_account@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
