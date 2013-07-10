@@ -17,6 +17,7 @@
 #import "NSManagedObject+MagicalRecord.h"
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObject+MagicalAggregation.h"
+#import "NSManagedObject+MagicalFinders.h"
 
 #define MR_SHORTHAND
 
@@ -62,23 +63,13 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     showRequest.account = account;
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[showRequest preparedURLRequest]
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                if ([account.username isEqual:screenName]) {
-                    QWUser *user = [self insertNewUser];
-                    [user updateFromJSON:JSON];
-                    [_users setObject:user forKey:screenName];
-                    if (onSucceed) {
-                        onSucceed(user, request, nil);
-                    }
-                } else {
-                    QWUser *user = [self insertNewUser];
-                    [user updateFromJSON:JSON];
-                    [_users setObject:user forKey:screenName];
-                    if (onSucceed) {
-                        // ToDo エラーは後で！
-                        onSucceed(user, request, [NSError errorWithDomain:@"" code:@"" userInfo:nil]);
-                    }
+                QWUser *user = [self insertNewUser];
+                [user updateFromJSON:JSON];
+                NSLog(@"create %@", user.screenName);
+                [_users setObject:user forKey:screenName];
+                if (onSucceed) {
+                    onSucceed(user, request, nil);
                 }
-
             } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 
             }];
@@ -117,10 +108,7 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 }
 
 - (QWUser *)selectUserByName:(NSString *)name {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"User"];
-    request.predicate = [NSPredicate predicateWithFormat:@"screenName = %@", name];
-
-    NSArray *cache = [QWUser MR_executeFetchRequest:request];
+    NSArray *cache = [QWUser MR_findAllWithPredicate:[NSPredicate predicateWithFormat:@"screenName = %@", name]];
     if ([cache count] > 0) {
         return [cache lastObject];
     }

@@ -13,6 +13,7 @@
 // Custom logic goes here.
 
 - (id)updateFromJSON:(NSDictionary *)dictionary {
+    self.pk = dictionary[@"id"];
     self.name = dictionary[@"name"];
     self.screenName = dictionary[@"screen_name"];
     if (![dictionary[@"description"] isEqual:[NSNull null]]) {
@@ -30,8 +31,10 @@
     if (![dictionary[@"location"] isEqual:[NSNull null]]) {
         self.location = dictionary[@"location"];
     }
-    NSURL *imageURL = [[NSURL alloc] initWithString:self.profileImageURL];
-    self.profileImage = [NSData dataWithContentsOfURL:imageURL];
+    if (self.profileImageURL != nil) {
+        NSURL *imageURL = [[NSURL alloc] initWithString:self.profileImageURL];
+        self.profileImage = [NSData dataWithContentsOfURL:imageURL];
+    }
     return self;
 }
 

@@ -43,7 +43,7 @@
             QWUserManager *manager = [QWUserManager sharedManager];
             for (ACAccount *acAccount in accounts) {
                 QWUser *cache = [manager selectUserByName:acAccount.username];
-                if (cache == NULL) {
+                if (cache == nil) { // 保存されていないとき
                     [manager createUserWithScreenName:acAccount.username via:acAccount succeed:^(QWUser *user, NSHTTPURLResponse *response, NSError *err) {
                         QWAccount *account = [[QWAccount alloc] initWithUser:user account:acAccount];
                         [_accounts addObject:account];
@@ -54,10 +54,12 @@
                             completion(granted, error);
                         }
                     }];
-                } else {
-                    QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
-                    if (![_accounts containsObject:account]) {
-                        [_accounts addObject:account];
+                } else { // 保存されているとき
+                    if (![self containsUser:cache]) {
+                        QWAccount *account = [[QWAccount alloc] initWithUser:cache account:acAccount];
+                        if (![_accounts containsObject:account]) {
+                            [_accounts addObject:account];
+                        }
                     }
                 }
             }
@@ -83,6 +85,15 @@
             }
         }
     }];
+}
+
+- (BOOL)containsUser:(QWUser *)user {
+    for (QWAccount *account in self.accounts) {
+        if ([account.user.screenName isEqual:user.screenName]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 @end

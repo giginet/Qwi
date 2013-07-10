@@ -21,5 +21,6 @@
 + (id)sharedManager;
 - (void)loadAccounts:(ACAccountStoreRequestAccessCompletionHandler)completion;
 - (void)updateAccounts:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
+- (BOOL)containsUser:(QWUser *)user;
 
 @end
