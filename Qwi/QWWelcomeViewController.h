@@ -9,5 +9,6 @@
 
 
 @interface QWWelcomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 
 @end

@@ -14,6 +14,8 @@
 
 #define MR_SHORTHAND
 
+const NSString *kLastAccountKey = @"lastAccount";
+
 @implementation QWAccountManager
 
 + (id)sharedManager {
@@ -94,6 +96,44 @@
         }
     }
     return NO;
+}
+
+- (void)restoreLastAccount:(void (^)(QWAccount *account, BOOL succeed))completion {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *lastAccount = [ud objectForKey:kLastAccountKey];
+    if (lastAccount) {
+        ACAccountType *type = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+        [_accountStore requestAccessToAccountsWithType:type options:nil completion:^(BOOL granted, NSError *error) {
+            if (granted) {
+                NSArray *accounts = [NSMutableArray arrayWithArray:[_accountStore accountsWithAccountType:type]];
+                for (ACAccount *acAccount in accounts) {
+                    if ([acAccount.username isEqual:lastAccount]) {
+                        QWUser *user = [[QWUserManager sharedManager] selectUserByName:lastAccount];
+                        if (user) {
+                            NSLog(@"restore account %@", lastAccount);
+                            QWAccount *account = [[QWAccount alloc] initWithUser:user account:acAccount];
+                            self.currentAccount = account;
+                            completion(account, YES);
+                        } else {
+                            [ud setObject:@"" forKey:kLastAccountKey];
+                            completion(nil, NO);
+                        }
+                        break;
+                    }
+                }
+            }
+        }];
+    }
+}
+
+- (void)setCurrentAccount:(QWAccount *)currentAccount {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    if (currentAccount) {
+        [ud setObject:currentAccount.user.screenName forKey:kLastAccountKey];
+    } else {
+        [ud setObject:@"" forKey:kLastAccountKey];
+    }
+    _currentAccount = currentAccount;
 }
 
 @end

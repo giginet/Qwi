@@ -7,6 +7,7 @@
 //
 
 #import "QWWelcomeViewController.h"
+#import "QWAccountManager.h"
 
 @interface QWWelcomeViewController ()
 
@@ -23,10 +24,19 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.startButton.enabled = NO;
+    QWAccountManager *manager = [QWAccountManager sharedManager];
+    if (!manager.currentAccount) {
+        [manager restoreLastAccount:^(QWAccount *account, BOOL succeed) {
+            if (succeed) {
+                self.startButton.enabled = YES;
+            }
+        }];
+    } else {
+        self.startButton.enabled = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning

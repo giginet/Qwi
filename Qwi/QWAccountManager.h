@@ -22,5 +22,6 @@
 - (void)loadAccounts:(ACAccountStoreRequestAccessCompletionHandler)completion;
 - (void)updateAccounts:(void (^)(QWUser *user, NSHTTPURLResponse *urlResponse, NSError *error))onSucceed;
 - (BOOL)containsUser:(QWUser *)user;
+- (void)restoreLastAccount:(void (^)(QWAccount *account, BOOL succeed))completion;
 
 @end

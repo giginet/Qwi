@@ -18,6 +18,8 @@
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObject+MagicalAggregation.h"
 #import "NSManagedObject+MagicalFinders.h"
+#import "NSManagedObjectContext+MagicalRecord.h"
+#import "NSManagedObjectContext+MagicalSaves.h"
 
 #define MR_SHORTHAND
 
@@ -67,9 +69,12 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                 [user updateFromJSON:JSON];
                 NSLog(@"create %@", user.screenName);
                 [_users setObject:user forKey:screenName];
-                if (onSucceed) {
-                    onSucceed(user, request, nil);
-                }
+                NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
+                [context MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+                    if (onSucceed) {
+                        onSucceed(user, request, nil);
+                    }
+                }];
             } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 
             }];
