@@ -1,16 +1,19 @@
 PODS:
   - AFNetworking (1.2.1)
   - MagicalRecord (2.1)
+  - TestFlightSDK (1.3.0-beta.6)
   - TouchJSON (1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - MagicalRecord
+  - TestFlightSDK
   - TouchJSON
 
 SPEC CHECKSUMS:
   AFNetworking: a44069e3c9c89867544f6639482f155c7e5f9b41
   MagicalRecord: 64e7184c240087a45e9588a722eaf05b0ad837f7
+  TestFlightSDK: f3e516c64f61abedeb26a7b184101df54df3db09
   TouchJSON: 42c1e460723d56d57d03ece0449299c81ebf9391
 
 COCOAPODS: 0.19.1
