@@ -64,14 +64,14 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
             success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                 if ([account.username isEqual:screenName]) {
                     QWUser *user = [self insertNewUser];
-                    [self updateFromDictionary:JSON for:user];
+                    [user updateFromJSON:JSON];
                     [_users setObject:user forKey:screenName];
                     if (onSucceed) {
                         onSucceed(user, request, nil);
                     }
                 } else {
                     QWUser *user = [self insertNewUser];
-                    [self updateFromDictionary:JSON for:user];
+                    [user updateFromJSON:JSON];
                     [_users setObject:user forKey:screenName];
                     if (onSucceed) {
                         // ToDo エラーは後で！
@@ -85,7 +85,9 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
     [self.queue addOperation:operation];
 }
 
-- (QWUser *)updateUserByName:(NSString *)screenName via:(ACAccount *)account succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
+- (QWUser *)updateUserByName:(NSString *)screenName
+                         via:(ACAccount *)account
+                     succeed:(void (^)(QWUser *, NSHTTPURLResponse *, NSError *))onSucceed {
     QWUser *user = [self selectUserByName:screenName];
     if (user) {
         SLRequest *showRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter
@@ -93,12 +95,14 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                                                           URL:[self buildURL:kFriendListAPI]
                                                    parameters:@{@"screen_name" : screenName}];
         showRequest.account = account;
-        [showRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-            NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-            [self updateFromJSON:jsonString for:user];
-            onSucceed(user, urlResponse, error);
-        }];
-
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[showRequest preparedURLRequest]
+                                                                                            success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+                                                                                                [user updateFromJSON:JSON];
+                                                                                                onSucceed(user, response, nil);
+                                                                                            } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+                    onSucceed(user, response, error);
+                }];
+        [self.queue addOperation:operation];
     }
     return user;
 }
@@ -125,37 +129,6 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
 
 - (BOOL)isCachedByName:(NSString *)name {
     return [QWUser MR_countOfEntitiesWithPredicate:[NSPredicate predicateWithFormat:@"screenName = %@", name]];
-}
-
-- (QWUser *)updateFromDictionary:(NSDictionary *)dictionary for:(QWUser *)user {
-    user.name = dictionary[@"name"];
-    user.screenName = dictionary[@"screen_name"];
-    if (![dictionary[@"description"] isEqual:[NSNull null]]) {
-        user.bio = dictionary[@"description"];
-    }
-    user.friendsCount = dictionary[@"friends_count"];
-    user.favoritesCount = dictionary[@"favorites_count"];
-    user.statusesCount = dictionary[@"statuses_count"];
-    user.followersCount = dictionary[@"followers_count"];
-    user.listedCount = dictionary[@"listed_count"];
-    if (![dictionary[@"url"] isEqual:[NSNull null]]) {
-        user.url = dictionary[@"url"];
-    }
-    user.profileImageURL = dictionary[@"profile_image_url"];
-    if (![dictionary[@"location"] isEqual:[NSNull null]]) {
-        user.location = dictionary[@"location"];
-    }
-    //NSURL *imageURL = [[NSURL alloc] initWithString:user.profileImageURL];
-    //user.profileImage = [NSData dataWithContentsOfURL:imageURL];
-    return user;
-}
-
-- (QWUser *)updateFromJSON:(NSString *)jsonString for:(QWUser *)user {
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *error = nil;
-    NSDictionary *dictionary = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
-    NSLog(@"name = %@", dictionary[@"name"]);
-    return [self updateFromDictionary:dictionary for:user];
 }
 
 - (void)updateFriends:(NSString *)screenName via:(ACAccount *)account {
@@ -201,12 +174,12 @@ const NSString *kFriendsIdsAPI = @"friends/ids.json";
                     if ([self isCachedByName:screenName]) {
                         // 保存済みの時
                         QWUser *user = [self selectUserByName:screenName];
-                        [self updateFromDictionary:userInfo for:user];
+                        [user updateFromJSON:userInfo];
                         NSLog(@"update %@", screenName);
                     } else {
                         // 保存されていなかったとき。新規生成してあげるよ！
                         QWUser *user = [self insertNewUser];
-                        [self updateFromDictionary:userInfo for:user];
+                        [user updateFromJSON:userInfo];
                         NSLog(@"create %@", screenName);
                     }
                 }

@@ -1,5 +1,7 @@
 #import "_QWUser.h"
 
 @interface QWUser : _QWUser {}
-// Custom logic goes here.
+
+- (id)updateFromJSON:(NSDictionary *)dictionary;
+
 @end
