@@ -72,10 +72,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     QWAccount *account = accounts[indexPath.row];
     QWUser *user = account.user;
-    cell.textLabel.text = user.name;
-    cell.detailTextLabel.text = user.screenName;
-    cell.imageView.image = [UIImage imageWithData:user.profileImage];
-
+    UIImageView *imageView = [cell viewWithTag:1];
+    //cell.textLabel.text = user.name;
+    //cell.detailTextLabel.text = user.screenName;
+    imageView.image = [UIImage imageWithData:user.profileImage];
+    UIView *background = [cell viewWithTag:2];
+    const int reds[] = {247, 240, 232, 227};
+    const int greens[] = {246, 239, 232, 227};
+    const int blues[] = {241, 249, 237, 229};
+    int index = indexPath.row % 4;
+    cell.backgroundColor = [UI7Color colorWithRed:reds[index] green:greens[index] blue:blues[index] alpha:255];
     return cell;
 }
 
